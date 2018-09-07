@@ -21,5 +21,12 @@ Aftermath of Pompeii gives archaeologists a lot of insights about life of romans
 2. How similar were their liives to ours?
   * People weren't fools
 3. How different was it?
+  * Polytheistic (?) society - many gods
+  * Lack of knowledge - assumed the end of the world, when it was volcano erruption.
 4. How does study affect our experiences in our own lives?
+  * the idea whether people turned to faith in times of crisis.
 
+**Things will be tested on**
+1. Lecture notes (what said in class + slides)
+2. Class discussion notes (questions and comments from students)
+3. Textbook readings (gives background and details)
