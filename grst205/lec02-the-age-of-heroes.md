@@ -1,4 +1,4 @@
-# Overview of Greece and Rome
+# The Age of Heroes: Early Greece
 
 **Outline**:
 1. Overview of Greece and Rome.
