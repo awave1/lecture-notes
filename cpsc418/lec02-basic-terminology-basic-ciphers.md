@@ -38,7 +38,7 @@ Cryptography security mechanisms discussed in this course include:
 Cryptography provides many security mechanismsm but not all:
 * Necessary, but not sufficient for InfoSec
 
-Reference: *Why Cryptosystems fail*, Russ Anderson
+> Reference: *Why Cryptosystems fail*, Russ Anderson
 
 ## Security Attacks
 Security mechanisms are designed to detect, prevent, or recover from a *security attack*, i.e. an acction that compromises the security of information by an organization.
@@ -57,7 +57,7 @@ Successfull cryptographic protocols typically combine several mechanisms to guar
   - For example: an encryption scheme
 * **Cryptographic protocol** - an algorithm to be undertaken by two or more entities t oachieve a specific security objective
 
-Reference: *Handbook of Applied Cryptography*
+> Reference: *Handbook of Applied Cryptography*
 
 * **Message space** $`M`$ - set of all possible plaintext messages
 * **Cipher space** $`C`$ - set of all possible encrypted messages
@@ -72,21 +72,21 @@ Reference: *Handbook of Applied Cryptography*
 Gilles Brassard, prof at the U of Montreal, the inventor of quantum cryptography, created the protagonists *Alice and Bob*. Since then, more characters joined the crypto game, most notably *Eve - the eavesdropper*.
 
 **Idea**:
-* A transmitter (Bob) generates a plaintext message `m (partof) M` to be communicated to a legitimate receiver (Alice) over an insecure channel.
-* To prevent Eve from learining the contents of `m`, Bob chooses a key `k (partof) K` and encrypts `m` with `Ek` to produce the ciphertext `C = Ek(m)`.
-* `C` is sent along the insecure channel. When Alice obtains `C`, she deciphers it by applying `Dk` to `C` to obtain `M = Dk(C)`.
+* A transmitter (Bob) generates a plaintext message $`m \in M`$ to be communicated to a legitimate receiver (Alice) over an insecure channel.
+* To prevent Eve from learining the contents of $`m`$, Bob chooses a key $`k \in K`$ and encrypts $`m`$ with $`E_k`$ to produce the ciphertext $`C = E_k(m)`$.
+* $`C`$ is sent along the insecure channel. When Alice obtains $`C`$, she deciphers it by applying $`D_k`$ to $`C`$ to obtain $`M = D_k(C)`$.
 
 ### Issues
 Encryption functons are our first example of a cryptographic primitive
 * could easily formalize the above description to create a crypto. protocol.
 
-Note that Bob must somehow communicate the secure key to Alice without Eve obtaining it, i.e. over a **secure channel**. The assumption is that the workings of `Ek` and `Dk` are not secret, but `k` is secret, so only Alice can decrypt, but no one else can.
+Note that Bob must somehow communicate the secure key to Alice without Eve obtaining it, i.e. over a **secure channel**. The assumption is that the workings of $`E_k`$ and $`D_k`$ are not secret, but $`k`$ is secret, so only Alice can decrypt, but no one else can.
 
 #### Example: Shift Cipher
 * $`M = C = \{A, B, ... Z\}`$
 * Keys represent shifts by a position between 0 and 25.
-* Encryption is forward circular shift of a plaintext letter by `k`.
-* Decryption is the corresponding backward circular shift of a ciphertext letter by `k`.
+* Encryption is forward circular shift of a plaintext letter by $`k`$.
+* Decryption is the corresponding backward circular shift of a ciphertext letter by $`k`$.
 
 More formally, first assign each letter a numerical equivalent, as follows:
 ```
@@ -96,7 +96,7 @@ A B C D     Z
 - With that, we have $`M = C = K = Z_{26}`$ (the integeras module 26)
 - Encryption: $`E_k(m) = (m + k) \space \% \space 26`$ (remainder between 0 and 25)
 - Decryption: $`D_k(c) = (c - k) \space \% \space 26`$ (remainder between 0 and 25)
-> Note: For the Caesar cipher, k = 3.
+> Note: For the Caesar cipher, $`k = 3`$.
 
 ##### Issues with the Shift Cipher
 Main problem: very small key space ($`|K| = 26`$)
