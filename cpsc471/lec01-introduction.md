@@ -39,8 +39,8 @@ Traditional Applications:
 * **Database System** - the DBMS software together with the **data itself**. Sometimes the applications are also included.
 
 ### Simplified database system environment
-`@TODO: add image`
-![Simplified database system environment]('./img/lec01/simplified_db_sys_env.png')
+
+![Simplified database system environment](cpsc471/img/lec01/simplified_db_sys_env.png)
 
 ## Typical DBMS Functionality
 The first thing is to **define** a database. **Define** a particular database in terms of its data types, structures, and constraints. The next step is to **populate** it. **Populate** the initial database contents on a secondary storage medium. Then, the database can be **manipulated**. To **manipulate** the database means; *Retrieval*: quering, generating reports, *Modification*: insertions, deletions, and updates to its content. **Processing** and **sharing** by a set of concurent users and application programs - yet, keeping all data valid and consistent (preventing racing conditions).
