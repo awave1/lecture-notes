@@ -63,11 +63,11 @@ Reference: *Handbook of Applied Cryptography*
 * **Message space** *M* - set of all possible plaintext messages
 * **Cipher space** *C* - set of all possible encrypted messages
 * **Key space** *K* - the finite set of possible keys
-* **Encryption transformation** - a left invertible map `Ek: M -> C`, indexed by some key `k (partof) K`
-* **Decryption transformation** - the left inverse map `Dk` of `Ek`, so `Dk(Ek(M)) = M` for all plaintexts `m (partof) M`
+* **Encryption transformation** - a left invertible map $`E_k: M \to C`$, indexed by some key $`k \isin K`$
+* **Decryption transformation** - the left inverse map $`D_k`$ of $`E_k`$, so `Dk(Ek(M)) = M` for all plaintexts $`m \isin M`$
 
-> Note: `Dk(Ek(M)) = M implies that `Dk o Rk = I` is the identity transformation on *M*.
-> Note: The fact that `Ek` is left-invertible is equivalent to `Ek` is an injective (i.e. one-to-one) map.
+> Note: $`D_{k}(E_{k}(M)) = M`$ implies that $`D_k o R_k = I`$ is the identity transformation on *M*.
+> Note: The fact that `Ek` is left-invertible is equivalent to $`Ek`$ is an injective (i.e. one-to-one) map.
 
 ## The idea of encryption and decryption
 Gilles Brassard, prof at the U of Montreal, the inventor of quantum cryptography, created the protagonists *Alice and Bob*. Since then, more characters joined the crypto game, most notably *Eve - the eavesdropper*.
@@ -84,7 +84,7 @@ Encryption functons are our first example of a cryptographic primitive
 Note that Bob must somehow communicate the secure key to Alice without Eve obtaining it, i.e. over a **secure channel**. The assumption is that the workings of `Ek` and `Dk` are not secret, but `k` is secret, so only Alice can decrypt, but no one else can.
 
 #### Example: Shift Cipher
-* `M = C = {A, B, ... Z}`
+* $`M = C = \{A, B, ... Z\}`$
 * Keys represent shifts by a position between 0 and 25.
 * Encryption is forward circular shift of a plaintext letter by `k`.
 * Decryption is the corresponding backward circular shift of a ciphertext letter by `k`.
@@ -94,15 +94,15 @@ More formally, first assign each letter a numerical equivalent, as follows:
 0 1 2 3 ... 25
 A B C D     Z
 ```
-- With that, we have `M = C = K = Z26` (the integeras module 26)
-- Encryption: `Ek(m) = m + k (mod 26)` (remainder between 0 and 25)
-- Decryption: `Dk(C) = c - k (mod 26)` (remainder between 0 and 25)
+- With that, we have $`M = C = K = Z_{26}`$ (the integeras module 26)
+- Encryption: $`E_k(m) = (m + k)\enspace \% \enspace 26`$ (remainder between 0 and 25)
+- Decryption: $`D_k(c) = (c - k)\enspace \% \enspace 26`$ (remainder between 0 and 25)
 > Note: For the Caesar cipher, k = 3.
 
 ##### Issues with the Shift Cipher
-Main problem: very small key space (`|K| = 26`)
+Main problem: very small key space ($`|K| = 26`$)
 - Easily falls to a *brute force attack* by simply typing each key in turn. (assuming you know that a shift cipher is used).
 
 **How small is small?**:
-- With modern technology, one tenth of a billion billion = 10^17 = 2^56 is small (DES has `|K| = 2^56`)
-- Clearly 26 < 2^56.
+- With modern technology, one tenth of a billion billion: $`10^{17} = 2^{56}`$ is small (DES has $`|K| = 2^{56}`$)
+- Clearly $`26 < 2^{56}`$.
