@@ -2,14 +2,14 @@
 
 > Required reading: Ch.1 & 2
 
-**Objectives**:
+## Objectives
 * Describe basic DB terminology, functionality, and types of users
 * Entretrain the main characteristics of the DB approach
 * Entertain the advantages of the DB approach
 * Describe what a data model is
 * Differentiate between a DB schema and set (instance)
 * Understand the three-schema architecture
-* Discuss `@TODO: Finish`
+* Discuss and differentiate between centralized and distributed DB architectures
 
 ## Types of Databases and Database Applications
 Traditional Applications:
@@ -34,11 +34,13 @@ Traditional Applications:
 ## Basic Definitions
 * **Database** - a collection of related data.
 * **Data** - known facts that can be recorded and have an implicit meaning. Not any data has meaning. Need to store meaningful data
+* **Mini-world** - some part of the real world about which data is stored in a database
 * **Database Managment System (DBMS)** - a software package to facilitate the creation and maintenance of a computerized database.
 * **Database System** - the DBMS software together with the **data itself**. Sometimes the applications are also included.
 
 ### Simplified database system environment
 `@TODO: add image`
+![Simplified database system environment]('./img/lec01/simplified_db_sys_env.png')
 
 ## Typical DBMS Functionality
 The first thing is to **define** a database. **Define** a particular database in terms of its data types, structures, and constraints. The next step is to **populate** it. **Populate** the initial database contents on a secondary storage medium. Then, the database can be **manipulated**. To **manipulate** the database means; *Retrieval*: quering, generating reports, *Modification*: insertions, deletions, and updates to its content. **Processing** and **sharing** by a set of concurent users and application programs - yet, keeping all data valid and consistent (preventing racing conditions).
