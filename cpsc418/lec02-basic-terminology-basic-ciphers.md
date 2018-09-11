@@ -5,11 +5,8 @@
 2. Encryption and Decryption
 3. Cryptographic attacks
 4. Cryptographic security
-5. Introduction to ciphers
-  - Substitution ciphers
-6. Substitution ciphers
-  - Monoalphabetic sub. ciphers
-  - Polyalphabetic sub. ciphers
+5. Introduction to ciphers (Substitution ciphers)
+6. Substitution ciphers (Monoalphabetic sub. ciphers, Polyalphabetic sub. ciphers)
 7. Transposition ciphers
 
 ---
@@ -25,9 +22,11 @@ Cryptography provides some such measures:
 ## Security Mechanisms
 Cryptography provides services that can achieve *security* objectives.
 Services provided by modern cryptography:
-* Data confidentiality
-* Data integrity
-`@TODO: Finish`
+* Data confidentiality - data only readable to legitimate parties
+* Data integrity - data has not been modified
+* Non-repudiation - protection against denial by one of the parties in a communication
+* Authentication - communicating entity is the one claimed
+* Access Control
 
 Encryption is just one of many *security* mechanisms that achieve one or more of the aboce security objective.
 Cryptography security mechanisms discussed in this course include:
