@@ -27,8 +27,11 @@ BCE - - - - - | - - - - - CE
 
 Both system split by 0. The older you are the more you're in BC/BCE.
 > BC  - Before Christ
+
 > AD  - Anno Domini
+
 > BCE - Before Common Era
+
 > CE  - Common Era
 
 History divided into periods: **periodization**. Periods used to split different eras when talk about cultures.
@@ -48,11 +51,13 @@ Eventually the Myancanaens conqoured
 
 ### Knosos: Minoan **palace** (c. 1700 BC)
 > Lightwell: hole in the ceiling
+
 > Labyrinthine floor plan: Maze-like floor design
+
 > Central courtyard: central performance community space
 
 * Settlement size: 10km^2.
-* Construction and decoration: Stone masonry, timber beams, lightwells, fresco paintings, **labyrinthine** floor plan with central courtyard.
+* Construction and decoration: Stone masonry, timber beams, lightwells, fresco paintings; **Labyrinthine** floor plan with central courtyard.
 
 Displayed on pics: Bulls and 'bull-leaping'/snake goddess (common motifs in Minoan art). Lack of knowledge (text) prevents us from knowing what exactly that art represents.
 
