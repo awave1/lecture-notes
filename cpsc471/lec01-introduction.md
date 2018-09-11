@@ -76,6 +76,7 @@ Applications must not allow unauthorized users to access data. They also must ke
 
 **Example of a simple databases**:
 **`COURSE`**:
+
 |`course_name`         |`course_number`|`credit_hours`|`department`|
 |----------------------|:-------------:|:------------:|:----------:|
 | Intro to CS          | CS1310        | 4            | CS         |
@@ -84,6 +85,7 @@ Applications must not allow unauthorized users to access data. They also must ke
 | Datbase              | CS1310        | 3            | CS         |
 
 **`SECTION`**:
+
 |`section_identifier`|`course_number`|`semester`|`year`|`instructor`|
 |:------------------:|---------------|----------|------|------------|
 | 85                 | MATH2410      | Fall     | '07  | King       |
@@ -94,6 +96,7 @@ Applications must not allow unauthorized users to access data. They also must ke
 | 135                | CS3380        | Fall     | '08  | Stone      |
 
 **`GRADE_REPORT`**: `@TODO: Finish`
+
 |`section_identifier`|`course_number`|`semester`|
 |:------------------:|---------------|----------|
 | 85                 | MATH2410      | Fall     |
