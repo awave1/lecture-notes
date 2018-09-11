@@ -271,9 +271,9 @@ Defines the **conceptual schema**.
 ### Client-server DBMS
 1. **Logical Two-Tier Client-Server Architecture**
 
-![Logical Two-Tier Client-Server Architecture](05_two_tier_client_server.png)
+![Logical Two-Tier Client-Server Architecture](cpsc471/img/lec01/05_two_tier_client_server.png)
 
 2. **Three-Tier Client-Server Architecture**
 
-![Three-Tier Client-Server Architecture](06_three_tier_client_server.png)
+![Three-Tier Client-Server Architecture](cpsc471/img/lec01/06_three_tier_client_server.png)
 
