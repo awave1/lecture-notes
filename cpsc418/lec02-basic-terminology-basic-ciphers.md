@@ -60,14 +60,14 @@ Successfull cryptographic protocols typically combine several mechanisms to guar
 
 Reference: *Handbook of Applied Cryptography*
 
-* **Message space** *M* - set of all possible plaintext messages
-* **Cipher space** *C* - set of all possible encrypted messages
-* **Key space** *K* - the finite set of possible keys
-* **Encryption transformation** - a left invertible map $`E_k: M \to C`$, indexed by some key $`k \isin K`$
-* **Decryption transformation** - the left inverse map $`D_k`$ of $`E_k`$, so `Dk(Ek(M)) = M` for all plaintexts $`m \isin M`$
+* **Message space** $`M`$ - set of all possible plaintext messages
+* **Cipher space** $`C`$ - set of all possible encrypted messages
+* **Key space** $`K`$ - the finite set of possible keys
+* **Encryption transformation** - a left invertible map $`E_k: M \to C`$, indexed by some key $`k \in K`$
+* **Decryption transformation** - the left inverse map $`D_k`$ of $`E_k`$, so $`D_k(E_k(M)) = M`$ for all plaintexts $`m \in M`$
 
-> Note: $`D_{k}(E_{k}(M)) = M`$ implies that $`D_k o R_k = I`$ is the identity transformation on *M*.
-> Note: The fact that `Ek` is left-invertible is equivalent to $`Ek`$ is an injective (i.e. one-to-one) map.
+> Note: $`D_{k}(E_{k}(M)) = M`$ implies that $`D_k \space \circ \space E_k = I`$ is the identity transformation on $`M`$.
+> Note: The fact that $`E_k`$ is left-invertible is equivalent to $`E_k`$ is an injective (i.e. one-to-one) map.
 
 ## The idea of encryption and decryption
 Gilles Brassard, prof at the U of Montreal, the inventor of quantum cryptography, created the protagonists *Alice and Bob*. Since then, more characters joined the crypto game, most notably *Eve - the eavesdropper*.
@@ -95,8 +95,8 @@ More formally, first assign each letter a numerical equivalent, as follows:
 A B C D     Z
 ```
 - With that, we have $`M = C = K = Z_{26}`$ (the integeras module 26)
-- Encryption: $`E_k(m) = (m + k)\enspace \% \enspace 26`$ (remainder between 0 and 25)
-- Decryption: $`D_k(c) = (c - k)\enspace \% \enspace 26`$ (remainder between 0 and 25)
+- Encryption: $`E_k(m) = (m + k) \space \% \space 26`$ (remainder between 0 and 25)
+- Decryption: $`D_k(c) = (c - k) \space \% \space 26`$ (remainder between 0 and 25)
 > Note: For the Caesar cipher, k = 3.
 
 ##### Issues with the Shift Cipher
