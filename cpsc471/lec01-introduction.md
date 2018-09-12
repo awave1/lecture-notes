@@ -209,9 +209,6 @@ Applications must not allow unauthorized users to access data. They also must ke
 **Data Model** - A set of concepts to describe the **structure** of a database, the **operations** for manipulating these structures, and certain **constraints** that the database should obey.
 
 ## Schemas vs Instances
-
-`@TODO: Finish`
-
 ### Database Schema (intention):
 - The **description** of a database
 - Database structure, data types, and constraints
