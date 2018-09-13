@@ -21,7 +21,13 @@ Mycanaeans spoke an early form of ancient Greek. Surviving texts are bureaucrati
 
 
 ## Greek Dark Age (1050 - 750 BCE)
-Collapse of Mycenaean Civilization Results
+Archaelogists discovered the evidence of collapse and destruction throughout Greece and the Eastern Mediterranean about 200 years before. Another problem was that some areas were not destroyed, such as Athens, and some of the Cycladic islands.
+
+Additional theories to explain the end of the Bronze Age include new weapons and technology, including the use of iron.
+
+### Collapse of Mycenaean Civilization Results
+A common explanation for the destruction at the Mycenaean sites, especially the palace/citadel itself, which was destroyed by fire, is that the fire was caused by an **earthquake**.
+
 * Loss of literacy
 * Almost total disappearance of figurative art
     * styles more crude
