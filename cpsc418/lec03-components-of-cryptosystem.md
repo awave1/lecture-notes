@@ -1,28 +1,25 @@
 # Components of a Cryptosystem
-* `$M$` - message / plaintext space
-* `$C$` - ciphertext space
-* `$K$` - key space
+* $`M`$ - message / plaintext space
+* $`C`$ - ciphertext space
+* $`K`$ - key space
 
 > **Shift Ciphers**: `$M + C + K = \Z_{26}$`
 
 ## Symmetric Cryptosystems
-```
-@TODO: Finish
-```
 A symmetric cryptosystem consists of the following:
-* A finite non-empty set `$M$` called the *plaintext* space
-* A finite non-empty set `$C$` called the *ciphertext*  space
-* A finite non-empty set `$K$` called the *key* space
-* A single-parameter family `$\{E_k\}_{k \in K}$` off injective transformations
+* A finite non-empty set $`M`$ called the *plaintext* space
+* A finite non-empty set $`C`$ called the *ciphertext*  space
+* A finite non-empty set $`K`$ called the *key* space
+* A single-parameter family $`\{E_k\}_{k \in K}`$ off injective transformations
 
 ```math
 E_k: M \to C \space via \space M \mapsto C := E_k(M)
 ```
 
-Called *encryption functions*. The left inverse `$E_k$`, denoted `$D_k$`, is called the corresponding *decryption function*. That is:
+Called *encryption functions*. The left inverse $`E_k`$, denoted $`D_k`$, is called the corresponding *decryption function*. That is:
 
 ```math
-D_k(E_k(m)) = m \space for all \space m \in M \space and \space k \in K
+D_k(E_k(m)) = m \space for \space all \space m \in M \space and \space k \in K
 ```
 
 ### Schematic of a Symmetric Cryptosystem
@@ -72,7 +69,6 @@ Depends on what adversary has available and what attacker can do
 **Note**: These attacks are *active*: adversary interacts with the system.
 
 ### More on attacks
-
 **Note**: A good/secure cryptosystem should be secure against adaptive CCA's (as strong as possible)
 
 Some attacks that cryptography cannot protect against, include:
