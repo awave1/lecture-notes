@@ -73,6 +73,52 @@ Depends on what adversary has available and what attacker can do
 
 ### More on attacks
 
+**Note**: A good/secure cryptosystem should be secure against adaptive CCA's (as strong as possible)
+
+Some attacks that cryptography cannot protect against, include:
+* **Side Channel Attacks** - adversary exploits some physical aspect of the cryptosystem implementation to extract the ky.
+* **Clandestine Attack** (AKA Rubber Hose Cryptography) - adversary bribes, blackmails, threatens, steals, or beats the key out of the recepient.
+
+## Notions of Security
+There are different notions of security. Security includes a lot of aspects: physical, psychological. It means different things for different people.
+
+**Kerchoff's Principle**:
+The security of a cryptosystem should depend entirely upon knowledge of the key, not the method.
+
+From "La Cryptographie Militarie" (1883), one of the first scientific treatments of cryptography.
+
+> As long as you don't know the key, the system shouldn't be crackable
+
+This principle implies that a cipher should be completely published/open source and *still* be secure (against its own designer and everyone else).
+
+## Measures of Security
+Listed from strongest to weakest:
+* **Unconditional Security** - can an adversary with unlimited computing power defeat the system?
+* **Provable Security** - breaking the system can be reduced (mathematically) to another, supposedly, difficult problem: e.g. integer factorization.
+    * Finding factor is one way of cracking the system
+    * Can still be other ways of doing that
+* **Computational Security** - does the perceived amount of computing power necessary to break the system (using the best known method) exceed (by a comfortable margin) the available computing power of the attacker.
+* **Ad-hoc Security** - security is "proved" via a series of convincing arguments that every successful attack is impractical (nowadays no longer accepted)
+
+### Remarks
+Computational security often used in conjunction with provable security
+* E.g. a typical security claim might read something like "a cryptosystem is provably secure against an adaptive CCA assuming integer factorization is hard"
+
+Provable security does *not* mean that a cryptography `@TODO: finish`
+
+## Classical ciphers
 ```
 @TODO: Finish
+```
+Classical ciphers usually beong to one of the following two types: substitution or transposition ciphers.
+
+**Substitution cipher** - a cipher for which encryption replaces each plaintext symbol by some ciphertext symbol without changing the order of the plaintext symbols
+
+**Transposition cipher** - a cipher in which the ciphertext is a rearrangement (i.e. permutation) of the plaintext symbols
+
+### Modern Usage
+Individually, substitution ciphers and transposition ciphers are generally insecure. However, when alternating them repeatedly, they become secure.
+
+```
+@TODO: img and finish
 ```
