@@ -3,7 +3,7 @@
 * $`C`$ - ciphertext space
 * $`K`$ - key space
 
-> **Shift Ciphers**: `$M + C + K = \Z_{26}$`
+> **Shift Ciphers**: $`M + C + K = \Z_{26}`$
 
 ## Symmetric Cryptosystems
 A symmetric cryptosystem consists of the following:
