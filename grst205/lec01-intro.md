@@ -30,3 +30,8 @@ Aftermath of Pompeii gives archaeologists a lot of insights about life of romans
 1. Lecture notes (what said in class + slides)
 2. Class discussion notes (questions and comments from students)
 3. Textbook readings (gives background and details)
+
+### Eyewitness account by Pliny the Younger, describing the eruption of Mount Vesuvius
+> ‘Ashes were already falling, but not very thickly yet. I looked round: a dense black cloud was coming up behind us, spreading over the earth like a flood. “We must leave the road while we can still see,” I said, “or we will be knocked down and trampled underfoot in the dark by the crowd behind us.” We had scarcely sat down to rest when darkness fell, not the dark of a moonless or cloudy night, but as if a lamp had been put out in a closed room.
+
+>   ‘You could hear the shrieks of women, the wailing of infants, and the shouting of men; some were calling their parents, others their children or their wives, trying to recognize them by their voices. People bewailed their own fate or that of their relatives, and there were some who even prayed for death, so afraid were they of dying. Many begged for the help of the gods, but even more people imagined there were no gods left, and that the universe was plunged into eternal darkness for evermore.’
