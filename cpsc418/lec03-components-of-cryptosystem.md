@@ -184,6 +184,7 @@ A transposition cipher where the plaintext is arranged in some geometric figure 
 
 #### Example: Route Cipher 
 Plaintext: `Now is the time for all good men`.
+
 Encryption: arrange the plaintext by rows into a rectangle of $`K`$ columns and extract the ciphertext by the column.
 
 ### Columnar Transposition
