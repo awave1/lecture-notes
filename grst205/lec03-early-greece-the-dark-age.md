@@ -3,11 +3,10 @@
 **Outline**
 1. Mycenaean palaces
 2. Collapse of Mycenaean
-`@TODO: Finish`
 
 ## Mycanaean Palaces
 Mycenae: Mycenaean palace/citadel (c. 1350 BCE)
-* Settlement size: 30000 `$m^2$`
+* Settlement size: 30000 $`m^2`$
 * Smaller area
 * Defensible position
 * Heavy fortifications (**Cyclopean** masonry)
@@ -19,6 +18,10 @@ Mycenae: Mycenaean palace/citadel (c. 1350 BCE)
 
 Mycanaeans spoke an early form of ancient Greek. Surviving texts are bureaucratic / administrative. The Minoan language and script (Linear A) remain undeciphered.
 
+Mycanaeans literacy:
+* Tells us that they had a strong economy
+* They had mayors (some way of looking after people)
+* Used clay to keep records
 
 ## Greek Dark Age (1050 - 750 BCE)
 Archaelogists discovered the evidence of collapse and destruction throughout Greece and the Eastern Mediterranean about 200 years before. Another problem was that some areas were not destroyed, such as Athens, and some of the Cycladic islands.
@@ -29,6 +32,7 @@ Additional theories to explain the end of the Bronze Age include new weapons and
 A common explanation for the destruction at the Mycenaean sites, especially the palace/citadel itself, which was destroyed by fire, is that the fire was caused by an **earthquake**.
 
 * Loss of literacy
+* Invasion of sea peoples (?)
 * Almost total disappearance of figurative art
     * styles more crude
 * End of monumental building
