@@ -64,6 +64,14 @@ Each citizen supplies his own equipment. Middle and upper class were usually abl
 Soldiers were fighting in ranks. Massed ranks, called *phalanx*, instead of individual fighters/chariots. Requires cooperation/communal participation. Similar to rugby/american football. Average battle during this period lasted for about an hour. Push until the other side turns around and runs away - called *trophy*. Greek definition of a coward is someone who throws away the shield *hoplon*.
 
 ### Literature: The Poet Homer (The Odyssey)
-```
-@TODO: Finish
-```
+> From there we sailed with heavy hearts, and came
+> to the land of the Cyclopes, a lawless, aggressive
+> people, who never lift their hands to plant or
+> plough, but rely on the immortal gods. Wheat,
+> barley, and vines with their richly clustered
+> grapes, grow there without ploughing or sowing,
+> and rain from Zeus makes them flourish. The
+> Cyclopes have no council meetings, no code of law,
+> but live in echoing caves on the mountain slopes,
+> and each man lays down the law to his wives and
+> children, and disregards his neighbours
