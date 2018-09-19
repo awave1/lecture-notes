@@ -55,7 +55,7 @@ Can be either **simple** or **composite**
 
 #### Example of a Composite Attribute
 
-![Composite Attribute]('cpsc471/img/lec02/01.png')
+![Composite Attribute](cpsc471/img/lec02/01.png)
 
 **Multi-valued**: an entity may have multiple values for that attribute. For example, color of a `CAR` or `PreviousDegrees` of a `STUDENT`. Denoted as `{Color}` or `{PreviousDegrees}`
 
