@@ -1,6 +1,6 @@
 ## Herodotus: The Histories (440's BCE)
 
-![Herodotus](grst205/lec08/01.png)
+![Herodotus](grst205/img/lec08/01.png)
 
 Herodotus is a Greek historian from Halicarnassus (Greek *polis* conquered by Persians in 540s). Herodotus ws interested in other cultures: Egyptian, Persian, Indian. Herodotus wrote **first surviving Greek** *Historia* ('inquiry').
 
