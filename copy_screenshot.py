@@ -19,10 +19,10 @@ def main():
     base_dir = env.get('SCREENSHOT_ROOT', home + '/Pictures/screenshots/')
     courses = ['cpsc418', 'cpsc471', 'grst205']
     courses_img = map(lambda x: os.getcwd() + '/' + x + '/img', courses)
-    to = filter(lambda x: args.course[0] in x, courses_img)
+    to = list(filter(lambda x: args.course[0] in x, courses_img))
 
     if len(to) != 0:
-        files = filter(path.isfile, glob.glob(base_dir + '*'))
+        files = list(filter(path.isfile, glob.glob(base_dir + '*')))
         files.sort(key=lambda x: path.getmtime(x), reverse=True)
 
         to_dir = to[0] + '/lec' + args.lec[0]
@@ -35,6 +35,7 @@ def main():
         to_file = '{}/{}'.format(to_dir, img_name)
 
         sh.copy(src_file, to_file)
+        os.system('echo "![{}]({})" | pbcopy'.format(to_file, to_file))
 
 
 if __name__ == '__main__':

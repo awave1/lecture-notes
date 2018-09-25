@@ -105,3 +105,21 @@ We consider the following probabilities
 
 ## Perfect Secrecy
 A cryptosystem provides perfect secrecy if $`p(m|c) = p(m)`$ for all $`m \in M`$ and $`c \in C`$ with $`p(c) > 0`$
+
+```
+@TODO: add notes from wednesday
+```
+
+### Necessary Condition for Perfect Secrecy
+Mathematically can be correct, but impracticall
+
+## One-Time Pad
+
+### Bitwise XOR
+
+### Security of the One Time Pad
+**Theorem**: The one-time pad provides perfect secrecy if each key is chosen with equal likelihood. Under this assumption, each ciphertext occurs with equal likelihood (regardless of the probability distribution on the plaintext space).
+
+This means that in the one-time pad, any given ciphertext can be decrypted to *any* plaintext with equal likelihood (definition of perfect secrecy). There's no "distinguished" (e.g. meaningful) decryption. Se even exhaustive search doesn't help.
+
+
