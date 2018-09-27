@@ -1,7 +1,4 @@
 # Perfect Secrecy, One-Time Pad
-```
-@TODO: fix formatting
-```
 
 > Note: will need probablity theory
 

@@ -7,7 +7,7 @@
 
 ## Literary / Artistic Achievment
 ### Homer
-Ancient freeks claimed that he was the author of two of their most cherished poems *The Illiad* and *The Odyssey*
+Ancient greeks claimed that he was the author of two of their most cherished poems *The Illiad* and *The Odyssey*
 
 ![Homer](grst205/img/lec05/01_homer.jpg)
 

@@ -1,6 +1,4 @@
 # GRST - 205
----
-
 # How should we study ancient history?
 ## Course Objectives
 Introduction to ancient evidence and larger themes in the study of Greek and Roman history.

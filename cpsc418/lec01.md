@@ -1,5 +1,4 @@
 # CPSC 418
----
 
 # Introduction
 
