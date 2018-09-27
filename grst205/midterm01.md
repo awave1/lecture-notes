@@ -10,6 +10,7 @@
     * CE - Common Era
 3. **Bronze Age** 2200 - 1050 BC
 4. Early Greece and key civilizations:
+    * Palaces were religious, economic powers
     * **Minoan**: 2000 - 1400 BC
         * Located on island of Crete
         * Key Palace: **Knosos** 1700 BC
@@ -18,6 +19,7 @@
             * Central courtyard: central performance community space
             * **Magazines** - storage in long hallways
             * Settlement size: $`10 km^2`$
+            * West for visitors, East for families, domestic area
             * Construction and decoration:
                 * Stone masonry
                 * Timber Beams
@@ -28,7 +30,10 @@
                 * Bull leaping
                 * Snake goddess
                 * Both were common motifs in minoan art, but lack of knowledge prevents from knowing the meaning behind the art.
+            * Spoke Linear A: **not** decipherable
+            * Minoans were taken over by Mycenaean in 1400 BC
     * **Mycenaean**: 1700 - 1200 BC
+        * Bones were found in Pylos
         * were influenced by Minoans
         * Key palace/citadel **Mycenae**
             * Settlement size: $`30 km^2`$
@@ -41,11 +46,14 @@
         * Spoke early form of ancient greek
             * Linear A and Minoan language remain undeciphered
         * Literacy:
+            * Spoke Linear B 
             * Tells that they had strong economy
-            * had mayors looking after people
+            * Had mayors looking after people
             * used clay to keep records
 5. **Greek Dark Age** 1050 - 750 BCE
     * Marked the end of the **Bronze Age** (2200 - 1050 BC)
+    * Minoans and Mycenaeans were only remembered from myths
+    * Armor was still made from Bronze
     * Invasion of **Sea People**
     * Fall of Mycenaean civilization
     * No more monumental building
@@ -56,6 +64,7 @@
     * Smaller and poorer settlements
     * Can also be reffered to as Iron Age due to high usage of iron (cuz its more common in Aegean area)
     * Some echoes of Minoan / Mycenaean civilizations preserved in Greek myths, traditions, and language
+    * 950 BC - Iron started being used more often
 6. **Greek Revival** 900 - 750 BC
     * Still Dark Age, but greeks were recovering
     * Collapse of Mycenaean civilization produces **Sub-Mycenaean potterry**
@@ -74,12 +83,14 @@
     * Greek Revival encouraged trade/contact with other regions/peoples of Mediterranean.
         * Greek alphabet derived from **Phoenicians**: people from ancient near east
 7. **Archaic Period** 750 - 480 BC
+    * Values changed from Aristocratic to Communal
     * **Polis** emerge around 750 BC
     * Hoplite warfare
         * Developed around 8th - 7th BCE.
-        * Main Greek fighting style until 4th c. BCE.
+            * Main Greek fighting style until 4th c. BCE.
         * **Hoplon** - heavy rounded wooden shield, coated with bronze. About 3ft, covers upper body and a person beside.
         * **Greaves** - hoplite shin guards
+        * **Linen Cuirass** - hoplite chest cover
         * **Sarissa** - a long spear
         * Had special flute players that kept soldiers in order so they don't get scared and run away
         * Each citizen supplies his own equipment. Middle and Upper classes usually were able to supply themselves with equipment
@@ -87,6 +98,11 @@
             * Requires cooperation / communal participation
         * Avg battle lasted for abt. 1h
         * **Coward**: someone who throws away **hoplon**
+        * **Trireme** - the most effective warship used to ram, disable, or sink other ships
+        * Poor were rowers
+        * Middle class were infantry
+        * Rich were 
+        * Hoplites had to maintain formation, because without it they were useless
     * Increased Literacy / artistic achievment
         * **Homer**
             * the author of **The Illiad** and **The Odyssey**
@@ -110,6 +126,7 @@
     * Shift from aristocratic values to communal values
         * **Wanakes** - powerful kings that ruled the Bronze Age
         * **Baseileis**: chieftains, that were in control of small greek communities
+            * Existed before polis 
             * Position was justified by personal charisma and courage and leadership in battle
             * In early *Archaic* period. descendants of baseileis see themselves as **aristocrats** (the best)
                 * justified by: ancestry/family
@@ -125,13 +142,13 @@
             * Rhodes
         * Typical characteristics (Poseidonia as example, found in southern Italy 7th c. BC):
             * Temples (for worshiping greek gods)
-            * **Agora**: for givernment activity
+            * **Agora**: for government activity
             * Paved streets
                 * Grid Pattern
             * Coinage:
-                * patron god or goddess
-            * citizen army
-            * organs of government
+                * Patron god or goddess
+            * Citizen army
+            * Organs of government
                 * Assembly
                 * Councils
                 * Officials
@@ -196,6 +213,7 @@
     * Wrote a first surviving book, called **Historia**
         * **Historia** - an account of events, based on research, crititcal of myth, and focused of explaining why things happened the way they did
 12. **Persian Wars** early 5th c. BC
+    * Land warfare dominated from 7th - 4th BC
     * Conflict between Greek polies and Persian Empire
     * Major source of these wars is **Herodotus**
     * Major events
@@ -217,3 +235,5 @@
     * **Darius** died in 486 BCE; **Xerxes** was his successor
     * By 480 BCE, when Xerxes was ready for massive Greek invasion, in awe of Persia, Some Greek cities joined Persian Empire
     * The rest formed **Hellenic League** to defend themselves
+    * Cleitheres divided into the into to 10 new tribes
+    * Leaders of Alecmaeonids
