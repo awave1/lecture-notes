@@ -203,3 +203,9 @@
         * Ruled by kings, capital at **Persepolis**, but empire administred by **satraps** - regional rulers.
         * Persian empire were forcing slavery, according to greeks, but others claim that they didn't force anything, any religion to conquered territories, however they demanded taxes and contribution to the army.
     * **The Ionian Revolt** 499 - 493 BC
+        * Athenians were involved, but was short lived
+        * The Persians destroyed the rebelion in 494 BCE, at the naval battle of Lade
+    * **Polemarch** - senior military title
+    * **Darius** died in 486 BCE; **Xerxes** was his successor
+    * By 480 BCE, when Xerxes was ready for massive Greek invasion, in awe of Persia, Some Greek cities joined Persian Empire
+    * The rest formed **Hellenic League** to defend themselves
