@@ -16,6 +16,7 @@
             * Lightwell: hole in the ceiling
             * Labyrinthine floor plan: maze-like floor design
             * Central courtyard: central performance community space
+            * **Magazines** - storage in long hallways
             * Settlement size: $`10 km^2`$
             * Construction and decoration:
                 * Stone masonry
@@ -45,7 +46,9 @@
             * used clay to keep records
 5. **Greek Dark Age** 1050 - 750 BCE
     * Marked the end of the **Bronze Age** (2200 - 1050 BC)
+    * Invasion of **Sea People**
     * Fall of Mycenaean civilization
+    * No more monumental building
     * Loss of literacy
     * Almost total disappearance of figurative art
         * styles more crude
@@ -71,10 +74,14 @@
     * Greek Revival encouraged trade/contact with other regions/peoples of Mediterranean.
         * Greek alphabet derived from **Phoenicians**: people from ancient near east
 7. **Archaic Period** 750 - 480 BC
+    * **Polis** emerge around 750 BC
     * Hoplite warfare
         * Developed around 8th - 7th BCE.
         * Main Greek fighting style until 4th c. BCE.
         * **Hoplon** - heavy rounded wooden shield, coated with bronze. About 3ft, covers upper body and a person beside.
+        * **Greaves** - hoplite shin guards
+        * **Sarissa** - a long spear
+        * Had special flute players that kept soldiers in order so they don't get scared and run away
         * Each citizen supplies his own equipment. Middle and Upper classes usually were able to supply themselves with equipment
         * **Phalanx**: rank / group of soldiers
             * Requires cooperation / communal participation
@@ -101,6 +108,7 @@
                 * Life sized female sculptures
                 * weren't naked like **kouros**
     * Shift from aristocratic values to communal values
+        * **Wanakes** - powerful kings that ruled the Bronze Age
         * **Baseileis**: chieftains, that were in control of small greek communities
             * Position was justified by personal charisma and courage and leadership in battle
             * In early *Archaic* period. descendants of baseileis see themselves as **aristocrats** (the best)
