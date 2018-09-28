@@ -43,8 +43,6 @@
             * **Megaron**: Central hall, rather than courtyard
             * Same decorative style as Minoan
             * Art includes more military elements
-        * Spoke early form of ancient greek
-            * Linear A and Minoan language remain undeciphered
         * Literacy:
             * Spoke Linear B 
             * Tells that they had strong economy
