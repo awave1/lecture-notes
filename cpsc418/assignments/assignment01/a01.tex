@@ -1,0 +1,71 @@
+\documentclass[11pt]{article}
+
+\usepackage{fullpage, verbatim, amsthm, amsmath, amssymb, amsfonts}
+
+% Aliases
+\newcommand{\K}{\mathcal{K}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\Z}{\mathbb{Z}}
+
+% Setup page style
+\parindent 0pt
+\parskip 3mm
+
+\theoremstyle{definition}
+\newtheorem*{solution}{Solution}
+
+
+\begin{document}
+
+\begin{center}
+
+  \bf \Large CPSC 418 / MATH 318 --- Introduction to Cryptography \\
+  ASSIGNMENT 1
+
+\end{center}
+
+
+\medskip \hrule
+
+  \textbf{Name:} Artem Golovin \\
+  \textbf{Student ID:} 30018900
+
+\medskip \hrule
+
+% Problem 1
+\item[] \textbf{Problem 1} --- Superencipherment for substitution ciphers, 12 marks
+
+\begin{enumerate}
+  \item
+    \begin{enumerate}
+      \item
+        \begin{proof}
+          Encryption using Shift cipher is given by $E_K (M) &\equiv (M + K) \mod 26$. Given $\M = \C = \K = \Z_{26}$, $K_1, K_2 \in \K$ and $M \in \M$: \\
+          Let $C_1 \in \C$ be a ciphertext that results from encrypting plaintext $M$ with a key $K_1$:
+          \begin{enumerate}
+            \item $ E_{K_1}(M) &\equiv (M + K_1) \mod 26 $
+            \item $ C_1 = E_{K_1} $
+            \item $ C_1 = (M + K_1) \mod 26 $
+            \item Let $C_2 = E_{K_2}(C_1)$, where $E_{K_2}(C_1) &\equiv (C_1 + K_2) \mod 26$
+            \item Therefore, by substituting $C_1$,
+              \begin{equation}
+              \begin{aligned}
+                C_2 & = (C_1 + K_2) \mod 26 \\
+                    & = ((M + K_1) + K_2) \mod 26 \\
+                    & = (M + K_3) \mod 26
+              \end{aligned}
+              \end{equation}
+              Where $K_3 \in \K$ and $K_3 = K_1 + K_2$. Finally, according to definition, $C_2$ results in shift cipher.
+          \end{enumerate}
+        \end{proof}
+      \item
+    \end{enumerate}
+
+  \item
+\end{enumerate}
+
+\newpage
+
+
+\end{document}
