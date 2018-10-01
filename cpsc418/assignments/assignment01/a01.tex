@@ -9,8 +9,8 @@
 \newcommand{\Z}{\mathbb{Z}}
 
 % Setup page style
-\parindent 0pt
-\parskip 3mm
+\parindent=0pt
+\parskip=3mm
 
 \theoremstyle{definition}
 \newtheorem*{solution}{Solution}
@@ -45,27 +45,77 @@
           Let $C_1 \in \C$ be a ciphertext that results from encrypting plaintext $M$ with a key $K_1$:
           \begin{enumerate}
             \item $ E_{K_1}(M) &\equiv (M + K_1) \mod 26 $
-            \item $ C_1 = E_{K_1} $
-            \item $ C_1 = (M + K_1) \mod 26 $
+            \item $ C_1 &\equiv E_{K_1} $
+            \item $ C_1 &\equiv (M + K_1) \mod 26 $
             \item Let $C_2 = E_{K_2}(C_1)$, where $E_{K_2}(C_1) &\equiv (C_1 + K_2) \mod 26$
             \item Therefore, by substituting $C_1$,
-              \begin{equation}
+              \begin{equation*}
               \begin{aligned}
-                C_2 & = (C_1 + K_2) \mod 26 \\
-                    & = ((M + K_1) + K_2) \mod 26 \\
-                    & = (M + K_3) \mod 26
+                C_2 & \equiv (C_1 + K_2) \mod 26 \\
+                    & \equiv ((M + K_1) + K_2) \mod 26 \\
+                    & \equiv (M + K_3) \mod 26
               \end{aligned}
-              \end{equation}
-              Where $K_3 \in \K$ and $K_3 = K_1 + K_2$. Finally, according to definition, $C_2$ results in shift cipher.
+              \end{equation*}
+              Where $K_3 \in \K$ and $K_3 = K_1 + K_2$. Therefore, resulting key of multiple encipherment is $K_3$.
           \end{enumerate}
         \end{proof}
+
       \item
+        \begin{proof}
+          Based on previous proof, superencipherment using shift cipher can be defined as follows
+          \[
+            E_{K_i}(M) &\equiv (M + \sum_{\substack{K_i \in \K \\ i = 1}}^n K_i) \mod 26
+          \]
+          Where $M \in \M$, $K_i \in \K$, $n \in \Z$, and $i \geq 1, i \in \Z$.
+          \begin{enumerate}
+            \item
+              Base Case: let $n = 1$,
+              \begin{equation} \label{eq:p1_base_case}
+              \begin{aligned}
+                C &\equiv (M + \sum_{\substack{K_i \in \K \\ i = 1}}^1 K_i) \mod 26 \\
+                  &\equiv (M + K_1) \mod 26
+              \end{aligned}
+              \end{equation}
+            \item
+              Induction hypothesis: Assume $n = m$, where $m \in \Z$. Therefore:
+              \[
+                C &\equiv (M + \sum_{\substack{K_i \in \K \\ i = 1}}^m K_i) \mod 26
+              \]
+
+              Let: \\
+              \begin{equation} \label{eq:p1_induction_hyp}
+              \begin{aligned}
+                K^{'} &= \sum^m_{\substack{K_i \in \K \\ i = 1}} K_i \\
+                C &\equiv (M + K^{'}) \mod 26
+              \end{aligned}
+              \end{equation}
+              Still results in a shift cipher, according to definition.
+            \item
+              Inductive case: According to induction hypothesis, we can show that $m + 1$ holds true as well:
+              \begin{align*}
+                C &\equiv (M + \sum^{m + 1}_{\substack{K_i \in \K \\ i = 1}} K_i) \mod 26 \\
+                C &\equiv (M + (\sum^{m}_{\substack{K_i \in \K \\ i = 1}} K_i + \sum^{1}_{\substack{K_i \in \K \\ i = 1}} K_i)) \mod 26 \\
+                C &\equiv (M + (\sum^{m}_{\substack{K_i \in \K \\ i = 1}} K_i + K_1)) \mod 26 \\
+                C &\equiv (M + (K^{'} + K_1)) \mod 26 \\
+                C &\equiv (M + K^{"}) \mod 26 \\
+              \end{align*}
+              where $K_1$ is our base case \eqref{eq:p1_base_case} and $K^{'}$ is our induction hypothesis \eqref{eq:p1_induction_hyp}. Since $K_1 \in \K$ and $K^{'} \in \K$, therefore $K^{"} = K_1 + K^{'}, K^{"} \in \K$. Hence, the key of multiple encipherment is sum of all given keys.
+          \end{enumerate}
+        \end{proof}
     \end{enumerate}
 
   \item
+    \begin{proof}
+      Let $M \in \M$ be a plaintext of length $x \in \Z$. Let $p_0, p_1, p_2, ...,p_{x - 1}$ be positions of letters in plaintext $M$. Given key $w_1$ of length $m$, let $k_0, k_1, k_2, ...,k_{m - 1}$ be positions of letters in key $w_1$.
+    \end{proof}
 \end{enumerate}
 
 \newpage
 
+\item[] \textbf{Problem 2} --- Key size versus password size, 21 marks
+
+\newpage
+
+\item[] \textbf{Problem 3} --- Equiprobability maximizes entropy for two outcomes, 12 marks
 
 \end{document}
