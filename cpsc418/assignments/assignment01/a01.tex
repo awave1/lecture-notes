@@ -106,13 +106,32 @@
 
   \item
     \begin{proof}
-      Let $M \in \M$ be a plaintext of length $x \in \Z$. Let $p_0, p_1, p_2, ...,p_{x - 1}$ be positions of letters in plaintext $M$. Given key $w_1$ of length $m$, let $k_0, k_1, k_2, ...,k_{m - 1}$ be positions of letters in key $w_1$.
+      Let $M \in \M$ be a plaintext of length $x \in \Z$. Let $p_0, p_1, p_2, ...,p_{x - 1}$ be positions of letters in plaintext $M$. Given key $w_1 \in \K$ of length $m \in \Z$ and key $w_2 \in \K$ of length $n \in \Z$, let $k_0, k_1, k_2, ...,k_{m - 1}$ be positions of letters in key $w_1$, and $l_0, l_1, l_2, ...,l_{n - 1}$ be positions of letters in key $w_2$. To encrypt plaintext $p_i$, we use a key $k_j$, where $i$ is letter position from $0$ to $x - 1$.
+      \[
+        j \equiv i \pmod m
+      \]
+      Let ciphertext $C_i$ be ciphertext that corresponds to $p_i$
+      \[
+        C_i \equiv p_i + k_j \pmod {26}
+      \]
+      Where $k_j \equiv i \pmod m$. \\
+      Let ciphertext $C_{2_i}$ be ciphertext that corresponds to $C_i$. Therefore, the second round of encryption, using the key $w_2$, results in following:
+      \begin{equation*}
+      \begin{aligned}
+        C_{2_i} &\equiv C_i + l_j &\pmod {26} \\
+                &\equiv (p_i + k_j) + l_z &\pmod {26} \\
+                &\equiv p_i + (k_j + l_z) &\pmod {26}
+      \end{aligned}
+      \end{equation*}
+      Where $z \equiv i \pmod n$ and $l_z \equiv i \pmod n$. Therefore that ensures that length of resulting key will be $x$.
     \end{proof}
 \end{enumerate}
 
 \newpage
 
 \item[] \textbf{Problem 2} --- Key size versus password size, 21 marks
+
+
 
 \newpage
 
