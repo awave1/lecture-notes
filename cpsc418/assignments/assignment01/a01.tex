@@ -51,9 +51,9 @@
             \item Therefore, by substituting $C_1$,
               \begin{equation*}
               \begin{aligned}
-                C_2 & \equiv (C_1 + K_2) \mod 26 \\
-                    & \equiv ((M + K_1) + K_2) \mod 26 \\
-                    & \equiv (M + K_3) \mod 26
+                C_2 &= C_1 + K_2       &\pmod {26} \\
+                    &= M + (K_1 + K_2) &\pmod {26} \\
+                    &= M + K_3         &\pmod {26}
               \end{aligned}
               \end{equation*}
               Where $K_3 \in \K$ and $K_3 = K_1 + K_2$. Therefore, resulting key of multiple encipherment is $K_3$.
@@ -64,7 +64,7 @@
         \begin{proof}
           Based on previous proof, superencipherment using shift cipher can be defined as follows
           \[
-            E_{K_i}(M) &\equiv (M + \sum_{\substack{K_i \in \K \\ i = 1}}^n K_i) \mod 26
+            E_{K_i}(M) = (M + \sum_{\substack{K_i \in \K \\ i = 1}}^n K_i) \pmod {26}
           \]
           Where $M \in \M$, $K_i \in \K$, $n \in \Z$, and $i \geq 1, i \in \Z$.
           \begin{enumerate}
@@ -72,32 +72,32 @@
               Base Case: let $n = 1$,
               \begin{equation} \label{eq:p1_base_case}
               \begin{aligned}
-                C &\equiv (M + \sum_{\substack{K_i \in \K \\ i = 1}}^1 K_i) \mod 26 \\
-                  &\equiv (M + K_1) \mod 26
+                C &= M + \sum_{\substack{K_i \in \K \\ i = 1}}^1 K_i &\pmod {26} \\
+                  &= M + K_1 &\pmod {26}
               \end{aligned}
               \end{equation}
             \item
               Induction hypothesis: Assume $n = m$, where $m \in \Z$. Therefore:
               \[
-                C &\equiv (M + \sum_{\substack{K_i \in \K \\ i = 1}}^m K_i) \mod 26
+                C &= M + \sum_{\substack{K_i \in \K \\ i = 1}}^m K_i \pmod {26}
               \]
 
               Let: \\
               \begin{equation} \label{eq:p1_induction_hyp}
               \begin{aligned}
                 K^{'} &= \sum^m_{\substack{K_i \in \K \\ i = 1}} K_i \\
-                C &\equiv (M + K^{'}) \mod 26
+                C &= M + K^{'} \pmod {26}
               \end{aligned}
               \end{equation}
               Still results in a shift cipher, according to definition.
             \item
               Inductive case: According to induction hypothesis, we can show that $m + 1$ holds true as well:
               \begin{align*}
-                C &\equiv (M + \sum^{m + 1}_{\substack{K_i \in \K \\ i = 1}} K_i) \mod 26 \\
-                C &\equiv (M + (\sum^{m}_{\substack{K_i \in \K \\ i = 1}} K_i + \sum^{1}_{\substack{K_i \in \K \\ i = 1}} K_i)) \mod 26 \\
-                C &\equiv (M + (\sum^{m}_{\substack{K_i \in \K \\ i = 1}} K_i + K_1)) \mod 26 \\
-                C &\equiv (M + (K^{'} + K_1)) \mod 26 \\
-                C &\equiv (M + K^{"}) \mod 26 \\
+                C &= (M + \sum^{m + 1}_{\substack{K_i \in \K \\ i = 1}} K_i) &\pmod {26} \\
+                  &= (M + (\sum^{m}_{\substack{K_i \in \K \\ i = 1}} K_i + \sum^{1}_{\substack{K_i \in \K \\ i = 1}} K_i)) &\pmod {26} \\
+                  &= (M + (\sum^{m}_{\substack{K_i \in \K \\ i = 1}} K_i + K_1)) &\pmod {26} \\
+                  &= (M + (K^{'} + K_1)) &\pmod {26} \\
+                  &= (M + K^{"}) &\pmod {26} \\
               \end{align*}
               where $K_1$ is our base case \eqref{eq:p1_base_case} and $K^{'}$ is our induction hypothesis \eqref{eq:p1_induction_hyp}. Since $K_1 \in \K$ and $K^{'} \in \K$, therefore $K^{"} = K_1 + K^{'}, K^{"} \in \K$. Hence, the key of multiple encipherment is sum of all given keys.
           \end{enumerate}
@@ -118,9 +118,9 @@
       Let ciphertext $C_{2_i}$ be ciphertext that corresponds to $C_i$. Therefore, the second round of encryption, using the key $w_2$, results in following:
       \begin{equation*}
       \begin{aligned}
-        C_{2_i} &\equiv C_i + l_j &\pmod {26} \\
-                &\equiv (p_i + k_j) + l_z &\pmod {26} \\
-                &\equiv p_i + (k_j + l_z) &\pmod {26}
+        C_{2_i} &= C_i + l_j &\pmod {26} \\
+                &= (p_i + k_j) + l_z &\pmod {26} \\
+                &= p_i + (k_j + l_z) &\pmod {26}
       \end{aligned}
       \end{equation*}
       Where $z \equiv i \pmod n$ and $l_z \equiv i \pmod n$. Therefore that ensures that length of resulting key will be $x$.
@@ -130,9 +130,11 @@
 \newpage
 
 \item[] \textbf{Problem 2} --- Key size versus password size, 21 marks
+\begin{enumerate}
+  \item
 
 
-
+\end{enumerate}
 \newpage
 
 \item[] \textbf{Problem 3} --- Equiprobability maximizes entropy for two outcomes, 12 marks

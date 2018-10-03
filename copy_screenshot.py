@@ -21,11 +21,14 @@ def main():
     courses_img = map(lambda x: os.getcwd() + '/' + x + '/img', courses)
     to = list(filter(lambda x: args.course[0] in x, courses_img))
 
+    img_to = list(filter(lambda x: args.course[0] in x, courses))[0]
+
     if len(to) != 0:
         files = list(filter(path.isfile, glob.glob(base_dir + '*')))
         files.sort(key=lambda x: path.getmtime(x), reverse=True)
+        lec = 'lec' + args.lec[0]
 
-        to_dir = to[0] + '/lec' + args.lec[0]
+        to_dir = to[0] + '/' + lec
         src_file = files[0]
         if not path.exists(to_dir):
             os.makedirs(to_dir)
@@ -34,8 +37,10 @@ def main():
         img_name = '0{}.png'.format(len(imgs) + 1)
         to_file = '{}/{}'.format(to_dir, img_name)
 
+        img_path = '{}/img/{}/{}'.format(img_to, lec, img_name)
+
         sh.copy(src_file, to_file)
-        os.system('echo "![{}]({})" | pbcopy'.format(to_file, to_file))
+        os.system('echo "![{}]({})" | pbcopy'.format(img_name, img_path))
 
 
 if __name__ == '__main__':
