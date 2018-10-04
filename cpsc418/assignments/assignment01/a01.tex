@@ -208,13 +208,32 @@
 
     \end{proof}
   \item
-      \begin{equation*}
-      \begin{aligned}
-        H(X) &= -\frac{1}{2}\logbin (\frac{1}{2}) - (1 - \frac{1}{2})\logbin (1 - \frac{1}{2}) \\
-             &= \frac{1}{2} + \frac{1}{2} \\
-             &= 1
-      \end{aligned}
-      \end{equation*}
+    Maximal value of $H(X)$, given $p = \frac{1}{2}$:
+    \begin{equation*}
+    \begin{aligned}
+      H(X) &= -\frac{1}{2}\logbin (\frac{1}{2}) - (1 - \frac{1}{2})\logbin (1 - \frac{1}{2}) \\
+           &= \frac{1}{2} + \frac{1}{2} \\
+           &= 1
+    \end{aligned}
+    \end{equation*}
+\end{enumerate}
+
+\item[] \textbf{Problem 4} --- Conditional entropy, 12 marks
+\begin{enumerate}
+  \item
+    Given conditional entropy
+    \[
+      H(X|Y) = \sum_{y \in Y}\sum_{x \in X}p(x, y)\logbin (\frac{1}{p(x|y)})
+    \]
+    Where $p(x|y) \neq 0$, and $p(M_i) = p(C_i) = \frac{1}{4}$ for $1 \leq i,j \leq 4$, the resulting $H(\M|\C)$ is:
+    \begin{equation*}
+    \begin{aligned}
+      H(\M|\C) &= \sum_{C \in \C}\sum_{M \in \M}p(M, C)\logbin (\frac{1}{p(M|C)}) \\
+               &= 
+    \end{aligned}
+    \end{equation*}
+  \item
+  \item
 \end{enumerate}
 
 \end{document}
