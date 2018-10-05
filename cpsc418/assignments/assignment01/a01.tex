@@ -148,18 +148,35 @@
     \end{equation*}
 
   \item
-    Out of 94 printable characters, we only have 52 that correspond to letters of English alphabet. That means probability of getting a lowercase letter is $p(X) = 1 - \frac{1}{52}$. Therefore, the entropy of this key space is:
     \begin{equation*}
     \begin{aligned}
-      H(X) &= 8 \times (1 - \frac{1}{52})\logbin {\frac{1}{1 - \frac{1}{52}}} \\
-           &\approx 0.22
+      H(X) &= 8 \times \frac{1}{26}\logbin {\frac{1}{26} \\
+           &\approx 1.45
     \end{aligned}
     \end{equation*}
 
   \item
     \begin{enumerate}
+      Given $H(X) = 128$, let $n \in \Z$ be a password length.
       \item
+        $p(X) = \frac{1}{94}$
+        \begin{equation*}
+        \begin{aligned}
+          n \times \frac{1}{94}\logbin (94) = 128 \\
+          n = \frac{128 \times 94}{\logbin (94)} \\
+          n \approx 1836 
+        \end{aligned}
+        \end{equation*}
+      
       \item
+        $p(X) = \frac{1}{26}$
+        \begin{equation*}
+        \begin{aligned}
+          n \times \frac{1}{26}\logbin (26) = 128 \\
+          n = \frac{128 \times 26}{\logbin (26)} \\
+          n \approx 709
+        \end{aligned}
+        \end{equation*}
     \end{enumerate}
 
 \end{enumerate}
