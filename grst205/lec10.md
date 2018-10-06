@@ -31,7 +31,8 @@ Three kinds of plays, produced for competition
 
 ### Athenian Drama: Theaters and Staging
 
-Dramatic contests held during festivals for the god Dionysus. All performers were men in costumes. Actors (speaking parts) and _chorus_ - dancers, singers. Eloquent poetry, strong emotions.
+Dramatic contests held during festivals for the god Dionysus, shows that they are in a religous mindset. All performers were men in costumes. Actors (speaking parts) and _chorus_ - dancers, singers. Eloquent poetry, strong emotions and made spectacular musical masks
+-
 
 ![03.png](grst205/img/lec10/03.png)
 
