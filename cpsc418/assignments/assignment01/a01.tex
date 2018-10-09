@@ -236,13 +236,13 @@
 \end{enumerate}
 
 \item[] \textbf{Problem 4} --- Conditional entropy, 12 marks
+
+Given conditional entropy
+\[
+  H(X|Y) = \sum_{y \in Y}\sum_{x \in X}p(x, y)\logbin (\frac{1}{p(x|y)})
+\]
 \begin{enumerate}
   \item
-    Given conditional entropy
-    \[
-      H(X|Y) = \sum_{y \in Y}\sum_{x \in X}p(x, y)\logbin (\frac{1}{p(x|y)})
-    \]
-    Where $p(x|y) \neq 0$, and $p(M_i) = p(C_i) = \frac{1}{4}$ for $1 \leq i,j \leq 4$, the resulting $H(\M|\C)$ is:
     \begin{equation*}
     \begin{aligned}
     \end{aligned}
@@ -272,6 +272,13 @@
       \end{equation*}
     \end{proof}
   \item
+    \begin{proof}
+      Assume the system provides perfect secrecy. Therefore, the following consition should be met $p(M|C) = p(M)$ for $M \in \M$ and $C \in \C$. Let's calculate $p(M_1|C_1)$, if the system provides perfect secrecy, $p(M_1|C_1) = p(M_1) = \frac{1}{4}$
+      \[
+        p(M_1|C_1) = p(M_1) + p(M_2) = \frac{1}{4} + \frac{1}{4} = \frac{1}{2}
+      \]
+      Therefore, the system does not provide perfect secrecy.
+    \end{proof}
 \end{enumerate}
 
 \end{document}
