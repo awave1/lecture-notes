@@ -156,8 +156,8 @@
     \end{equation*}
 
   \item
+    Given $H(X) = 128$, let $n \in \Z$ be a password length.
     \begin{enumerate}
-      Given $H(X) = 128$, let $n \in \Z$ be a password length.
       \item
         $p(X) = \frac{1}{94}$
         \begin{equation*}
@@ -245,11 +245,32 @@
     Where $p(x|y) \neq 0$, and $p(M_i) = p(C_i) = \frac{1}{4}$ for $1 \leq i,j \leq 4$, the resulting $H(\M|\C)$ is:
     \begin{equation*}
     \begin{aligned}
-      H(\M|\C) &= \sum_{C \in \C}\sum_{M \in \M}p(M, C)\logbin (\frac{1}{p(M|C)}) \\
-               &= 
     \end{aligned}
     \end{equation*}
   \item
+    Assuming that the system provides perfect secrecy $p(M|C) = p(M)$ and $p(M) > 0$ for all $M \in \M$. Given that $H(\M|\C) = \sum_{C \in \C}\sum_{M \in \M}p(M, C)\logbin (\frac{1}{p(M|C)})$ and $H(\M) = \sum_{M \in \M}p(M)\logbin(\frac{1}{p(M)})$, show that $H(\M|\C) = H(\M)$. Assume that $H(\M|\C) = H(\M)$:
+    \begin{proof}
+      \begin{equation*}
+      \begin{aligned}
+        & H(\M|\C) = H(\M) \\
+        & \sum_{C \in \C}p(C)\sum_{M \in \M}p(M|C)\logbin (\frac{1}{p(M|C)}) = H(\M) \\
+        & \text{Given that the system provides perfect secrecy, we get} \\
+        & \sum_{C \in \C}p(C)\sum_{M \in \M}p(M)\logbin (\frac{1}{p(M)}) = H(\M) \\
+        & \sum_{C \in \C}p(C)H(\M) = H(\M) \\
+        & \text{Dividing both sides by $H(\M)$, we get} \\
+        & \sum_{C \in \C}p(C) = 1
+      \end{aligned}
+      \end{equation*}
+        % \sum_{M \in \M}p(M)\logbin(\frac{1}{p(M)}) \\
+      Therefore, as shown above $\sum_{C \in \C}p(C) = 1$. Using that, we can now show that $H(\M|\C) = H(\M)$:
+      \begin{equation*}
+      \begin{aligned}
+        H(\M|\C) &= \sum_{C \in \C}p(C)\sum_{M \in \M}p(M|C)\logbin (\frac{1}{p(M|C)}) \\
+                   &= \sum_{M \in \M}p(M|C)\logbin (\frac{1}{p(M|C)}) \\
+                   &= H(\M)
+      \end{aligned}
+      \end{equation*}
+    \end{proof}
   \item
 \end{enumerate}
 
