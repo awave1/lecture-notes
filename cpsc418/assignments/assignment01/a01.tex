@@ -113,15 +113,15 @@
       \[
         C_i = p_i + k_j \pmod {26}
       \]
-      Let ciphertext $C^{'}_i$ be a result of encrypting $C_i$ with a key $l_p$, where $p \equiv i \pmod m$
+      Let ciphertext $C^{'}_i$ be a result of encrypting $C_i$ with a key $l_c$, where $c \equiv i \pmod m$
       \begin{equation*}
       \begin{aligned}
         C^{'}_i &= C_i + l_p &\pmod {26} \\
-                &= p_i + (k_j + l_p) &\pmod {26} \\
-                &= p_i + h_{j + p \pmod{26}} &\pmod {26}
+                &= p_i + (k_j + l_c) &\pmod {26} \\
+                &= p_i + h_{j + c \pmod{26}} &\pmod {26}
       \end{aligned}
       \end{equation*}
-      Where $h_{j + p \pmod{26}}$ is the result of $k_j + l_p$. Therefore that ensures that resulting key will be the same length as plaintext.
+      Where $h_{j + c \pmod{26}}$ is the result of $k_j + l_c$. Therefore that ensures that resulting key will be the same length as plaintext.
     \end{proof}
 \end{enumerate}
 
