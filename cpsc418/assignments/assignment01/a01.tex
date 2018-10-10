@@ -105,24 +105,23 @@
 
   \item
     \begin{proof}
-      Let $M \in \M$ be a plaintext of length $x \in \Z$. Let $p_0, p_1, p_2, ...,p_{x - 1}$ be positions of letters in plaintext $M$. Given key $w_1 \in \K$ of length $m \in \Z$ and key $w_2 \in \K$ of length $n \in \Z$, let $k_0, k_1, k_2, ...,k_{m - 1}$ be positions of letters in key $w_1$, and $l_0, l_1, l_2, ...,l_{n - 1}$ be positions of letters in key $w_2$. To encrypt plaintext $p_i$, we use a key $k_j$, where $i$ is letter position from $0$ to $x - 1$.
+      Let $M \in \M$ be a plaintext of length $x \in \Z$. Let $p_0, p_1, p_2, ...,p_{x - 1}$ be positions of letters in plaintext $M$. Given key $w_1 \in \K$ of length $m \in \Z$ and key $w_2 \in \K$ of length $n \in \Z$, let $k_0, k_1, k_2, ...,k_{m - 1}$ be positions of letters in key $w_1$, and $l_0, l_1, l_2, ...,l_{n - 1}$ be positions of letters in key $w_2$. To encrypt plaintext $p_i$, we use a key $k_j$, where $i$ is letter position from $0$ to $x - 1$ and $j$ is determied as follows:
       \[
         j \equiv i \pmod m
       \]
       Let ciphertext $C_i$ be ciphertext that corresponds to $p_i$
       \[
-        C_i \equiv p_i + k_j \pmod {26}
+        C_i = p_i + k_j \pmod {26}
       \]
-      Where $k_j \equiv i \pmod m$. \\
-      Let ciphertext $C_{2_i}$ be ciphertext that corresponds to $C_i$. Therefore, the second round of encryption, using the key $w_2$, results in following:
+      Let ciphertext $C^{'}_i$ be a result of encrypting $C_i$ with a key $l_p$, where $p \equiv i \pmod m$
       \begin{equation*}
       \begin{aligned}
-        C_{2_i} &= C_i + l_j &\pmod {26} \\
-                &= (p_i + k_j) + l_z &\pmod {26} \\
-                &= p_i + (k_j + l_z) &\pmod {26}
+        C^{'}_i &= C_i + l_p &\pmod {26} \\
+                &= p_i + (k_j + l_p) &\pmod {26} \\
+                &= p_i + h_{j + p \pmod{26}} &\pmod {26}
       \end{aligned}
       \end{equation*}
-      Where $z \equiv i \pmod n$ and $l_z \equiv i \pmod n$. Therefore that ensures that length of resulting key will be $x$.
+      Where $h_{j + p \pmod{26}}$ is the result of $k_j + l_p$. Therefore that ensures that resulting key will be the same length as plaintext.
     \end{proof}
 \end{enumerate}
 
