@@ -105,23 +105,18 @@
 
   \item
     \begin{proof}
-      Let $M \in \M$ be a plaintext of length $x \in \Z$. Let $p_0, p_1, p_2, ...,p_{x - 1}$ be positions of letters in plaintext $M$. Given key $w_1 \in \K$ of length $m \in \Z$ and key $w_2 \in \K$ of length $n \in \Z$, let $k_0, k_1, k_2, ...,k_{m - 1}$ be positions of letters in key $w_1$, and $l_0, l_1, l_2, ...,l_{n - 1}$ be positions of letters in key $w_2$. To encrypt plaintext $p_i$, we use a key $k_j$, where $i$ is letter position from $0$ to $x - 1$ and $j$ is determied as follows:
-      \[
-        j \equiv i \pmod m
-      \]
-      Let ciphertext $C_i$ be ciphertext that corresponds to $p_i$
-      \[
-        C_i = p_i + k_j \pmod {26}
-      \]
-      Let ciphertext $C^{'}_i$ be a result of encrypting $C_i$ with a key $l_c$, where $c \equiv i \pmod n$
+      Assume there exist two leys $w_1$ of length $m$ and $w_2$ of length $n$.
+
+      Since we know lengths of given keys, to find the length of new keyword $w$, find the least common multiple of $m$ and $n$, that is $x = LCM(m, n)$, where $x$ is the length of the key $w$.
+
+      The key is obtained by adding each letters of given keys: $b_c = k_i + l_j \pmod {26}$, where $b_c$ is a letter of key $w$, that is $b_c \in \{b_0, b_1, ..., b_{x - 1}\}$, $k_i \in \{k_1, k_2, \ldots, k_m\}$, and $l_j \in \{l_1, l_2, \ldots, l_n\}$. The position of key is obtained by doing following:
       \begin{equation*}
       \begin{aligned}
-        C^{'}_i &= C_i + l_p &\pmod {26} \\
-                &= p_i + (k_j + l_c) &\pmod {26} \\
-                &= p_i + h_{j + c \pmod{26}} &\pmod {26}
+        i &= c \mod m \\
+        j &= c \mod n
       \end{aligned}
       \end{equation*}
-      Where $h_{j + c \pmod{26}}$ is the result of $k_j + l_c$. 
+      Where $i$, $j$, and $c$ are positions of letters in $w_1$, $w_2$, and $w$. That ensures that key wraps around and matches the size of $w$. Therefore, the length of key $w$ is $LCM(m, n)$ and key is obtained by adding each letter of $w_1$ and $w_2$.
     \end{proof}
 \end{enumerate}
 
