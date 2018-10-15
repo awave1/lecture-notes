@@ -33,3 +33,42 @@ Compute a table of every $`E_k(m_i)`$. Decrypt $`C_1`$ with every key $`K`$.
 #### Attacking Linear Cryptosystems
 
 ### Algebraic Attacks
+
+## Stream Cipher
+
+## Syncronous Stream Cipher
+
+## Block Ciphers as SSCs
+
+### Properties of Block-Cipher Based SSCs
+
+No error propagation is bad because can't say if error happened or not.
+
+## Self Synchronyzing Stream Ciphers (Self-SSC)
+
+## Modes of Operation
+
+Block ciphers only encrypt fixed sized messages. For example, AES can encrypt only 128 bits at a time. Possible solution:
+
+**Electronic Code Block (ECB) mode**: Blocks are encrypted sequentially, one at a time: $`C_i = E_k(M_i)`$
+
+However, block cipher used in ECB mode, is essentially a substitution cipher (with all its weaknesses)
+
+### More modes
+
+Additional modes of operation:
+
+- Cipher Block Chaining (CBC)
+- Counter (CTR)
+- Cipher Feedback (CFB)
+- Output Feedback (OFB)
+
+### CBC Mode
+
+```math
+C_0 = I \text{choosen at random} \\
+```
+
+```
+@TODO: insert diagram
+```
