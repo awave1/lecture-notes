@@ -483,6 +483,50 @@ Rijndael is a **product cipher**, but not a Feistel cipher, like DES. Instead it
 
 ### Arithmetic on Bytes and 4 byte Vectors
 
+Consider a byte $`b = (b_7, b_6, b_5, ..., b_0)`$ (an 8 bit vector) as a polynomial with coefficients $`\{0, 1\}`$:
+
+```math
+b \mapsto b(x) = b_{7}x^7 + b_{6}x^6 + ... + b_{1}x + b_0
+```
+
+Under addition, modular multiplication, inversion, polynomials of degree $`\leq 7`$ with coefficients in $`\{0, 1\}`$\* form the field $`GF(2^8)`$.
+
+#### Addition
+
+Polynomial addition done by taking XOR of coefficients.
+
+![01.png](cpsc418/img/lec05/01.png)
+
+The sum of two polynomials taken in this manner yeilds another polynomial of degree $`\leg 7`$. Component-wise XOR of bytes is identified with this addition operation on polynomials.
+
+#### Modular Multiplication
+
+Polynomial multiplication (coefficients are in $`\{0, 1\}`$) modulo:
+
+```math
+m(x) = x^8 + x^4 + x^3 + x + 1
+```
+
+> remainder when dividing by m(x), analogous to modulo arithmetic with integers
+
+The remainder when dividing by a degree 8 polynomial will have degree $`\leq 7`$. Thus the product of two bytes is associated with the product of their polynomial equivalents modulo $`m(x)`$.
+
+**Note**: $`m(x)`$ is the lexicographically first polynomial that is irreducable over $`GF(2)`$ i.e. does not split in two polynomials of smaller degree with coefficients in $`\{0, 1\}`$.
+
+#### Inversion
+
+$`b(x)^{-1}`$, the inverse of $`b(x) = (b_7x^7, b_6x^6, ..., b_1x + b_0)`$ is the polynomial of degree $`\leq 7`$with coefficients in $`\{0, 1\}`$ such that:
+
+```math
+b(x)b(x)^{-1} \equiv 1 \pmod m(x)
+```
+
+This is analogous to the case of integer arithmetic modulo $`n`$. The inverse of the byte $`b = (b_7, b_6, b_5, ..., b_0)`$ is the byte associated with the inverse of $`b(x) = (b_7x^7, b_6x^6, ..., b_1x + b_0)`$.
+
+Rijndael uses inverse as above in **SubByte** operation.
+
+#### Arithmetic on 4 byte vectors
+
 ### Rijndael Algorithm
 
 ### AES Key Schedule and Decryption
