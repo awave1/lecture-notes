@@ -93,7 +93,7 @@ A **symmetric cryptosystem** consists of the following:
 - A finite non-empty set $`C`$ called the ciphertext space
 - A finite non-empty set $`K`$ called the key space
 - A single parameter family $`\{E_k\}_{k \in K}`$ of injective transormations:
-  - $`E_k: M \to C`$ via $`m \mapto c := E_k(m)`$ called encryption functions.
+  - $`E_k: M \to C`$ via $`m \mapsto c := E_k(m)`$ called encryption functions.
   - The left inverse of $`E_k`$, denoted $`D_k`$ is called the corresponding decryption function: $`D_k(E_k(m)) = m`$ for all $`m \in M`$ and $`k \in K`$.
 
 ### Key Channel
