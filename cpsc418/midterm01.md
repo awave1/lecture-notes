@@ -331,6 +331,12 @@ For the same reason we can't use shorter keys and reuse portions of them. Keys _
 
 One time schemes are used when perfect secrecy is crucial and precticality is less of a concern.
 
+Given a pair $`(m, c)`$, and $`c = m \oplus k`$, and $`k`$ is unknown, $`k`$ can be found:
+
+```math
+k = m \oplus c
+```
+ 
 ### Encodings
 
 Measured by the average number of bits needed to encode all possible messages in optimal prefix-free encoding:
