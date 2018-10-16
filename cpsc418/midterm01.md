@@ -93,7 +93,7 @@ A **symmetric cryptosystem** consists of the following:
 - A finite non-empty set $`C`$ called the ciphertext space
 - A finite non-empty set $`K`$ called the key space
 - A single parameter family $`\{E_k\}_{k \in K}`$ of injective transormations:
-  - $`E_k: M \to C`$ via $`m \mapto c := E_k(m)`$ called encryption functions.
+  - $`E_k: M \to C`$ via $`m \mapsto c := E_k(m)`$ called encryption functions.
   - The left inverse of $`E_k`$, denoted $`D_k`$ is called the corresponding decryption function: $`D_k(E_k(m)) = m`$ for all $`m \in M`$ and $`k \in K`$.
 
 ### Key Channel
@@ -182,7 +182,7 @@ Substitution ciphers are insecure:
 
 **Code**: A technique by which words or letter combinations are replaced by a set of predetermined codewords.
 
-####### Cryptanaltysis of Vigenere
+###### Cryptanaltysis of Vigenere
 
 1. Determine the number n of cipher alphabets (length of the key word), using kappa text or Kasiski's factoring method.
 2. Once n is known, consider $`1 \leq i \leq n`$ the $`i^{th}`$ subtext considering of the ciphertext letters in positions $`i, i + n, i + 2n, ...`$
@@ -307,7 +307,9 @@ Consider a cryptosystem where keys ar ebit strings (0s and 1s) of some length $`
 
 ### One-time pad
 
-$`M = C = K = \{0, 1\} ^n`$, $`n \in \N`$. Encryption of $`m \in \{0, 1\}^n`$ under key $`k \in \{0, 1\}^n`$ is bitwise XOR: $`c = m \oplus k`$. Decryption: $`m = c \oplus k`$.
+$`M = C = K = \{0, 1\} ^n`$, $`n \in \N`$.
+- **Encryption** of $`m \in \{0, 1\}^n`$ under key $`k \in \{0, 1\}^n`$ is bitwise XOR: $`c = m \oplus k`$.
+- **Decryption**: $`m = c \oplus k`$.
 
 The one-time pad provides perfect secrecy if each key is chosen with equal likelihood. Under this assumption, each ciphertext occurs with equal likelihood (regardless of the probability distribution on the plaintext space).
 
@@ -329,6 +331,12 @@ For the same reason we can't use shorter keys and reuse portions of them. Keys _
 
 One time schemes are used when perfect secrecy is crucial and precticality is less of a concern.
 
+Given a pair $`(m, c)`$, and $`c = m \oplus k`$, and $`k`$ is unknown, $`k`$ can be found:
+
+```math
+k = m \oplus c
+```
+ 
 ### Encodings
 
 Measured by the average number of bits needed to encode all possible messages in optimal prefix-free encoding:
