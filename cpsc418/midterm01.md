@@ -338,6 +338,117 @@ Measured by the average number of bits needed to encode all possible messages in
 
 The amt of information in an outcome is measured by the entropy of the outcome.
 
+## 03: Entropy, Product Ciphers, Block Ciphers
+
+### Entropy
+
+Let x be a random variable, with probability distribution $`p(x_1), p(x_2), ...`$:
+
+```math
+\sum^{n}_{i = 1} p(x_i) = 1
+```
+
+The entropy of x is defined by the weighted average:
+
+```math
+H(x) = \sum^{n}_{i = 1} p(x_i) \log_2 (\frac{1}{p(x_i)}) = - \sum^{n}_{i = 1} p(x_i) \log_2 (p(x_i))
+```
+
+The weighted H(x) is the expected number of biits in an optimal encoding of x. if x1, x2, ... xn are outcomes, occuring with probabilities p(xn), then H(x) is the amount of information **discovered abouut these outcomes**.
+
+#### Extremal Entropy
+
+H(x) is maximized iff all outcomes are equally likely. That is for any n, H(x) = log2(n) is maximal iff p(x_i) = 1/n for all $`1 \leq i \leq n`$.
+
+H(x) is minimized iff p(x_i) = 1 for **exactly one** i p(x_j) = 0 for all j != i.
+
+Intuitively, H(x) decreases as the distribution of messages becomes increasingly skewed.
+
+#### Entropy of keys
+
+For a key space $`K`$, $`H(K)`$ measures the amount of partial information that must be learned about a key to actually uncover it (e.g. number of bits that must be guessed correctly to recover the whole key).
+
+For a $`k-bit`$ key, the best scenario is that all $`k`$ bits must be guessed correctly to know the whole key (i.e. no amt of partial information reveals the key, only full information does).
+
+- Entropy of the random variable on the keyspace **should be maximal**
+- Prev. theorem: happens exactly when each key is equally likely
+- best to select keys in order to give away as little as possible is to choose them with equal likelihood (uniformly at random).
+
+Cryptosystems are assessed by their key entropy, which ideally should just be the key length in bits (i.e. maximal)
+
+#### Stuff Learned
+
+- security level (i.e. key entropy) of a cryptosystem may not tell the whole story in some applications and may in fact convey a false sense of security
+- small message spaces are problematic
+- the concept of indistinguishability is crucial in the content of security
+
+### Product Ciphers
+
+The product of two ciphers is the result of applying one cipher followed by the other.
+
+aka multiple encryption or superencipherment.
+
+_Note_: all modern symmetric key ciphers in use are product ciphers.
+
+#### Properties
+
+If different ciphers are used in a product cipher, ciphertext on one cipher need to have the correct format to be plaintexts for the next cipher to be applied. -> Composition of encryption maps.
+
+#### Caveat
+
+The product of two substitution ciphers is a substitution cipher.
+
+ususally multiple encryption under different keys provides no extra security.
+
+#### Confusion and diffusion
+
+- **Confusion** - make the relationship between the key and ciphertext as complex as possible (accomplished by applying substitutions or **S-boxes**).
+- **Diffuusion** - dissipate the statistical properties of the plaintext across teh ciphertext (accomplished by applying transposition or **P-boxes**).
+
+#### Examples
+
+- IBM Lucifer - used permutations (transpositions) on large blocks for mixing transformation, and substitution on small blocks for confusion. used p-boxes and s-boxes, (permutations and substitutions).
+
+The Lucifer system simply consisted of a number of P and S boxes in alternation.
+
+#### Error propagation
+
+- **Error propagation** - the degree to which a change in the input leads to changes in the output
+- **Avalanche effect** - changing one input bit leads to significant changes in the output
+
+Good error propagation is desirable property of a cryptosystem (user can tell if a message has been modified).
+
+### Block ciphers
+
+All modern ciphers in use are block ciphers.
+
+**Block cipher** - encrypts plaintext blocks of some fixed length to ciphertext blocks of some fixed (possibly different) length.
+
+Ususally a message m will be larger that the plaintext block length and must be divided into a series of message blocks: M1, M2, ... Mn. A block vipher operates a block at a time.
+
+### DES
+
+- developed in FIPS by IBM
+- Block cipher that encrypts 64bits plaintext int o 64bit ciphertext using 64bit keys (**Note**: 8 of the key bits are parity bits, resulting in 56 actual bits of the key).
+- $`M = C = \{0, 1\}^{64}`$ and $`K = \{0, 1\}^56`$
+- Algorithm consists of 16 rounds of permutations and substitutions
+
+#### Multiple DES encryption
+
+- double DES is not secure, but twice as slow
+
+##### Triple DES
+
+- Use 3 successive DES operations: $`c = DES_{k1}(DES^{-1}_{k2}(DES_{k3}(m)))`$.
+- Advantages
+  - same as single key, if $`k2 = k1`$ or $`k2 = k3`$
+  - exhaustive search has complexity of $`2^{112}`$ via meet in the middle attack but with a 168 bit key and a factor of 3 in speed
+  - can use $`k1 = k3`$ with no loss of security
+  - no other known practical attacks
+- Disadvantage: 3 times slower than DES while only doubling the key size
+
+### AES
+
 ## Discrete Math Topics
 
 ### Congruences & Integer modular arithmetic
