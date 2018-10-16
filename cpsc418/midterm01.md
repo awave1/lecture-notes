@@ -182,7 +182,7 @@ Substitution ciphers are insecure:
 
 **Code**: A technique by which words or letter combinations are replaced by a set of predetermined codewords.
 
-####### Cryptanaltysis of Vigenere
+###### Cryptanaltysis of Vigenere
 
 1. Determine the number n of cipher alphabets (length of the key word), using kappa text or Kasiski's factoring method.
 2. Once n is known, consider $`1 \leq i \leq n`$ the $`i^{th}`$ subtext considering of the ciphertext letters in positions $`i, i + n, i + 2n, ...`$
