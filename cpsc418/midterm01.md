@@ -209,6 +209,135 @@ Vulnerable to a COA:
 - guess the dimensions of the rectangle
 - determine the order of the columns via frequency counts. Place columns adjacent to each other if they pronounce common letter pairs.
 
+## 02: Perfect Secrecy, One-Time Pad
+
+### Information theory
+
+**Information theory** measures the amount of information conveyed by a piece of data. It captures how much partial information you need to have in order to obtain full information.
+
+### Probability Theory
+
+A **sample space** - a finite set X whose elements are called outcomes. Probability distribution on X - a complete set of probabilities:
+
+```math
+\sigma^{n}_{i = 1} p(x_i) = 1
+```
+
+**Random variable** - a pair x consisting of a sample space X and a probability distribution p on X. The (a priori) probability that X takes on the value $`x \in X`$ is denoted by p(X = x) or p(x).
+
+#### Joint and Conditional probability
+
+- **Joint probability** - p(x, y) where p(X = x) and p(Y = y)
+- **Conditional probability** - p(x|y) probability that p(x) given that p(y).
+
+Related as follows:
+
+```math
+p(x,y) = p(x|y)p(y)
+```
+
+#### Bayes' Theorem
+
+**Bayes' Theorem** - if p(y) > 0, then:
+
+```math
+p(x|y) = \frac{p(x)p(y|x)}{p(y)}
+```
+
+**Proof**: p(x, y) = p(y, x), so p(x|y)p(y) = p(y|x)p(x). now divide by p(y).
+
+#### Independence
+
+Two random variables X, Y are independent if p(x, y) = p(x)p(y) for all $`x \in X`$ and $`y \in Y`$.
+
+X and Y are independent iff p(x|y) = p(x) for all $`x \in X`$, $`y \in Y`$ with p(y) > 0.
+
+### Perfect Secrecy
+
+**Perfect secrecy** - a cryptosystem provides **perfect secrecy** if $`p(m|c) = p(m)`$ for all $`m \in M`$ and $`c \in C`$ with $`p(c) > 0`$.
+
+Formally, perfect secrecy means exactly that the random variables on $`M`$ and $`C`$ care independent. Informally, this implies that knowing hte ciphertext $`c`$ gives us no information about $`m`$.
+
+The probabilities $`p(m|c)`$ and $`p(m)`$ are hard to quantify. Bayes' theorem relates these quantities to $`p(c|m)`$ and $`p(c)`$ and these probabilities turn out easier to quantify..
+
+#### Equiv. Definition
+
+A cryptosystem provides perfect secrecy iff $`p(c|m) = p(c)`$ for all $`m \in M`$, $`c \in C`$ with $`p(m) > 0`$ and $`p(c) > 0`$.
+
+**Proof**: let $`m \in M`$ and $`c \in C`$ with $`p(c) > 0`$. If $`p(m) = 0`$ then $`p(m|c) = 0`$. Suppose $`p(m) > 0`$, therefore:
+
+```math
+p(c|m) = \frac{p(c)p(m|c)}{p(m)}
+```
+
+so $`p(c|m) = p(c)`$ iff perfect secrecy means exavtly that $`p(m|c) = p(m)`$, which is the case iff $`p(c|m) = p(c)`$.
+
+### Computing p(c|m) and p(c)
+
+For any message $`m \in M`$:
+
+```math
+p(c|m) = \sigma_{E_k(m) = c} p(k)
+```
+
+$`p(c|m)`$ is the sum of probabilities $`p(k)`$ over keys $`k \in K`$ that encipher m to c.
+
+#### computing p(c)
+
+For a key $`k`$ and ciphertext $`c \in E_k(M)`$, consider $`p(D_k(c))`$ that $`M = D_k (c)`$ was sent, then:
+
+```math
+p(c) = \sigma_{c \in E_k (M)} p(k)p(D_k (c))
+```
+
+That is, $`p(c)`$ is the sum of probabilities over all those keys $`k \in K`$ under which $`c`$ has a decryption under key $`k`$, each weighted by the probability that $`k`$ was chosen.
+
+### Conditions for perfect secrecy
+
+If a cryptosystem has perfect secrecy, then $`|K| \geq |M|`$.
+
+Suppose $`|K| < |M|`$:
+
+- pick $`c`$ with $`p(c) > 0`$
+- since $`|K| < |M|`$, there is some message $`m`$ that has no key $`k`$ that encrypts $`m`$ to $`c`$.
+- this means that the sum defining $`p(c|m)`$ is empty, so $`p(c|m) = 0`$
+- since $`p(c) > 0`$, we have no perfect secrecy
+
+Consider a cryptosystem where keys ar ebit strings (0s and 1s) of some length $`k`$ and messages are bit string of some length $`m`$. Then $`|K| = 2^k`$ and $`|M| = 2^m`$, The throrem shows that in order for such system to provide perfect secrecy, we must have $`k \geq m`$ => keys must be as long as messages.
+
+### One-time pad
+
+$`M = C = K = \{0, 1\} ^n`$, $`n \in \N`$. Encryption of $`m \in \{0, 1\}^n`$ under key $`k \in \{0, 1\}^n`$ is bitwise XOR: $`c = m \oplus k`$. Decryption: $`m = c \oplus k`$.
+
+The one-time pad provides perfect secrecy if each key is chosen with equal likelihood. Under this assumption, each ciphertext occurs with equal likelihood (regardless of the probability distribution on the plaintext space).
+
+This means that in one-time pad, any given ciphertext can be decrypted to any plaintext with qual likelihood. There's no distinguished (meaningful) decryption. Exhaustive search doesn't help.
+
+#### Cryptanaltysis
+
+It is imperative that each key is only used once:
+
+- falls to a KPA: if a plaintext/ciphertext pair (M, C) is known, then the key is $`k = \oplus c`$.
+- suppose the key is use4d twice: $`c_1 = m_1 \oplus k`$, $`c_2 = m_2 \oplus k`$, therefore $`c_1 \oplus c_2 = m_1 \oplus m_2`$
+
+For the same reason we can't use shorter keys and reuse portions of them. Keys _must_ be chosen randomly and at least as long as messages. This makes the one time pad impractical.
+
+#### Issues
+
+- Requires random key which is as long as message
+- each key can be used only once
+
+One time schemes are used when perfect secrecy is crucial and precticality is less of a concern.
+
+### Encodings
+
+Measured by the average number of bits needed to encode all possible messages in optimal prefix-free encoding:
+
+- optimaal - the avg number of bits is as small as possible
+- prefix free - no code word is the beginning of another code word
+
+The amt of information in an outcome is measured by the entropy of the outcome.
+
 ## Discrete Math Topics
 
 ### Congruences & Integer modular arithmetic
