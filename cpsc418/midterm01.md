@@ -307,7 +307,9 @@ Consider a cryptosystem where keys ar ebit strings (0s and 1s) of some length $`
 
 ### One-time pad
 
-$`M = C = K = \{0, 1\} ^n`$, $`n \in \N`$. Encryption of $`m \in \{0, 1\}^n`$ under key $`k \in \{0, 1\}^n`$ is bitwise XOR: $`c = m \oplus k`$. Decryption: $`m = c \oplus k`$.
+$`M = C = K = \{0, 1\} ^n`$, $`n \in \N`$.
+- Encryption of $`m \in \{0, 1\}^n`$ under key $`k \in \{0, 1\}^n`$ is bitwise XOR: $`c = m \oplus k`$.
+- Decryption: $`m = c \oplus k`$.
 
 The one-time pad provides perfect secrecy if each key is chosen with equal likelihood. Under this assumption, each ciphertext occurs with equal likelihood (regardless of the probability distribution on the plaintext space).
 
