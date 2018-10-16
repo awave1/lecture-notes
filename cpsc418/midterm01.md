@@ -447,7 +447,49 @@ Ususally a message m will be larger that the plaintext block length and must be 
   - no other known practical attacks
 - Disadvantage: 3 times slower than DES while only doubling the key size
 
-### AES
+### AES Competition
+
+Requirements for new cipher:
+
+- possible key sizes of 128, 192, 256 bits
+- plaintexts and ciphertexts of 128 bits
+- should work on different hardware
+- fast
+- secure
+- availability
+
+**Criteria**
+
+- resistance to all known attacks
+- speed and code compactness on diff platforms
+- simple design
+
+#### Rijndael
+
+Uses two different types on arithmetic:
+
+- arithmetic on bytes (8 bit vectors, elements of finite field $`GF(2^8)`$ of 256 elements)
+- 4 byte vectors (polynomial operations over $`GC(2^8)`$)
+
+The algorithm uses addition, multiplication and inversion on bytes as well as addition and multiplication of 4 byte vectors.
+
+Rijndael is a **product cipher**, but not a Feistel cipher, like DES. Instead it has 3 layers per round:
+
+1. linear mixing layer (ShiftRows, transposition and MixColumns, a linear transformation; for diffusion over multiple rounds)
+2. non-linear layer (SubBytes, substitution done with S-box)
+3. key addition layer (AddRoundKey, XOR with key)
+
+## 04: Advanced Encryption Standard
+
+### Arithmetic on Bytes and 4 byte Vectors
+
+### Rijndael Algorithm
+
+### AES Key Schedule and Decryption
+
+### Strengths and Weaknesses of Rijndael
+
+## 05: Attacks on Block Ciphers
 
 ## Discrete Math Topics
 
