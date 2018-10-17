@@ -220,7 +220,7 @@ Vulnerable to a COA:
 A **sample space** - a finite set X whose elements are called outcomes. Probability distribution on X - a complete set of probabilities:
 
 ```math
-\sigma^{n}_{i = 1} p(x_i) = 1
+\sum^{n}_{i = 1} p(x_i) = 1
 ```
 
 **Random variable** - a pair x consisting of a sample space X and a probability distribution p on X. The (a priori) probability that X takes on the value $`x \in X`$ is denoted by p(X = x) or p(x).
