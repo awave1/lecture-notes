@@ -308,6 +308,7 @@ Consider a cryptosystem where keys ar ebit strings (0s and 1s) of some length $`
 ### One-time pad
 
 $`M = C = K = \{0, 1\} ^n`$, $`n \in \N`$.
+
 - **Encryption** of $`m \in \{0, 1\}^n`$ under key $`k \in \{0, 1\}^n`$ is bitwise XOR: $`c = m \oplus k`$.
 - **Decryption**: $`m = c \oplus k`$.
 
@@ -336,7 +337,7 @@ Given a pair $`(m, c)`$, and $`c = m \oplus k`$, and $`k`$ is unknown, $`k`$ can
 ```math
 k = m \oplus c
 ```
- 
+
 ### Encodings
 
 Measured by the average number of bits needed to encode all possible messages in optimal prefix-free encoding:
@@ -535,11 +536,73 @@ Rijndael uses inverse as above in **SubByte** operation.
 
 #### Arithmetic on 4 byte vectors
 
+In Rijndael MixColumn operation, 4 byte vectors are considered as **degree 3 polynomials** with coefficients in $`GF(2^8)`$. That is the 4 byte vector $`(a_3, a_2, a_1, a_0)`$ is associated with the polynomial:
+
+```math
+a(y) = a_3y^3 + a_2y^2 + a_1y + a_0
+```
+
+Where each coefficient is a byte viewed as an element of $`GF(2^8)`$.
+
+##### Multiplication on 4 byte vectors
+
+Use:
+
+```math
+M(y) = y^4 + 1
+```
+
+Result is a degree 3 polynomial with coefficients in $`GF(2^8)`$.
+
+### Properties of Rijndael
+
+- Designed for block ciphers and key lengths to be any multiple of 32, including those specified in the AES.
+- Iterated cipher: number of rounds $`N_r`$ depends on the ley length. 10 rounds for 128 bit key, 12 rounds for 192 bit key, 14 rounds for 256 bit key.
+- Algorithm operates on 4x4 array of bytes (8 bit vectors) called **state**
+
+![02.png](cpsc418/img/lec05/02.png)
+
 ### Rijndael Algorithm
 
-### AES Key Schedule and Decryption
+1. Initialize State with M, where M consists of the 16 bytes $`m_0, m_1,..., m_{15}`$.
+
+![03.png](cpsc418/img/lec05/03.png)
+
+On input State, whose columns are 16 message bytes:
+
+2. Perform AddRoundKey, which XOR the first RoundKey with State
+3. For each of the first $`N_r - 1`$ rounds:
+
+- SubBytes on State (apply S-box on each byte of State => _Confusion_)
+- ShiftRows (apply P-box on State => _Diffustion_)
+- MixColumns (**linear transformation**)
+- AddRoundKey (each column of the State is XORed with one word of the round key)
+
+4. Last round:
+
+- SubBytes
+- ShiftRows
+- AddRoundKey
+
+5. Define the ciphertext C to be State (using the same byte ordering).
 
 ### Strengths and Weaknesses of Rijndael
+
+**Strengths**:
+
+- Secure against all known attacks at the time, new attacks pose no real threat
+- Non-linearity resides in S-boxes (SubBytes):
+- ShiftRows and MixColumns ensure that after a few rounds all output bits depend on all input bits (great diffusion)
+- Secure key schedule (great confusion)
+- low mem. req.
+- fast
+
+**Weaknesses**:
+
+- decryption is slower than encryption
+- decryption is different from encryption (requires separate circuits and/or tables)
+
+Mathematically, there is no proof that AES is secure. Practically, it withstands modern attacks.
 
 ## 05: Attacks on Block Ciphers
 
