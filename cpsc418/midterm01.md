@@ -606,6 +606,85 @@ Mathematically, there is no proof that AES is secure. Practically, it withstands
 
 ## 05: Attacks on Block Ciphers
 
+### Exhaustive Search
+
+Simplest of attacks on a block cipher. Set $`N = |K|`$ (number of keys).
+
+**Simple exhaustive search** (**COA**) - requires $`|K|`$ encryptions
+
+- feasible for DES - $`N = 2^{56} \approx 10^{17}`$ possible keys
+- infeasible for 3DES - $`N = 2^{112} \approx 10^{34}`$ possible keys
+- infeasible for AES - $`N = 2^{128} \approx 10^{38}`$ possible keys
+
+### Notion and Resource Requirements of Time-Memory Trade-Off
+
+**Hellman's time-memory tradeoff**:
+
+KPA that shortens search time by using a lot of memory:
+
+- the attacker knows a plaintex/ciphertext pair $`(m_0, c_0)`$
+- the goal is to a key $`k`$ such that $`c_0 = E_k (m_0)`$
+
+Let $`N = |K|`$. Cost (number of encryptions) is:
+
+- Precomputation time: $`N`$
+- Expected time: $`N^{\frac{2}{3}}`$
+- Expected memory: $`N^{\frac{2}{3}}`$
+
+Large precomputation time, but improvement for individual keys. For example, for DES $`N^{\frac{2}{3}} \approx 10^{12}`$.
+
+### Meet-In-The-Middle Attack
+
+KPA on double encryption. Setup:
+
+- Adversary has two known plaintext/ciphertext pairs $`(m_1, c_1)`$ and $`(m_2, c_2)`$
+- Double encryption, so $`c_i = E_{k_1}(E_{k_2} (m_i))`$ for $`i = 1, 2`$ and 2 unknown keys $`k_1`$ and $`k_2`$.
+
+**Important observation**: $`D_{k_1}(c_i) = E_{k_2}(m_i)`$ for $`i = 1, 2`$.
+
+#### Attack
+
+1. Single encrypt $`m_1`$ under every key $`k_i`$ to compute $`c_i = E_{k_i} (m_i)`$ for $`1 \leq i \leq N`$.
+2. Sort the table / create hash table
+3. For $`j = 1`$:
+
+- Single-decrypt $`c_1`$ under every key $`k_j`$ to compute $`m_j = D_{k_j} (c_1)`$
+- Search for $`m_j`$ in the table of $`c_i`$. If $`m_j = c_i`$ for some $`i`$ then check if $`E_{k_i}(m_2) = D_{k_j}(c_2)`$. If this holds, then guess $`k_2 = k_i`$ and $`k_1 = k_j`$ and quit.
+
+### Differential and Linear Cryptanalysis
+
+#### Linear Cryptanalysis
+
+A cryptosystem is affine (linear) if encryptiona are affine (linear) functions relating plaintexts to ciphertexts.
+
+A cryptanalyst can mount a CPA on an affine (linear) system by obtaining sufficiently many plaintext/ciphertext pairs $`(m_i, c_i)`$ to deduce $`A`$ and $`B`$ from the equations:
+
+```math
+c_i = Am_i + b
+```
+
+where $`i = 1,2,3...`$
+
+**Examples of linear cryptosystems**:
+
+- shift cipher
+- vigenere cipher
+- transposition cipher
+- one-time pad
+- linear feedback shift register stream cipher
+
+Linear cryptanalysis attempts to choose $`(m, c)`$ pairs such that with high probability, linear relations exist between portions of the plaintexts $`m`$ and ciphertexts $`c`$, called linearly approximations
+
+If a cryptosystem is close to being affine then the modified system can be broken and the oridinal system compromised after some searching.
+
+Every block in DES and AES except the S-boxes is affine. S-boxes must not be close to linear. DES wasn't designed to resist linear cryptanalysis.
+
+#### Differential Cryptanalysis
+
+Compares input XORs to output XORs and traces these differences through the cipher. Both linear _and_ differential cryptanalysis work well in DES with fewer than 16 rounds.
+
+DES was designed against differential cryptanalysis (T or Tickle attack).
+
 ## Discrete Math Topics
 
 ### Congruences & Integer modular arithmetic
