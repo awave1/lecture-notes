@@ -10,7 +10,7 @@
 - **Ciphertext** - The message after encryption
 - **Cipher, cryptosystem** - A particular method of encryption, capable of handling arbitrary messages
 
-## 02:Basic Terminology, Classical Ciphers
+## 02: Basic Terminology, Classical Ciphers
 
 **Information Security** - Measures to protect information security and information systems from unauthorized access, use, disclosure, disruption, modification or destruction.
 
@@ -209,7 +209,7 @@ Vulnerable to a COA:
 - guess the dimensions of the rectangle
 - determine the order of the columns via frequency counts. Place columns adjacent to each other if they pronounce common letter pairs.
 
-## 02: Perfect Secrecy, One-Time Pad
+## 03: Perfect Secrecy, One-Time Pad
 
 ### Information theory
 
@@ -220,7 +220,7 @@ Vulnerable to a COA:
 A **sample space** - a finite set X whose elements are called outcomes. Probability distribution on X - a complete set of probabilities:
 
 ```math
-\sigma^{n}_{i = 1} p(x_i) = 1
+\sum^{n}_{i = 1} p(x_i) = 1
 ```
 
 **Random variable** - a pair x consisting of a sample space X and a probability distribution p on X. The (a priori) probability that X takes on the value $`x \in X`$ is denoted by p(X = x) or p(x).
@@ -347,7 +347,7 @@ Measured by the average number of bits needed to encode all possible messages in
 
 The amt of information in an outcome is measured by the entropy of the outcome.
 
-## 03: Entropy, Product Ciphers, Block Ciphers
+## 04: Entropy, Product Ciphers, Block Ciphers
 
 ### Entropy
 
@@ -488,7 +488,7 @@ Rijndael is a **product cipher**, but not a Feistel cipher, like DES. Instead it
 2. non-linear layer (SubBytes, substitution done with S-box)
 3. key addition layer (AddRoundKey, XOR with key)
 
-## 04: Advanced Encryption Standard
+## 05: Advanced Encryption Standard
 
 ### Arithmetic on Bytes and 4 byte Vectors
 
@@ -604,7 +604,7 @@ On input State, whose columns are 16 message bytes:
 
 Mathematically, there is no proof that AES is secure. Practically, it withstands modern attacks.
 
-## 05: Attacks on Block Ciphers
+## 06: Attacks on Block Ciphers
 
 ### Exhaustive Search
 
