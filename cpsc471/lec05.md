@@ -159,11 +159,39 @@ The general case of JOIN operations is called theta-join: $`R \Join_{theta} S`$.
 
 The most common use of join involves join condition with equality comparisons only. Such join where only '=' is used is called an EQUIJOIN. In the result of an EQUIJOIN we always have one or more pairs of attributes (whose names need not be identical) that have identical values in every tuple.
 
+##### NATURAL JOIN
+
+Same as EQUIJOIN, except that the attributes if $`R_2`$ are not included in the resulting relation; if the join attributes have the same names, they do not have to be specified at all.
+
+```math
+R_{1} <join> R_2
+```
+
 #### DIVISION
 
 The DIVISION operation is applied to two relations. $`R(Z) \div S(X)`$ where $`X \subset Z`$. Let $`Y = Z - X`$ (hence $`Z = X \cup Y`$), that is let $`Y`$ be the set of attributes of $`R`$ that are not attributes of $`S`$.
 
 The result of DIVISION is a relation $`T(Y)`$ that includes a tuple $`t`$ if tuples $`t_R`$ appear in $`R`$ with $`t_R [Y] = t`$ and with $`t_R [X] = t_S`$ for every tuple in $`t_S`$ in $`S`$.
+
+For every tuple $`t`$ to appear in the result $`T`$ of the DIVISION, the values in $`t`$ must appear in $`R`$ in combination with **every** tuple in $`S`$.
+
+![02.png](cpsc471/img/lec05/02.png)
+
+## Additional Relational Operations
+
+### Aggregate Functions and Grouping
+
+- Work on collections of values from the database
+- Common functions: SUM, AVERAGE, MAXIMUM, MINIMUM
+- The COUNT function is used for counting tuples or values
+
+## Relational Calculus
+
+A **tuple relational calculus** expression creates a new relation, which is specified in terms of variables that range over rows of the stored database relations.
+
+In calculus expression, there is **no order of operations** to specify how to retreive the query result - a calculus expression specifies only what information the result should contain.
+
+Relational calculus is considered to be a **non-procedural** or **declarative** language. This differs from relational algebra, where we must write a sequence of operations to specify a retrieval request, hence relational algebra can be considered as a procedural way of starting a query.
 
 ## RA Expressions
 
