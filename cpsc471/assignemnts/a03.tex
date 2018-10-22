@@ -30,7 +30,10 @@
     \item
       \begin{equation*}
       \begin{aligned}
-				\code{todo}
+        \code{Schools} &\leftarrow \select{(city = "Paris")}{School} \\
+        \code{A} &\leftarrow \join{Schools}{(sname = name)}{Distribute} \\
+        \code{B} &\leftarrow \join{A}{((pname = name) and (Publisher.city = "London"))}{Publisher} \\
+        \code{Result} &\leftarrow \proj{(director)}{B} \\
       \end{aligned}
       \end{equation*}
 
