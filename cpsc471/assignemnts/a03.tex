@@ -3,10 +3,14 @@
 \usepackage[shortlabels]{enumerate}
 \usepackage{fullpage, verbatim, amsthm, amsmath, amssymb, amsfonts}
 
+ % Macros
 \def\code#1{\texttt{#1}}
-\def\select#1{\sigma_{\code{#1}}}
-\def\join#1{\bowtie_{\code{#1}}}
-\def\proj#1{\pi_{\code{#1}}}
+
+% RA Macros
+\def\select#1#2{\sigma_{\code{#1}} \code{(#2)}}
+\def\join#1#2#3{\code{#1} \bowtie_{\code{#2}} \code{#3}}
+\def\proj#1#2{\pi_{\code{#1}} \code{(#2)}}
+\def\diff#1#2{\code{#1} - \code{#2}}
 
 \begin{document}
 
@@ -16,10 +20,10 @@
     \item
       \begin{equation*}
       \begin{aligned}
-        \code{RedBooks} &\leftarrow \select{(color = `red`)} \code{(Book)} \\
-        \code{Publishers} &\leftarrow \code{RedBooks} \join{(Book.ISBN = Distribute.ISBN)} \code{(Distribute)} \\
-        \code{CalgarySchools} &\leftarrow \select{(city = `Calgary`)} \code{(Publishers)} \\
-        \code{Result} &\leftarrow \proj{(city, name)} \code{(Publishers - CalgarySchools)}
+        \code{RedBooks} &\leftarrow \select{(color = "red")}{Book} \\
+        \code{A} &\leftarrow \join{RedBooks}{(Book.ISBN = Distribute.ISBN)}{Distribute} \\
+        \code{Calgary} &\leftarrow \select{(sname = "Calgary")}{A} \\
+        \code{Result} &\leftarrow \proj{(name, city)} {\diff{A}{Calgary}}
       \end{aligned}
       \end{equation*}
 
