@@ -1,0 +1,63 @@
+\documentclass[11pt]{article}
+
+\usepackage[shortlabels]{enumerate}
+\usepackage{fullpage, verbatim, amsthm, amsmath, amssymb, amsfonts}
+
+\def\code#1{\texttt{#1}}
+\def\select#1{\sigma_{\code{#1}}}
+\def\join#1{\bowtie_{\code{#1}}}
+\def\proj#1{\pi_{\code{#1}}}
+
+\begin{document}
+
+\item[] \textbf{Question 1}
+
+  \begin{enumerate}[a.]
+    \item
+      \begin{equation*}
+      \begin{aligned}
+        \code{RedBooks} &\leftarrow \select{(color = `red`)} \code{(Book)} \\
+        \code{Publishers} &\leftarrow \code{RedBooks} \join{(Book.ISBN = Distribute.ISBN)} \code{(Distribute)} \\
+        \code{CalgarySchools} &\leftarrow \select{(city = `Calgary`)} \code{(Publishers)} \\
+        \code{Result} &\leftarrow \proj{(city, name)} \code{(Publishers - CalgarySchools)}
+      \end{aligned}
+      \end{equation*}
+
+    \item
+      \begin{equation*}
+      \begin{aligned}
+				\code{todo}
+      \end{aligned}
+      \end{equation*}
+
+    \item 
+      \begin{equation*}
+      \begin{aligned}
+				\code{todo}
+      \end{aligned}
+      \end{equation*}
+
+    \item
+      \begin{equation*}
+      \begin{aligned}
+				\code{todo}
+      \end{aligned}
+      \end{equation*}
+
+    \item 5
+  \end{enumerate}
+
+
+\item[] \textbf{Question 2}
+
+  \begin{enumerate}[a.]
+
+    \item 1
+    \item 2
+    \item 3
+    \item 4
+    \item 5
+
+  \end{enumerate}
+
+\end{document}
