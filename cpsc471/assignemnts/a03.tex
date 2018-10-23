@@ -23,7 +23,7 @@
       \begin{equation*}
       \begin{aligned}
         \code{RedBooks} &\leftarrow \select{color = "red"}{Book} \\
-        \code{A} &\leftarrow \join{RedBooks}{Book.ISBN = Distribute.ISBN}{Distribute} \\
+        \code{A} &\leftarrow \join{RedBooks}{RedBooks.ISBN = Distribute.ISBN}{Distribute} \\
         \code{Calgary} &\leftarrow \select{sname = "Calgary"}{A} \\
         \code{Result} &\leftarrow \proj{name, city} {\diff{A}{Calgary}}
       \end{aligned}
@@ -44,7 +44,7 @@
       \begin{aligned}
         \code{RomePublishers} &\leftarrow \select{city = "Rome"}{Publisher} \\
         \code{A} &\leftarrow \join{RomePublishers}{(pname = name) and (sname = "Toronto")}{Distribute} \\ % all Rome publishers that distribute books
-        \code{B} &\leftarrow \join{A}{sname = School.name}{School} \\ % all schools receiving books from Rome publishers
+        \code{B} &\leftarrow \join{A}{sname = name}{School} \\ % all schools receiving books from Rome publishers
         \code{Result} &\leftarrow \proj{School.name}{B}
       \end{aligned}
       \end{equation*}
@@ -54,7 +54,7 @@
       \begin{aligned}
         \code{CalgarySchools} &\leftarrow \select{city = "Calgary"}{School} \\
         \code{A} &\leftarrow \join{CalgarySchools}{sname = name}{Distribute} \\
-        \code{B} &\leftarrow \join{A}{Distribute.ISBN = Book.ISBN}{Book} \\
+        \code{B} &\leftarrow \join{A}{A.ISBN = Book.ISBN}{Book} \\
         \code{Result} &\leftarrow \pi_{\code{(title, count)}} \code{(}\fun{title}{COUNT *}{Titles}\code{)}
       \end{aligned}
       \end{equation*}
@@ -62,7 +62,10 @@
     \item
       \begin{equation*}
       \begin{aligned}
-        \code{}
+        \code{A} &\leftarrow \join{Publisher}{name = pname}{Distribute} \\
+        \code{B} &\leftarrow \join{A}{A.city = School.city}{School} \\
+        \code{C} &\leftarrow \join{Book}{Book.ISBN = B.ISBN}{B} \\
+        \code{Result} &\leftarrow \pi_{\code{(title, count)}} \code{(}\fun{title}{COUNT *}{C}\code{)}
       \end{aligned}
       \end{equation*}
   \end{enumerate}
