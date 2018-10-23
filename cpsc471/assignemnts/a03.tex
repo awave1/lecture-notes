@@ -7,10 +7,11 @@
 \def\code#1{\texttt{#1}}
 
 % RA Macros
-\def\select#1#2{\sigma_{\code{#1}} \code{(#2)}}
-\def\join#1#2#3{\code{#1} \bowtie_{\code{#2}} \code{#3}}
-\def\proj#1#2{\pi_{\code{#1}} \code{(#2)}}
+\def\select#1#2{\sigma_{\code{(#1)}} \code{(#2)}}
+\def\join#1#2#3{\code{#1} \bowtie_{\code{(#2)}} \code{#3}}
+\def\proj#1#2{\pi_{\code{(#1)}} \code{(#2)}}
 \def\diff#1#2{\code{#1} - \code{#2}}
+\def\fun#1#2{f_{\code{#1}}{\code{(#2)}}}
 
 \begin{document}
 
@@ -20,34 +21,41 @@
     \item
       \begin{equation*}
       \begin{aligned}
-        \code{RedBooks} &\leftarrow \select{(color = "red")}{Book} \\
-        \code{A} &\leftarrow \join{RedBooks}{(Book.ISBN = Distribute.ISBN)}{Distribute} \\
-        \code{Calgary} &\leftarrow \select{(sname = "Calgary")}{A} \\
-        \code{Result} &\leftarrow \proj{(name, city)} {\diff{A}{Calgary}}
+        \code{RedBooks} &\leftarrow \select{color = "red"}{Book} \\
+        \code{A} &\leftarrow \join{RedBooks}{Book.ISBN = Distribute.ISBN}{Distribute} \\
+        \code{Calgary} &\leftarrow \select{sname = "Calgary"}{A} \\
+        \code{Result} &\leftarrow \proj{name, city} {\diff{A}{Calgary}}
       \end{aligned}
       \end{equation*}
 
     \item
       \begin{equation*}
       \begin{aligned}
-        \code{Schools} &\leftarrow \select{(city = "Paris")}{School} \\
-        \code{A} &\leftarrow \join{Schools}{(sname = name)}{Distribute} \\
-        \code{B} &\leftarrow \join{A}{((pname = name) and (Publisher.city = "London"))}{Publisher} \\
-        \code{Result} &\leftarrow \proj{(director)}{B} \\
+        \code{Schools} &\leftarrow \select{city = "Paris"}{School} \\
+        \code{A} &\leftarrow \join{Schools}{sname = name}{Distribute} \\
+        \code{B} &\leftarrow \join{A}{(pname = name) and (Publisher.city = "London")}{Publisher} \\
+        \code{Result} &\leftarrow \proj{director}{B} \\
       \end{aligned}
       \end{equation*}
 
     \item 
       \begin{equation*}
       \begin{aligned}
-				\code{todo}
+        \code{RomePublishers} &\leftarrow \select{city = "Rome"}{Publisher} \\
+        \code{A} &\leftarrow \join{RomePublishers}{(pname = name) and (sname = "Toronto")}{Distribute} \\ % all Rome publishers that distribute books
+        \code{B} &\leftarrow \join{A}{sname = School.name}{School} \\ % all schools receiving books from Rome publishers
+        \code{Result} &\leftarrow \proj{School.name}{B}
       \end{aligned}
       \end{equation*}
 
     \item
       \begin{equation*}
       \begin{aligned}
-				\code{todo}
+        \code{CalgarySchools} &\leftarrow \select{city = "Calgary"}{School} \\
+        \code{A} &\leftarrow \join{CalgarySchools}{sname = name}{Distribute} \\
+        \code{B} &\leftarrow \join{A}{Distribute.ISBN = Book.ISBN}{Book} \\
+        \code{Titles} &\leftarrow \proj{title}{B} \\
+        \code{Result} &\leftarrow \fun{\code{COUNT title}}{Titles}
       \end{aligned}
       \end{equation*}
 
