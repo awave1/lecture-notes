@@ -11,7 +11,8 @@
 \def\join#1#2#3{\code{#1} \bowtie_{\code{(#2)}} \code{#3}}
 \def\proj#1#2{\pi_{\code{(#1)}} \code{(#2)}}
 \def\diff#1#2{\code{#1} - \code{#2}}
-\def\fun#1#2{f_{\code{#1}}{\code{(#2)}}}
+\def\fun#1#2{f_{\code{(#1)}}{\code{(#2)}}}
+\def\fun#1#2#3{\code{#1}f_{\code{(#2)}}{\code{(#3)}}}
 
 \begin{document}
 
@@ -54,15 +55,14 @@
         \code{CalgarySchools} &\leftarrow \select{city = "Calgary"}{School} \\
         \code{A} &\leftarrow \join{CalgarySchools}{sname = name}{Distribute} \\
         \code{B} &\leftarrow \join{A}{Distribute.ISBN = Book.ISBN}{Book} \\
-        \code{Titles} &\leftarrow \proj{title}{B} \\
-        \code{Result} &\leftarrow \fun{\code{COUNT title}}{Titles}
+        \code{Result} &\leftarrow \pi_{\code{(title, count)}} \code{(}\fun{title}{COUNT *}{Titles}\code{)}
       \end{aligned}
       \end{equation*}
 
     \item
       \begin{equation*}
       \begin{aligned}
-				\code{todo}
+        \code{}
       \end{aligned}
       \end{equation*}
   \end{enumerate}
