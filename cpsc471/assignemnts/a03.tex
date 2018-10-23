@@ -14,6 +14,9 @@
 \def\fun#1#2{f_{\code{(#1)}}{\code{(#2)}}}
 \def\fun#1#2#3{\code{#1}f_{\code{(#2)}}{\code{(#3)}}}
 
+% RC Macros
+\def\expr#1#2{\{\code{#1} | #2\}}
+
 \begin{document}
 
 \item[] \textbf{Question 1}
@@ -78,7 +81,9 @@
     \item
       \begin{equation*}
       \begin{aligned}
-				\code{todo}
+        \expr{s.stno} {\code{Street(s) and } \exists{\code{c}} \code{(Country(c) and c.name = "Canada" and } \\
+          \forall{\code(ct)} \code{(City(ct) and ct.country-name = c.country))}
+      }
       \end{aligned}
       \end{equation*}
 
