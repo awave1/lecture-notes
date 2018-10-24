@@ -5,9 +5,7 @@
 > Readings: greek. 47-48, 81
 
 - **Polemarch** - senior military title
-
-Key battles: **Thermopylae, Salamis, Platea**
-
+- Key battles: **Thermopylae, Salamis, Platea**
 - Pesonally led by **Xerxes I**, son of Darius I
 - Much larger Persian force: **200k soldiers, 600 ships**
 - Persian force includes many ethnic groups conscripted from empire + **Ionians** (because Persians conquered that area)
@@ -79,10 +77,27 @@ Key battles: **Thermopylae, Salamis, Platea**
   - Phrynichus, The fall of Miletus: 490 BCE
   - Aeschylus, Persians 472 BCE
 
-## Classical Art
+## Classical Period / Art
 
 > Readings: greek 378-381
 
+- In the classical period, Greek philosophy focused on defining moral goodness and how to formulate convinving arguments
+  - Philisophy covered science, math, ethics and religion
+- Greek men believed women should be practicing hard work, productivity, frugality, and sexual restraint
+- Women in greek art are often depicted performing funeral services
+- The only women allowed at symposium were prostitutes
+  - **Symposium** - part of a banquet that took place after the meal, when drinking for pleasure was accompanied by music, dancing, recitals, or conversation
+- **Pediment** - triangular roof shape with scultures built into it
+- (Athenian) **Acropolis** - first unified temple complex
+  - Was funded by tributes from the Athenian Empire
+  - Three main buildings of: **Parthenon**, **Erechtheion**, **Propylaea**
+    - **Erechtheion** - housed olive tree of Athena and salt spring of Poseidon
+    - **Parthenon** - temple of Athena
+- **Propylaea** - entrance / gate to the Acropolis
+- **Socrates**:
+  - was charged with corrupting youth and not recognizing the Gods
+  - Plato was Socrates student
+  - **339 BCE**: Condemned to death
 
 ## Peloponnesian War
 
@@ -96,6 +111,10 @@ Key battles: **Thermopylae, Salamis, Platea**
   - Goal: aggressive protection from Persia
   - Members contribute either ships or troops
   - From **460's BCE**, Athens refuses to allow secession from League, confiscates territory from rebelious polies. Treasury of the league moved to Athens in **454 BCE**.
+- **League of Corinth**:
+  - Main goals are: Common Peace and Vengeance against Persia
+  - Founded in **337 BCE**
+  - was funded by King Phillip
 
 ### Lead up to Peloponnesian War
 
@@ -146,6 +165,7 @@ Key battles: **Thermopylae, Salamis, Platea**
 5. Harsh treatment of allies alienates support:
   - e.g. Mytilene, revolted vs Athenian Empire (**428 BCE**), recaptured in **427 BCE**.
   - 'Mytilenaean Debate' in athens about how to treat the recaptured city
+6. After the war, Greece left vulnerable to attacks from Macedon 
 
 ### Significances
 
@@ -162,7 +182,9 @@ Key battles: **Thermopylae, Salamis, Platea**
 ### Ancient Macedon
 
 - Few cities, many tribal groups
-- King has sole power, but advised by **hetairoi** - noble campanion
+- Didn't use polis system
+- King has sole power, advised by **hetairoi** - noble campanion
+  - Therefore Macedon was **monarchy**
 - Aristocratic warrior ideals:
   - Elite interred in large burial mounds
   - Personal Courage (war and hunting) celebrated
@@ -176,14 +198,21 @@ Key battles: **Thermopylae, Salamis, Platea**
 ### Rise Of Macedon
 
 - **350-338 BCE**: intervened in disputes betwen polies
+- Phillip II was the king during Battle of Chaeronea
 - **338 BCE**: **Battle of Chaeronea**:
   - Defeat of remaining Greek opposition
+  - Macedonians solidify control of Greece
 - Phillip strenthened loyalty to king among elite and non-elite Macedonians
 - **337 BCE**: **League of Corinth**, founded by Phillip with two goals:
   - Common peace in Greece
   - Vengeance against Persia
 - Macedonians used new weapon, **sarissa** and more cavalry to break up hoplite phalanx 
 - Had greek style theatres
+- **Phillip II**:
+  - Encoureged loyalty
+  - United greeks
+  - Invented new technology
+  - **336 BCE**: dies
 
 ## Alexander the Great
 
@@ -198,6 +227,8 @@ Key battles: **Thermopylae, Salamis, Platea**
 
 ### Campaigns of Alexander (334-325 BCE)
 
+**Important Events**: Battle of Issus, Capture of Persipolis, and Mutinity at Hyphasia.
+
 - **333 BCE**: **Battle of Issus**
   - Persian kind Darius III personally defeated for the first time
 - **331 BCE**:, Darius is defeated again. Soon after he murdured by one of his satraps.
@@ -205,6 +236,7 @@ Key battles: **Thermopylae, Salamis, Platea**
 - **330 BCE**: Captures Persipolis
 - **326 BCE**: Turns back after mutiny at Hyphasiis River in India 
 - **323 BCE**: Dies in Babylon
+- Established kingdoms in: Asia, Syria, Egypt, Macedon, and Northern Greece
 
 #### Motivation
 
@@ -237,6 +269,8 @@ Key battles: **Thermopylae, Salamis, Platea**
   - egypt
   - Macedon + northen Greece
 - Larger, more interconnected Mediterranean world, linked by Greek language and culture
+- More trade and travel
+- Plutarch wrote about his campaigns 400 years later
 
 ## Roman History
 
@@ -248,15 +282,19 @@ Key battles: **Thermopylae, Salamis, Platea**
 - **7th - 5th c's BCE**: Urbanization
 - **753 - 509 BCE**: Regal Period
 - **509 - 264 BCE**: Early Republic
-- People who live in Latium spoke Latins
-- Etruria (Etruscans)
-- **Magna Graecia** - Greeks
+- Many ethnic groups and languages:
+  - People who live in Latium spoke Latins
+  - Etruria (Etruscans)
+    - Art was influenced by greek art in the Archaic Period
+  - **Magna Graecia** - Greeks
 - Italian art was influenced by Egiptian, Phoenician, and Greek art, but also reflects local customs and values.
 - Greek influences on Early Italy:
   - Settlements (from mid-8th BCE)
   - Writing (by 700 BC)
   - Hoplite Warfare (by 6th BC)
   - Coinage (by 5th BC Etruria, by 300 BC Rome)
+- Complex civilization develop slower in Italy, than they are in Greece
+- Men and women woud eat together
 
 ### Evidence for Early Rome
 
@@ -265,22 +303,29 @@ Key battles: **Thermopylae, Salamis, Platea**
 - Mythology / oral tradition
   - Romans created songs / poetry about their past
   - Imaginary characters not historical fact.
+  - Romulus and Remus were the mythological, semi-divine sons of Mars, the God of war
+  - Rome was founded by Romulus and Remus. Romulus killed Remus and named the city after himself
 - Literary / textual evidence:
   - First Greek style Latin plays and poems about Roman past written in second half of **3rd c. BCE**.
   - First Roman prose 'history' written end of **3rd c. BCE**.
   - Texts present founding / growth of Rome as organized process, in great detail
     - Some are inaccurate, some are factual
+  - Romans didn't start writing down their stories until ~200
 
-### Rome: The Regal Period (Monarchy)
-- Rome was ruled by kings (**rex**/**reges**) until **509 BCE** - Rome stops being monarchy. Kingship wasn't hereditary. Kings were responsible for:
-  - Organizing religious rites
-  - Fortifying the city
-  - Public buildings
-  - Leadership in war
+### Rome: The Regal Period (Monarchy): 753 - 509
 
-Aristocratic council - **senate** - chose kings and advised them. First king Romulus chose the senate. Other sources state that senate was choosing kings.
-
-Roman poet **Ennuis** wrote a lot of poetry about Rome. Can be compared to Homer.
+- Rome was ruled by kings (**rex**/**reges**):*
+  - **509 BCE** - Rome stops being monarchy
+  - Kingship wasn't hereditary.
+  - Kings were responsible for:
+    - Organizing religious rites
+    - Fortifying the city
+    - Public buildings
+    - Leadership in war
+- Romans valued **military leadership** 
+- Aristocratic council - **senate** - chose kings and advised them:
+  - First king Romulus chose the senate. Other sources state that senate was choosing kings.
+- Roman poet **Ennuis** wrote a lot of poetry about Rome. Can be compared to Homer.
 
 ### Romulus as King
 
@@ -291,7 +336,9 @@ Roman poet **Ennuis** wrote a lot of poetry about Rome. Can be compared to Homer
 
 ### Rome: Early Republic
 
+- **509 - 254 BCE**
 - **509 BCE**: Sextus Tarquinius, son of the last king Tarquin the Proud, rapes elite woman Lucretia.
+  - As the result, kings were expelled from Rome
 - Her relatives lead a revolt and expel the kings from Rome.
 - 6th - 4th c's BCE: powers of the king distributed between officials / magistrates.
   - **2 Consuls** - analog of strategois.
@@ -299,17 +346,18 @@ Roman poet **Ennuis** wrote a lot of poetry about Rome. Can be compared to Homer
   - **Dictator** (in emergencies) - in power only for 6 months, resign after. powers are similar to the old kings, can execute people.
 - Also retained from Regal Period:
   - **Assembly** (comitia) of adult male citizens:
-    - Only magistrates can speac
+    - Only magistrates can speak
     - Elects magistrates
     - Passes laws: accepts or rejects proposals by magistrates
-    - Votes on war and peace
+    - Votes on war and peace but votes only yes or no
     - Several different assemblies: imortant are: **comitia centuriata** and **concilium plebis**
   - **Senate** remains as advisory council for magistrates
+- Rome had a **mixed constitution**: elements of democracy, oligarchy, and monarchy.
 
-Rome had a **mixed constitution**: elements of democracy, oligarchy, and monarchy.
+### Struggle of the orders (5th - early 3rd)
 
-### Struggle of the orders
-
-- 5th - early 3rd  BCE: Romans not of noble birth **plebians** challenge aristocrats **patricians**. **Gibbs p. 52-53, 223-224**.
+- **5th - early 3rd BCE**: Romans not of noble birth **plebians** challenge aristocrats **patricians**.
+- Plebians went on strike
 - Conflict resolved through compromise (secession)
-- **10 tribunes of the plebs** created to protect all citizens **provocatio**
+- As the result of Struggle of the Orders **10 tribunes of the plebs** created to protect all citizens - **provocatio**:
+  - Tribunes of the plebs were elected annually

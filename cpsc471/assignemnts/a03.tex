@@ -17,7 +17,12 @@
 % RC Macros
 \def\expr#1#2{\{\code{#1} | #2\}}
 
+\title{Assignemnt 3}
+\author{Artem Golovin}
+
 \begin{document}
+
+\maketitle
 
 \item[] \textbf{Question 1}
 
@@ -58,7 +63,7 @@
         \code{CalgarySchools} &\leftarrow \select{city = "Calgary"}{School} \\
         \code{A} &\leftarrow \join{CalgarySchools}{sname = name}{Distribute} \\
         \code{B} &\leftarrow \join{A}{A.ISBN = Book.ISBN}{Book} \\
-        \code{Result} &\leftarrow \pi_{\code{(title, count)}} \code{(}\fun{title}{COUNT *}{Titles}\code{)}
+        \code{Result} &\leftarrow \pi_{\code{(name, count)}} \code{(}\fun{title}{COUNT name}{Titles}\code{)}
       \end{aligned}
       \end{equation*}
 
@@ -68,11 +73,12 @@
         \code{A} &\leftarrow \join{Publisher}{name = pname}{Distribute} \\
         \code{B} &\leftarrow \join{A}{A.city = School.city}{School} \\
         \code{C} &\leftarrow \join{Book}{Book.ISBN = B.ISBN}{B} \\
-        \code{Result} &\leftarrow \pi_{\code{(title, count)}} \code{(}\fun{title}{COUNT *}{C}\code{)}
+        \code{Result} &\leftarrow \pi_{\code{(name, count)}} \code{(}\fun{title}{COUNT name}{C}\code{)}
       \end{aligned}
       \end{equation*}
   \end{enumerate}
 
+\newpage
 
 \item[] \textbf{Question 2}
 
@@ -81,9 +87,7 @@
     \item
       \begin{equation*}
       \begin{aligned}
-        \expr{s.stno} {\code{Street(s) and } \exists{\code{c}} \code{(Country(c) and c.name = "Canada" and } \\
-          \forall{\code(ct)} \code{(City(ct) and ct.country-name = c.country))}
-      }
+        \expr{s.stno} {}
       \end{aligned}
       \end{equation*}
 
