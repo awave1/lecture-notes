@@ -3,8 +3,10 @@
 \usepackage[shortlabels]{enumerate}
 \usepackage{fullpage, verbatim, amsthm, amsmath, amssymb, amsfonts}
 
+
  % Macros
 \def\code#1{\texttt{#1}}
+\def\c#1{\texttt{#1}}
 
 % RA Macros
 \def\select#1#2{\sigma_{\code{(#1)}} \code{(#2)}}
@@ -87,35 +89,54 @@
     \item
       \begin{equation*}
       \begin{aligned}
-        \expr{s.stno} {}
+        \expr{x.stno} {
+          &\c{Street(x) and } \exists(\c{c})(\c{City(c) and} \\
+          &\c{c.country-name = "Canada" and } \forall(\c{s})(\c{Street(s) and} \\ 
+          &\c{(x.city-name = s.city-name)} \to \c{(x.length > s.length)}
+        ))}
       \end{aligned}
       \end{equation*}
 
     \item 
       \begin{equation*}
       \begin{aligned}
-				\code{todo}
+        \expr{x.owner-name} {
+          &\c{House(x) and } \exists(\c{c})\exists(\c{s}) (\c{City(c) and Street(s) and} \\
+          &\c{s.city-name = c.city-name and c.country-name = "Canada"} \\
+          &\c{x.stno = s.stno}
+        )}
       \end{aligned}
       \end{equation*}
 
     \item
       \begin{equation*}
       \begin{aligned}
-				\code{todo}
+        \expr{x.owner-name} {
+          &\c{House(x) and } \exists(\c{s})\exists(\c{c})(\c{Street(s) and City(c) and} \\
+          &\c{x.stno = s.stno and not(c.country-name = "USA")}) \\
+          &\forall(\c{c})\exists(\c{s})(\c{City(c) and Street(s) and} \\
+          &\c{    (c.country-name = "USA")} \to \c{(s.stno = x.stno)})
+        }
       \end{aligned}
       \end{equation*}
 
     \item
       \begin{equation*}
       \begin{aligned}
-				\code{todo}
+        \expr{x.name} {
+          \c{Country(x) and Border(x.name, "Germany")}
+        }
       \end{aligned}
       \end{equation*}
 
     \item
       \begin{equation*}
       \begin{aligned}
-				\code{todo}
+        \expr{x.owner-name} {
+          &\c{House(x) and } \exists(\c{c})\exists(\c{s}) (\c{City(c) and Street(s)} \\
+          &\c{and Border(c.country-name, "Spain")} \\
+          &\c{and s.city-name = c.city-name and s.stno = x.stno}
+        )}
       \end{aligned}
       \end{equation*}
 
