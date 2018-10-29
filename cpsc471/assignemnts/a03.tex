@@ -113,7 +113,7 @@
       \begin{aligned}
         \expr{x.owner-name} {
           &\c{House(x) and } \exists(\c{s})\exists(\c{c})(\c{Street(s) and City(c) and} \\
-          &\c{x.stno = s.stno and not(c.country-name = "USA")}) \\
+          &\c{x.stno = s.stno and not(c.country-name = "USA")}) \c{ and}\\
           &\forall(\c{c})\exists(\c{s})(\c{City(c) and Street(s) and} \\
           &\c{    (c.country-name = "USA")} \to \c{(s.stno = x.stno)})
         }
@@ -124,7 +124,8 @@
       \begin{equation*}
       \begin{aligned}
         \expr{x.name} {
-          \c{Country(x) and Border(x.name, "Germany")}
+          &\c{Country(x) and } \exists{\c{c}} (\c{ Country(c) and} \\
+          &\c{c.name = x.name and Border(c.name, "Germany")})
         }
       \end{aligned}
       \end{equation*}
