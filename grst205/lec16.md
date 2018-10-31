@@ -60,10 +60,78 @@ Silver *denarius* of P. Licinius Nerva depicting Roma (obverse) and voting bridg
 
 ![03.png](grst205/img/lec16/03.png)
 
-## Punic Wars: 3rd - 2nd BCE
+## 3rd - 2nd BCE: Punic Wars
 
 - Conflic between **Rome and Carthage** and their allies
-- Major Sources:
+- **Major Sources**:
   - Polybius - Greek, writing 2nd BC, **eyewitness to 3rd Punic War**
   - Livy - Roman, writing late **1st BCE**
   - No Carthaginian literary evidence
+- **Major Events**:
+  - **264 - 241 BCE**: First Punic War
+  - **218 - 201 BCE**: Second Punic War
+  - **149 - 146 BCE**: Third Punic War
+
+### First Punic War
+
+- Rome backs Italian mercenaries who have capruted Messana
+- Carthage backs Greek polis Syracuse vs. the mercenaries
+- Regulus the consul, returns to Carthage
+
+#### Military Factors in Roman Success
+
+- Romans win the war by building a fleet to defeat Carthage at sea
+  - Rome becomes a naval power
+  - The **corvus** - boarding ramp: **key tecknology in First Punic War**
+  - The **rostra** - ship ram
+
+#### Outcomes and Significances
+
+- Rome confiscates Sicily (first Roman territory outside Italian peninsula)
+  - Beginning of Rome empire
+- Carthage weakened by war indemnity, revolts among unpaid troops
+  - **238 BCE**: Roman capture of Corsica and Sardinia
+- Carthaginians seek to expand territory in Spain
+  - Roman anxiety
+
+### 218 - 201 BCE: Second Punic War
+
+**Imortant Carthaginian Generals**:
+
+- Hamilcar Barca
+- Hasdrubal
+- Hannibal Barca
+
+Events:
+
+- **226 BCE**: Romans and Carthaginians agree not to cross Ebro River
+- Carthaginians forces led by Hannibal Barca capture Roman friend Saguntum
+  - **amicitia**: "friendship", relationship
+- **218 BCE**: Hannibal crosses the Ebro river, breaking traty with Rome
+- He surprises the Romans by invading Italy from the north, crossing the Alps with 20000 infantry, 6000 cavalry, 300 elephants
+  - Hannibal was a gifted general, skilled at surprise attacks, ambushes and diplomacy
+  - **216 BCE**: Battle of Canae, Hannibal's victory
+- Romans manage to contain Hannibal in Southern Italy
+- **204 BCE**: Romans led by Scipio Africanus invade North Africa
+- **202 BCE**: Battle of Zama; Hannibal is defeated and dies in exile in Asia Minor
+
+#### Why did Rome win the Second Punic War?
+
+Hannibal probably never intended to destroy Rome. His goal was to force the Romans to negotiate a better deal with Carthage.
+
+**Romans eventually prevailed against him by**:
+
+- Avoiding pitched battles whenever possible, using **Fabian Tactics**
+  - **Fabian Tactics**: named after dictator Q. Dabius Maximus Verrucosus Cunctator
+- Invading Africa to threaten Carthage even though Hannibal was still in Italy
+- Retaining the loyalty of most of their Italian allies - 'Italian Manpower'
+
+#### Outcomes and Significances
+
+- Expansion of Rome terrirory
+  - Rome gains control of Spain
+- End of Carthaginian military and naval power
+  - Huge idemnity to be paid for next 50 years
+  - Fleet confiscated; Carthge forbidden to build navy
+- Rome becomes dominant power in the western Mediterranean
+- **Psychological effect**: Romans believe that Hannibal could have destroyed them. THey intervene more and more around the Mediterranean in the attempts to ward off the future threats (compare to Roman 'just war' theory)
