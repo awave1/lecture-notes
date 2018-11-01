@@ -32,7 +32,30 @@ INSERT INTO History (user_id, workout_id) VALUES (this.userId, workoutId)
 
 ## Workout
 
+1. `addSetExercise(int exerciseId)`
+
+```sql
+INSERT INTO SetExercise (workout_id) VALUES (this.workout_id) WHERE exercise_id = exerciseId
+```
+
+1. `addTimedExercise(int exerciseId)`
+
+```sql
+INSERT INTO TimedExercise (workout_id) VALUES (this.workout_id) WHERE exercise_id = exerciseId
+```
+
+2. `getAllExercises()`
+
+```sql
+SELECT * FROM SetExercise CROSS JOIN TimedExercise WHERE workout_id = this.workout_id
+```
+
 ## SetExercise
+
+1. `createExercise()`
+
+```sql
+```
 
 ### Set
 
