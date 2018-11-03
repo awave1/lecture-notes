@@ -1,6 +1,5 @@
 import itertools
 
-
 def list_binary_polynomials(degree):
     """
     a.i
@@ -27,13 +26,25 @@ def list_binary_polynomials(degree):
 
     return result
 
-def a_ii():
-    pass
+
+def left_rotate(n, d = 8, bits = 32):
+    """
+    left rotate n by d bits
+    """
+
+    return (n << d) | (n >> (bits - d))
+
+
+def format_binary(str_bin, n = 8):
+    return [str_bin[i:i+n] for i in range(0, len(str_bin), n)]
+
 
 def main():
-    polys = sorted(list_binary_polynomials(3))[::-1]
+    print("q1.a.1")
+    polys = sorted(list_binary_polynomials(3))
     for p in polys:
-       print(p)
-    
+        print(p)
+
+
 if __name__ == "__main__":
     main()
