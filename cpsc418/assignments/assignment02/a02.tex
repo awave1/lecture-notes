@@ -10,6 +10,14 @@
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\logbin}{\log_2}
 
+\def\code#1{\texttt{#1}}
+\def\c#1{\texttt{#1}}
+
+\def\ithash#1{\c{ItHash(}#1\c{)}}
+\def\phmac#1{\c{PHMAC}_K\c{(}#1\c{)}}
+\def\ahmac#1{\c{AHMAC}_K\c{(}#1\c{)}}
+\def\cbcmac#1{\c{CBC-MAC}_K\c{(}#1\c{)}}
+
 % Setup page style
 \parindent=0pt
 \parskip=3mm
@@ -41,35 +49,425 @@
   \item
     \begin{enumerate}[i. ]
       \item
-        \begin{enumerate}[1. ]
-          \item $x^3 + x^2 + x + 1$
-          \item $x^3 + x^2 + x$
-          \item $x^3 + x^2 + 1$
-          \item $x^3 + x^2$
-          \item $x^3 + x + 1$
-          \item $x^3 + x$
-          \item $x^3 + 1$ 
-          \item $x^3$
-        \end{enumerate}
+        \begin{align*}
+          &x^3 \\
+          &x^3 + 1  \\
+          &x^3 + x \\
+          &x^3 + x + 1 \\
+          &x^3 + x^2 \\
+          &x^3 + x^2 + 1 \\
+          &x^3 + x^2 + x \\
+          &x^3 + x^2 + x + 1 \\
+        \end{align*}
+
       \item
         \begin{enumerate}[1. ]
-          \item $x^3 + x^2 + x + 1$
-          \item $x^3 + x^2 + x$
-          \item $x^3 + x^2$
-          \item $x^3 + x$
-          \item $x^3 + 1$ 
-          \item $x^3$
+          \item
+            \begin{align*}
+              & x^3 = x^2 \cdot x \\
+              & \text{Solving for x: } \\
+              & x^2 \cdot x = 0 \\
+              & x = 0 \\
+              & \text{Therefore } x^3 \text{ is reducible }
+            \end{align*}
+
+          \item
+            \begin{align*}
+              & x^3 + 1 = (x + 1)(x^2 - x + 1) \\
+              & \text{Solving for x: } \\
+              & (x + 1)(x^2 - x + 1) = 0 \\
+              & x = -1 \\
+              & \text{Therefore } x^3 + 1 \text{ is reducible }
+            \end{align*}
+
+          \item
+            \begin{align*}
+              & x^3 + x = x(x^2 + 1)     \\
+              & \text{Solving for x: }   \\
+              & x(x^2 + 1) = 0           \\
+              & x = 0                    \\
+              & \text{Therefore } x^3 + x \text{ is reducible }
+            \end{align*}
+
+          \item
+            \begin{align*}
+              & x^3 + x^2 = x^2(x + 1) \\
+              & \text{Solving for x: } \\
+              & x(x^2 + 1) = 0 \\
+              & x = 0 \\
+              & \text{Therefore } x^3 + x^2 \text{ is reducible }
+            \end{align*}
+
+          \item
+            \begin{align*}
+              & x^3 + x^2 + x = x(x^2 + x + 1) \\
+              & \text{Solving for x: } \\
+              & x(x^2 + x + 1) = 0 \\
+              & x = 0 \\
+              & \text{Therefore } x^3 + x^2 + x \text{ is reducible }
+            \end{align*}
+
+          \item
+            \begin{align*}
+              & x^3 + x^2 + x + 1 = (x + 1)(x^2 + 1) \\
+              & \text{Solving for x: } \\
+              & (x + 1)(x^2 + 1) = 0 \\
+              & x = -1 \\
+              & \text{Therefore } x^3 + x^2 + x + 1 \text{ is reducible }
+            \end{align*}
         \end{enumerate}
+
       \item
-        \begin{enumerate}[1. ]
-          \item $x^3 + x^2 + 1$
-          \item $x^3 + x + 1$
+        A polynomial is irreducible if it's roots are not Integers, $x \notin \Z$. For polynomial of degree 3 to be reducible, it must be a product of degree 1 polynomial and degree 2 polynomial, as can be seen above. Possible factors will be $x$ and $x + 1$, with roots $0$ and $-1$.
+
+        \begin{enumerate}
+          \item
+            Assume $g(x) = x^3 + x^2 + 1$ is reducible, then $g(0) = 0$ or $g(-1) = 0$
+            \begin{align*}
+              & g(0) = 0^3 + 0^2 + 1 = 1\\
+              & g(-1) = (-1)^3 + (-1)^2 + 1 = 1\\
+            \end{align*}
+            Therefore $x^3 + x^2 + 1$ is irreducible. \qed
+
+          \item
+            Assume $g(x) = x^3 + x + 1$ is reducible, then $g(0) = 0$ or $g(-1) = 0$
+            \begin{align*}
+              & g(0) = 0^3 + 0 + 1 = 1 \\
+              & g(-1) = (-1)^3 + (-1) + 1 = -1 \\
+            \end{align*}
+            Therefore $x^3 + x + 1$ is irreducible. \qed
         \end{enumerate}
 
     \end{enumerate}
+  \item
+    \begin{enumerate}[i. ]
+      \item
+        Let $f(x) = x^2 + 1$, $g(x) = x^3 + x^2 + 1$. Given the irreducible polynomial $p(x) = x^4 + x + 1$
+        \begin{align*}
+          f(x)g(x) &= (x^2 + 1)(x^3 + x^2 + 1)   \\
+                  &= x^5 + x^4 + x^3 + 1 \\
+        \end{align*}
 
+        \begin{align*}
+          \text{where } x^5 \text{ is: } \\
+          p(x) &= 0 \\
+          x^4 + x + 1 &= 0 \\
+          x^4 &= x + 1 \\
+          x^5 &= x^4x = (x + 1)x = x^2 + x
+        \end{align*}
+
+        Therefore:
+        \begin{align*}
+          f(x)g(x) &= x^2 + x + x^4 + x^3 + 1 \\
+                   &= x^4 + x^3 + x^2 + x + 1 \\
+                   &= x + 1 + x^ 3 + x^2 + x + 1 \\
+                   &= 2x + x^3 + x^2 + 2 \\
+                   &= x^3 + x^2
+        \end{align*}
+
+      \item
+        Using the fact, that $p(x) = 0$ in $GF(2^4)$, the inverse of $f(x) = x$, where $f(x)g(x) = 1$ in $GF(2^4)$, we can find $g(x)$, as follows:
+        \begin{align*}
+          x^4 + x + 1 &= 0 \\
+          x^4 + x &= 1 \\
+          x(x^3 + 1) &= 1
+        \end{align*}
+        Since $f(x) = x$, $g(x) = (x^3 + 1)$, that satisfies $f(x)g(x) = 1$.
+    \end{enumerate}
+  \item
+    \begin{enumerate}[i. ]
+      \item
+        \begin{proof}
+          Let $S = (S_3, S_2, S_1, S_0)$ be a 4-byte vector, where $S_3, S_2, S_1, S_0$ are bytes. Then we have:
+          \begin{align*}
+            S(y) = S_3y^3 + S_2y^2 + S_1y + S_0
+          \end{align*}
+          If $S(y)$ is multiplied by $y$, we get the following:
+          \begin{align*}
+            y \cdot S(y) = S_3y^4 + S_2y^3 + S_1y^2 + S_0y
+          \end{align*}
+          Given $M(y) = y^4 + 1$, we have $y^4 = 1$, therefore $y \cdot S(y)$ results in:
+          \begin{align*}
+            y \cdot S(y) &= S_3 + S_2y^3 + S_1y^2 + S_0y \\
+                         &= S_2y^3 + S_1y^2 + S_0y + S_3
+          \end{align*}
+          We can see that all bytes have shifted left, resulting in new vector $S' = y \cdot S(y) = (S_2, S_1, S_0, S_3)$.
+        \end{proof}
+
+      \item
+        \begin{proof}
+          Given $i \in \Z$, $i \geq 0$, $j \in \Z$, $j \equiv i \pmod{4}$, and the fact that we're working with 4 byte arithmetic, where $M(y) = y^4 + 1$, we can show, that $y^i = y^j$.
+
+          By definition of divisibility, $i = 4k + j$, $k \in \Z$. Therefore $y^i$ can be defined as:
+          \begin{align*}
+            y^i \equiv y^{4k + j} \pmod{y^4 + 1}
+          \end{align*}
+
+          By deriving $j$ from $i = 4k + j$, we get:
+          \begin{align*}
+            i &= 4k + j \\
+            j &= i - 4k \\
+            j &= i \pmod{4}
+          \end{align*}
+
+          Therefore,
+          \begin{align*}
+            y^i &= y^{4k + j} \\
+                &= y^{4k} \cdot y^{j} \\
+                &= (y^{4})^k \cdot y^j \\
+                &= y^j
+          \end{align*}
+          Note that, $y^4 = 1$ and $j \equiv i \pmod{4}$ with $0 \leq j \leq 3$.
+        \end{proof}
+
+      \item
+        \begin{proof}
+          Let $S = (S_3, S_2, S_1, S_0)$ be a 4 byte vector and let $S(y) = S_3y^3 + S_2y^2 + S_1y + S_0$ be its polynomial form. Given $y^i (i \geq 0)$ and $j \equiv i \pmod{4}$, where $0 \leq j \leq 3$, we can show that $y^i \cdot S(y)$ results in a circular left shift of $S(y)$ by $j$ bytes.
+
+          As seen in previous proof, $y^i = y^j$, where $j \equiv i \pmod{4}$ and $0 \leq j \leq 3$. Proof $i.$ also shows that $y \cdot S(y)$ results in circular left shift by \textit{one} byte. It can also be written as $y^1 \cdot S(y)$.
+
+          Therefore, $y^i \cdot S(y)$ results in
+          \begin{align*}
+            y^i \cdot S(y) &= S_3y^{3 + i} + S_2y^{2 + i} + S_1y^{1 + i} + S_0y^i \\
+                           &= S_3y^{3 + (i \pmod{4})} + S_2y^{2 + (i \pmod{4})} + S_1y^{1 + (i \pmod{4})} + S_0y^{i \pmod{4}}
+          \end{align*}
+          Which will always result in circular left shift by $j$ bytes.
+        \end{proof}
+    \end{enumerate}
 \end{enumerate}
 
 \newpage
+
+\item[] \textbf{Problem 2} --- Arithmetic with the constant polynomial of MixColumns in AES, 13 marks
+
+\begin{enumerate}[a. ]
+  \item
+    \begin{align*}
+      c_1(x) &= 1 \\
+      c_2(x) &= x \\
+      c_3(x) &= x + 1
+    \end{align*}
+
+  \item
+    \begin{enumerate}[i. ]
+      \item
+        Let $b(x) = b_7x^7 + b_6x^6 + b_5x^5 + b_4x^4 + b_3x^3 + b_2x^2 + b_1x + b_0$, $b(x) = b_7x^7 + b_6x^6 + b_5x^5 + b_4x^4 + b_3x^3 + b_2x^2 + b_1x + b_0$, and $(02) = 0000 0010 = x$. $d(x) = x \cdot b(x)$
+
+        \begin{align*}
+          (02) \cdot b(x) &= x \cdot b(x) = (x)(b_7x^7 + b_6x^6 + b_5x^5 + b_4x^4 + b_3x^3 + b_2x^2 + b_1x + b_0) \\
+              &= b_7x^8 + b_6x^7 + b_5x^6 + b_4x^5 + b_3x^4 + b_2x^3 + b_1x^2 + b_0x \\
+          \text{Where } \\
+          x^8 + x^4 + x^3 + x + 1 &= 0 \\
+          x^8 &= x^4 + x^3 + x + 1 \\
+          \text{Therefore, } \\
+          x \cdot b(x) &= b_7(x^4 + x^3 + x + 1) + b_6x^7 + b_5x^6 + b_4x^5 + b_3x^4 + b_2x^3 + b_1x^2 + b_0x \\
+                       &= b_6x^7 + b_5x^6 + b_4x^5 + (b_7 + b_3)x^4 + (b_7 + b_2)x^3 + b_1x^2 + (b_7 + b_0)x + b_7
+        \end{align*}
+
+        The result of multiplication, bits $d_i, 0 \leq i \leq 7$:
+        \begin{align*}
+          &d_7 = b_6 \\
+          &d_6 = b_5 \\
+          &d_5 = b_4 \\
+          &d_4 = (b_7 + b_3) \\
+          &d_3 = (b_7 + b_2) \\
+          &d_2 = b_2 \\
+          &d_1 = (b_7 + b_0) \\
+          &d_0 = b_7
+        \end{align*}
+
+
+
+      \item
+        Let $b(x) = b_7x^7 + b_6x^6 + b_5x^5 + b_4x^4 + b_3x^3 + b_2x^2 + b_1x + b_0$, $b(x) = b_7x^7 + b_6x^6 + b_5x^5 + b_4x^4 + b_3x^3 + b_2x^2 + b_1x + b_0$, and $(03) = 0000 0011 = x + 1$. $e(x) = (x + 1) \cdot b(x)$
+
+        \begin{align*}
+          (03) \cdot b(x) = (x + 1) \cdot b(x) = (x + 1)(b_7x^7 + b_6x^6 + b_5x^5 + b_4x^4 + b_3x^3 + b_2x^2 + b_1x + b_0) \\
+                          = (b_7x^8 + b_6x^7 + b_5x^6 + b_4x^5 + b_3x^4 + b_2x^3 + b_1x^2 + b_0x) + \\
+          (b_7x^7 + b_6x^6 + b_5x^5 + b_4x^4 + b_3x^3 + b_2x^2 + b_1x + b_0) \\
+          \text{Where } \\
+          x^8 + x^4 + x^3 + x + 1 = 0 \\
+          x^8 = x^4 + x^3 + x + 1 \\
+        \end{align*}
+
+        \begin{align*}
+          (x + 1)b(x) = (b_7 + b_6)x^7 + (b_6 + b_5)x^6 + (b_5 + b_4)x^5 + (b_7 + b_4 + b_3)x^4 + (b_7 + b_3 + b_2)x^3 + \\ + (b_2 + b_1)x^2 + (b_7 + b_1 + b_0)x + (b_7 + b_0)
+        \end{align*}
+
+        The result of multiplication, bits $e_i, 0 \leq i \leq 7$:
+        \begin{align*}
+          &e_7 = (b_7 + b_6) \\
+          &e_6 = (b_6 + b_5) \\
+          &e_5 = (b_5 + b_4) \\
+          &e_4 = (b_7 + b_4 + b_3) \\
+          &e_3 = (b_7 + b_3 + b_2) \\
+          &e_2 = (b_2 + b_1) \\
+          &e_1 = (b_7 + b_1 + b_0) \\
+          &e_0 = (b_7 + b_0)
+        \end{align*}
+    \end{enumerate}
+
+  \item
+    \begin{enumerate}[i. ]
+      \item Computing $t(y) = s(y)c(y) \pmod{y^4 + 1}$:
+        \begin{align*}
+          t(y) &= s(y)c(y) \pmod{y^4 + 1} \\
+               &= (s_3y^3 + s_2y^2 + s_1y + s_0)((03)y^3 + (01)y^2 + (01)y + (02)) \pmod{y^4 + 1} \\
+               &= (03)(s_3y^6 + s_2y^5 + s_1y^4 + s_0y^3) + \\
+               &  (01)(s_3y^5 + s_2y^4 + s_1y^3 + s_0y^2) + \\
+               &  (01)(s_3y^4 + s_2y^3 + s_1y^2 + s_0y  ) + \\
+               &  (02)(s_3y^3 + s_2y^2 + s_1y   + s_0   ) \pmod{y^4 + 1} \\
+        \end{align*}
+
+        Where;
+        \begin{align*}
+          & y^6 = y^4y^2 = y^2 \\
+          & y^5 = y^4y = y
+        \end{align*}
+
+        Therefore we get:
+        \begin{align*}
+          t(y) &= (03)(s_3y^2 + s_2y   + s_1    + s_0y^3) + \\
+               &  (01)(s_3y   + s_2    + s_1y^3 + s_0y^2) + \\
+               &  (01)(s_3    + s_2y^3 + s_1y^2 + s_0y  ) + \\
+               &  (02)(s_3y^3 + s_2y^2 + s_1y   + s_0   ) \pmod{y^4 + 1} \\
+          \\
+               &= ((03)s_3y^2 + (03)s_2y   + (03)s_1    + (03)s_0y^3) + \\
+               &  ((01)s_3y   + (01)s_2    + (01)s_1y^3 + (01)s_0y^2) + \\
+               &  ((01)s_3    + (01)s_2y^3 + (01)s_1y^2 + (01)s_0y  ) + \\
+               &  ((02)s_3y^3 + (03)s_2y^2 + (02)s_1y   + (02)s_0   )  \pmod{y^4  +1} \\
+          \\
+               &= ((02)s_3y^3 + (01)s_2y^3 + (01)s_1y^3 + (03)s_0y^3)) + \\
+               &  ((03)s_3y^2 + (03)s_2y^2 + (01)s_1y^2 + (01)s_0y^2)) + \\
+               &  ((01)s_3y   + (03)s_2y   + (02)s_1y   + (01)s_0y)  ) + \\
+               &  ((01)s_3    + (01)s_2    + (03)s_1    + (02)s_0    )  \pmod{y^4  +1} \\
+          \\
+               &= ((02)s_3 + (01)s_2 + (01)s_1 + (03)s_0))y^3 +          \\
+               &  ((03)s_3 + (03)s_2 + (01)s_1 + (01)s_0))y^2 +          \\
+               &  ((01)s_3 + (03)s_2 + (02)s_1 + (01)s_0))y +            \\
+               &  ((01)s_3 + (01)s_2 + (03)s_1 + (02)s_0) \pmod{y^4 + 1} \\
+        \end{align*}
+
+      \item
+        $t(y)$ written in matrix form:
+        \begin{align*}
+          \begin{bmatrix}
+            t_0 \\
+            t_1 \\
+            t_2 \\
+            t_3 \\
+          \end{bmatrix} = 
+          \begin{bmatrix}
+            02 & 03 & 01 & 01 \\
+            01 & 02 & 03 & 01 \\
+            01 & 01 & 03 & 03 \\
+            03 & 01 & 01 & 01 \\
+          \end{bmatrix}
+          \begin{bmatrix}
+            s_0 \\
+            s_1 \\
+            s_3 \\
+            s_3 \\
+          \end{bmatrix}
+        \end{align*}
+    \end{enumerate}
+\end{enumerate}
+
+\newpage
+
+\item[] \textbf{Problem 3} --- Error propagation in block cipher modes, 12 marks
+
+\begin{enumerate}[a. ]
+  \item
+    \begin{enumerate}[i. ]
+      % @TODO: finish explaining why
+      \item
+        \textbf{ECB mode}: only $M_i$ will be affected. ECB mode is simply a shift cipher, each block is a substitution.
+
+      \item
+        \textbf{CBC mode}: $M_i$ and $M_{i + 1}$ will be affected, because $M_i = D_K(C_i) \oplus C_{i - 1}$, where $D_K$ is a decryption function.
+
+      \item
+        \textbf{OFB mode}: only $M_i$ is affected, because decryption for $M_i$ is done using previous state.
+
+      \item
+        \textbf{CFB mode}: $M_i$ and $M_{i + 1}$ will be affected, because decryption of $M_{i + 1}$ depends on $C_i$, which is corrupted.
+        
+      \item
+        \textbf{CTR mode}: only $M_i$ will be affected, because current counter value is XOR with $C_i$, which will result in corrupted $M_i$.
+    \end{enumerate}
+
+  \item
+    Since the error occured \textbf{before} any encryption, the message will be encrypted and decrypted with no errors, however, the corresponding decrypted plaintext $M'_i$ will be affected.
+\end{enumerate}
+
+\newpage
+
+\item[] \textbf{Problem 4} --- Flawed MAC designs, 24 marks
+
+\begin{enumerate}[a. ]
+  \item
+    \begin{enumerate}[i. ]
+      \item Given $(M_1, \phmac{M_1})$, where $\phmac{M_1}$ is the hash for $K||M_1 = K||P_1||P_2|| \ldots ||P_L$ and $M_2 = M_1||X$, $X$ is a $n$ bit block.
+        \begin{align*}
+          \phmac{M_2} &= \ithash{K||M_2} \\
+                      &= \ithash{K||M_1||X} \\
+                      &= \ithash{\phmac{M_1}||X}
+        \end{align*}
+
+        Therefore, this defeats computational resistance of $\c{PHMAC}$, because $\phmac{M_2}$ can be computed without knowledge of the key $K$.
+
+      \item Given $(M_1, \ahmac{M_1})$, where $\ahmac{M_1}$ is the hash for $M_1||K = P_1||P_2|| \ldots ||P_L||K$, we can find $(M_2, \ahmac{M_2})$ without knowledge of the key $K$.
+
+        Assume that $\c{ItHash}$ is not weakly collision resistant, therefore it is computationally feasible to find such $M_2$ that $M_2 \neq M_1$ and $\ahmac{M_2} = \ahmac{M_1}$. Given that pair $(M_1, \ahmac{M_1})$ is already known and $\ahmac{M}$ doesn't depend on $K$, just $M$, there exists $M_2 \neq M_1$ and $\ahmac{M_1} = \ahmac{M_2}$. Which therefore defeats computational resistance.
+    \end{enumerate}
+
+  \item
+    \begin{enumerate}[i. ]
+      \item Given that the attacker knows $(M_1, \cbcmac{M_1})$ and $(M_2, \cbcmac{M_2})$ with $M_2 = \cbcmac{M_1}$, we can find $\cbcmac{M_3}$, where $M_3 = M_1||0^n$. Since $M_1$ and $M_2$ are single block messages, we can show their $\c{CBC-MAC}$ values:
+          \begin{align*}
+            \cbcmac{M_1} &= E_K(0^n \oplus M_1) \\
+            \cbcmac{M_2} &= E_K(0^n \oplus M_2) \\
+                         &= E_K(0^n \oplus \cbcmac{M_1})
+          \end{align*}
+
+          Therefore, $\cbcmac{M_3}$ evaluates to:
+          \begin{align*}
+            \cbcmac{M_3} &= \cbcmac{M_1||0^n} \\
+                         &= E_K(0^n \oplus M_1) \\
+                         &= E_K(E_K(0^n \oplus M_1) \oplus 0^n) \\
+                         &= E_K(0^n \oplus E_K(0^n \oplus M_1)) \\
+                         &= E_K(0^n \oplus \cbcmac{M_1}) \\
+                         &= E_K(0^n \oplus \cbcmac{M_1}) \\
+                         &= \cbcmac{M_2}
+          \end{align*}
+          This violates computational resistance, because there's message $M_3 \neq M_2$ and $\cbcmac{M_3} = \cbcmac{M_2}$.
+      \item Given $(M_1, \cbcmac{M_1})$, $(M_2, \cbcmac{M_2})$, $(M_3, \cbcmac{M_3})$, $M_3 = M_1||X$ ($X$ is $n$ bit block), we can find $\cbcmac{M_4}$, where $M_4 = M_2||Y$ and $Y$ is:
+        \begin{align*}
+          Y = \cbcmac{M_1} \oplus \cbcmac{M_2} \oplus X
+        \end{align*}
+
+        Computing $\cbcmac{M_1}$, $\cbcmac{M_2}$, and $\cbcmac{M_3}$:
+        \begin{align*}
+          \cbcmac{M_1} &= E_K(0^n \oplus M_1) \\
+          \cbcmac{M_2} &= E_K(0^n \oplus M_2) \\
+          \cbcmac{M_3} &= E_K(0^n \oplus M_1) \\
+                       &= E_K(E_K(0^n \oplus M_1) \oplus X) \\
+                       &= E_K(\cbcmac{M_1} \oplus X)
+        \end{align*}
+
+        Computing $\cbcmac{M_4}$:
+        \begin{align*}
+          \cbcmac{M_4} &= E_K(0^n \oplus M_2) \\
+                       &= E_K(E_K(0^n \oplus M_2) \oplus Y) \\
+                       &= E_K(E_K(0^n \oplus M_2) \oplus \cbcmac{M_1} \oplus \cbcmac{M_2} \oplus X) \\
+                       &= E_K(\cbcmac{M_2} \oplus \cbcmac{M_1} \oplus \cbcmac{M_2} \oplus X) \\
+                       &= E_K(\cbcmac{M_1} \oplus X) \\
+                       &= \cbcmac{M_3}
+        \end{align*}
+
+        Therefore, we can see that $\cbcmac{M_4} = \cbcmac{M_3}$ given that $M_4 \neq M_3$. This defeats computational resistance.
+    \end{enumerate}
+\end{enumerate}
 
 \end{document}

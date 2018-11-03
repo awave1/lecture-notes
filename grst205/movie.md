@@ -1,0 +1,12 @@
+- kept slaves on villas
+- ???
+- profit
+- runaway slaves are brutally punished
+- each territory conquered brings something idk i didnt catch it
+- Putioli was most important port in Roman empire
+- much of it is under water due to sesmic activities
+- Romans got the bread
+- Portus, with canals connecting to the sea
+- one of the busiest ports
+- Portus was only imperial port
+- 
