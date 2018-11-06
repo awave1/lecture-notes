@@ -135,5 +135,3 @@ Hannibal probably never intended to destroy Rome. His goal was to force the Roma
   - Fleet confiscated; Carthge forbidden to build navy
 - Rome becomes dominant power in the western Mediterranean
 - **Psychological effect**: Romans believe that Hannibal could have destroyed them. THey intervene more and more around the Mediterranean in the attempts to ward off the future threats (compare to Roman 'just war' theory)
-
-
