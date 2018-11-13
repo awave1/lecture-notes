@@ -50,3 +50,19 @@ Roman sacrifice: Key players
 - Victimarius - victim man
 - Flute-player
 - Priests (pontifices, haruspex)
+
+### Religion and Politics
+
+- Social-political elite are the priests
+  - Magistrates required to perform religious rituals
+- In Imperial Period, emperor is worshipped as a god (**divus**)
+- Religion has political consequences
+  - E.g. consul Tiberius Sempronius Gracchus elections in 1633 for consulship of 162 BCE.
+
+There are two explanations here, Cicero's and the modern author's:
+
+1. What is Cicero's explanations? Why?
+2. What is the modern author's explanations? Why?
+3. Which do you agree with? Why?
+
+# 133 - 31 BCE: Rome Late Republic

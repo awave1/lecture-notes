@@ -5,7 +5,8 @@
 Function: `createUser(String firstName, String lastName, int age, double weight)`
 
 ```sql
-INSERT INTO User (first_name, last_name, age, weight) VALUES (firstName, lastName, age, weight)
+INSERT INTO User (first_name, last_name, age, weight)
+       VALUES (firstName, lastName, age, weight)
 ```
 
 ## Create Workout
