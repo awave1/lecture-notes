@@ -249,6 +249,54 @@ Assumes m > n (longer keys than MACs, reasonable). This is KPA:
 
 ## Key Agreement
 
+### One way functions
+
+### Diffie Hellman protocol
+
+### Discrete logarithms and the DLP
+
+### MITM attacks on "textbook" DH
+
 ## Public Key Cryptosystems
 
+### Trapdoor one-way functions
+
+### Definition of a PKC
+
+#### Services provided by PKC
+
+### RSA
+
+#### Security of "textbook" RSA
+
+##### Equivalence of factoring n
+
+##### Computing $`\phi(n)`$ and finding $`d`$
+
+##### Choice of parameters
+
+### Multiplicative attacks on RSA
+
+#### CCA
+
+#### Meet in the middle
+
+### Randomized encryption
+
+- ElGamal key generation, encryption and decryption procedures (no details about those)
+
+### Facts and assumptions about ElGamal
+
 ## Number Theory
+
+### $`Z_m and Z_{m}^{*}`$
+
+### Euler's $`\phi`$ function and Fermat's Theorems
+
+### Primitive roots
+
+### Binary Exponentiation
+
+### Euclidean algorithm and extended euclidean
+
+#### Solving linear Diophantine equations and linear congruences
