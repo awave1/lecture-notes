@@ -2,6 +2,13 @@
 
 ## Modern Symmetric Cryptography
 
+### Purpose of stream ciphers
+
+In contrast to block ciphers, stream ciphers don't trat incoming characters independently:
+
+* encryption $`C_i`$ of plaintext character $`M_i`$ depends on internal state of device
+* after encryption, the device changes state according to some rule
+
 ### SSC and self-SSC
 
 - SSC: Synchronous Stream Ciphers:
@@ -53,8 +60,6 @@ Modes:
   - ssc
   - simplest form, one register: $`KS_i = E_K (KS_{i - 1})`$ with $`KS_0 = IV`$
   - in general, r keystream bits are fed back
-
-### Purpose of stream ciphers
 
 ## Hash Functions and MACs
 
