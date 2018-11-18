@@ -91,23 +91,83 @@ Modes:
 
 ### Sponge Design
 
-<!-- todo -->
+- Hash function: arbitrary input length, fixed output length
+- Stream cipher: fixed input length, arbitrary output length
+- **Sponge function**: arbitrary input length, variable user-supplied output length
+
+Sponges can be used to build various cryptographic primitives:
+
+- Stream ciphers
+- Hash functions
+- MACs
+
+#### Overview
+
+Sponge function consists of:
+
+- width b (an int)
+- bit rate r (an int, r < b)
+- input S (bit string of length b)
+- fixed length permutation f that operates on S
+- padding rule "pad" that pads blocks of length r to blocks of length b
+
+The **capacity** of the sponge is the **padding amount**: $`c = b - r`$. The padding rule for Keccak simply appends the string 100 ... 01 ($`c - 2`$ zeros) to each r-bit block (called *multi-rate padding*).
+
+##### Absorb
+
+The input to the **absorbtion** phase is the message M - padded so the total length is a multiple of $`r`$ - consisting of r-bit blocks $`P_1, ..., P_{L}`$. The output is a string S of length b. **Absorbtion = xor & permute**.
+
+##### Squeeze
+
+The **squeezing** phase outputs on input S a hash message M whose bit length is a user-supplied value m. **Squeezing = append & permute**
 
 ### Basic overview of Keccak
 
-#### Hash length
+- SHA3/Keccak specifies:
+  - **hash lengths** m = 224, 256, 384, 512 (like SHA2)
+  - **capacities** c = 2m
+  - **widths** b = 25, 50, 100, 200, 400, 800, 1600 (1600 is default)
 
-#### Number of rounds
+The **internal state** to the Keccak permutation f, denoted A is a 3d bit array of dimensions $`5 \times 5 \times 2^l`$, where $`0 \leq l \leq 6`$, yeilding the above widths (default is $`l = 6`$ with a state $`5 \times 5 \times 64`$).
 
-#### Format of states
-
-#### High Level Design
+The Keccak permutation f iterates over multiple rounds. In SHA3, the number of rounds $`N_r`$ is $`12 + 2l`$. Each round of f operates on the state A and is the composition of 5 functions: $`\iota \circ \chi \circ \pi \circ \rho \circ \theta`$.
+$`\iota`$ incorporates round constants that vary by round.
 
 ### Attacks on hash functions
 
+- Objectives:
+  - find a pre-image: given any hash, create a corresponding message with that hash
+  - find a weak collision: given a message, modify it to another message with the same hash
+  - find a collision: find two messages with the same hash
+
 #### Brute Force Attack
 
-#### Birthday Attack
+For an m-bit hash function:
+
+- pre-images and weak collisions: $`2^m`$ attempts on average
+- strong collisions: $`2^{m/2}`$ attempts on average due to **birthday paradox**.
+  - birthday paradox: expected number of draw & replace trials from N objects required to draw an object twice approaches $`\sqrt{\pi N/2} \approx 1.25\sqrt{N}`$ as $`N`$ grows.
+- recommended sizes of m: 224, 256, 394, 512 (provide 112, 128, 192, and 256 bits of security)
+
+#### Weak vs Strong collision reistance
+
+Let m be of a size where:
+
+- searching a space of size $`2^m`$ is computationally infeasible
+- searching a space of size $`2^{m/2}`$ is computationally feasible.
+
+Then we expect m-bit hash function to be:
+
+- pre-image resistant
+- weakly collision resistant
+- **not** strongly collision resistant
+
+#### Birthday Attack on signature schemes with hash functions
+
+- Attacker geenrates $`2^{m/2}`$ variations of a valid message
+- Attacker generates $`2^{m/2}`$ variations of a desired fraudelent message
+- The two sets of messages are compared to find a pair with the same hash
+- Attacker has the victim sign the hash of the valid message - the signature will also be valid for the fraudelent message
 
 ### Definition and properties of MAC
 
