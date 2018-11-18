@@ -171,15 +171,81 @@ Then we expect m-bit hash function to be:
 
 ### Definition and properties of MAC
 
+* **MAC**: a small, fixed size key-dependent block that is appended to a message to check data integrity - AKA keyed hash function or tag.
+* MAC definition:
+  * A single parameter family $`\{C_K\}_{K \in K}`$ of many-to-one functions $`C_K: M \to \{0, 1\}^n`$, $`n \in \N`$, satisfying:
+    * Ease of computation with knowledge of K: For any $`m \in M`$ and $`k \in K`$, $`C_K(M)`$ is easy to compute.
+    * Computation resistance: for any $`k \in K`$, given zero or more message/MAC pairs $`(m_i, C_k(m_i))`$, it is computationally infeasible to compute any new message/mac pair $`(m, C_k(m))`$, $`m \neq m_i`$ for all $`i`$, without knowledge of $`k`$.
+
 #### Services provided by MAC
+
+* Computation-resistance implies **data integrity** (without secrecy):
+  - sender and receiver share a secret key $`k`$
+  - sender computes $`MAC = C_k(m)`$ and sends (m, mac) (unencrypted)
+  - receiver computes the same thing and checks $`mac' = mac`$. If they match and $`C_k`$ is computation resistant, the integrity of $`m`$ is preserved.
+* Active attack:
+  - attacker suppresses (m, mac) and instead sends a pair (m'', mac'') to the receiver
+  - receiver checks if $`C_k(m'') = mac''`$. If it holds, the attacker must have defeated computational resistance -> generated new pair (m'', mac'') from (m, mac).
+* MACs provide limited sender authentication in a similar manner to encryption:
+  - only sender or reciver who knows k could generate the mac.
+* non-repudiation of data origin is not provided:
+  - either party possesing k can generate macs.
 
 ### Basic idea of CMAC (CBC-MAC with special key in last round) and HMAC
 
+MAC can be applied first and then encrypt the message or encrypt the message first and apply MAC to the ciphertext.
+
+- Encrypt then MAC
+  - formally secure, it preserves the integrity of the ciphertext and protects against malleability
+  - prone to implementation errors
+- MAC then encrypt
+  - more natural, less error prone
+  - can be more practical if encryption is defeated, message integrity is still preserved
+
+* **CMAC**: a secure block cipher can be used to generate MACs
+  - **CBC-MAC**:
+    - Encrypt the message (zero IV, last block padded with 0s) using CBC mode
+    - the last cipher block (whose bits are dependent on all the key bits and message bits) is the MAC
+  - Only secure if messages of one fixed length are processed. Solution:
+    - use three keysm one at each step of chaining, two for the last block
+    - second two keys may be derived from the encryption key
+  - Properties:
+    - specified for use with AES and 3DES.
+    - can be proven secure as long as the underlying block cipher's output is indistinguishanle from a random permutation
+    - no known weaknesses
+* **HMAC**: $`MAC = H(M||K)`$ where H is a cryptographic hash function and K is a secret key.
+  - advantage over CMAC: hash functions are faster than block ciphers
+  - provable security
+
 ### Attacks on MACs and their complexity
 
-#### MAC space
+- Compute a new message / MAC pair (M, Ck(M)) for some message M != Mi given one or more pairs (Mi, Ck(Mi)).
+- Known-text, chosen-text, and adaprive chosen text variations are possible.
+
+#### MAC space attack
+
+Assume n-bit MACs, m-bit keys:
+
+- pick a message, guess the MAC value (probability $`2^{-n}`$ of being correct)
+- requires black-box MAC verifier to confirm guesses
+- expected number of attempts is 2^n
+- does not find the MAC key
 
 #### Key space attacks
+
+Assumes m > n (longer keys than MACs, reasonable). This is KPA:
+
+- given M1 and MAC1 = Ck(M1), compute MACi1 = Cki(M1) for all possible keys ki $`1 \leq i \leq 2^m`$
+- expect $`2^{m - n}`$ keys to produce a match MAC1 = MACi1 ($`2^m`$ MACs produced, only $`2^n`$ possible MACs)
+- repeat with M2 and MAC2 = Ck(M2) reducing the number of possible keys to $`2^{m - 2n}`$. Iterate with Mj and MACj = Ck(Mj), j = 3, 4, .. .
+- Requirements:
+  - [m/n] message/MAC pairs
+  - [m/n] * 2^m MAC computations but these can be conducted offline if M1, M2 are known in advance.
+- Brute force attacks (n bit MACs, m-bit keys):
+  - $`2^n`$ to defeat computation resistance (find a valid message/mac pair)
+  - [m/n] $`2^m`$ to find a MAC key.
+- for CMAC possible to attack cipher
+- for HMAC possible to attack hash function
 
 ## Key Agreement
 
