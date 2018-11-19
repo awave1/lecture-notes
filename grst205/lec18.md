@@ -64,5 +64,3 @@ There are two explanations here, Cicero's and the modern author's:
 1. What is Cicero's explanations? Why?
 2. What is the modern author's explanations? Why?
 3. Which do you agree with? Why?
-
-# 133 - 31 BCE: Rome Late Republic
