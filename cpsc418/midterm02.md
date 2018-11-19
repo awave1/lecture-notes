@@ -91,38 +91,371 @@ Modes:
 
 ### Sponge Design
 
-<!-- todo -->
+- Hash function: arbitrary input length, fixed output length
+- Stream cipher: fixed input length, arbitrary output length
+- **Sponge function**: arbitrary input length, variable user-supplied output length
+
+Sponges can be used to build various cryptographic primitives:
+
+- Stream ciphers
+- Hash functions
+- MACs
+
+#### Overview
+
+Sponge function consists of:
+
+- width b (an int)
+- bit rate r (an int, r < b)
+- input S (bit string of length b)
+- fixed length permutation f that operates on S
+- padding rule "pad" that pads blocks of length r to blocks of length b
+
+The **capacity** of the sponge is the **padding amount**: $`c = b - r`$. The padding rule for Keccak simply appends the string 100 ... 01 ($`c - 2`$ zeros) to each r-bit block (called *multi-rate padding*).
+
+##### Absorb
+
+The input to the **absorbtion** phase is the message M - padded so the total length is a multiple of $`r`$ - consisting of r-bit blocks $`P_1, ..., P_{L}`$. The output is a string S of length b. **Absorbtion = xor & permute**.
+
+##### Squeeze
+
+The **squeezing** phase outputs on input S a hash message M whose bit length is a user-supplied value m. **Squeezing = append & permute**
 
 ### Basic overview of Keccak
 
-#### Hash length
+- SHA3/Keccak specifies:
+  - **hash lengths** m = 224, 256, 384, 512 (like SHA2)
+  - **capacities** c = 2m
+  - **widths** b = 25, 50, 100, 200, 400, 800, 1600 (1600 is default)
 
-#### Number of rounds
+The **internal state** to the Keccak permutation f, denoted A is a 3d bit array of dimensions $`5 \times 5 \times 2^l`$, where $`0 \leq l \leq 6`$, yeilding the above widths (default is $`l = 6`$ with a state $`5 \times 5 \times 64`$).
 
-#### Format of states
-
-#### High Level Design
+The Keccak permutation f iterates over multiple rounds. In SHA3, the number of rounds $`N_r`$ is $`12 + 2l`$. Each round of f operates on the state A and is the composition of 5 functions: $`\iota \circ \chi \circ \pi \circ \rho \circ \theta`$.
+$`\iota`$ incorporates round constants that vary by round.
 
 ### Attacks on hash functions
 
+- Objectives:
+  - find a pre-image: given any hash, create a corresponding message with that hash
+  - find a weak collision: given a message, modify it to another message with the same hash
+  - find a collision: find two messages with the same hash
+
 #### Brute Force Attack
 
-#### Birthday Attack
+For an m-bit hash function:
+
+- pre-images and weak collisions: $`2^m`$ attempts on average
+- strong collisions: $`2^{m/2}`$ attempts on average due to **birthday paradox**.
+  - birthday paradox: expected number of draw & replace trials from N objects required to draw an object twice approaches $`\sqrt{\pi N/2} \approx 1.25\sqrt{N}`$ as $`N`$ grows.
+- recommended sizes of m: 224, 256, 394, 512 (provide 112, 128, 192, and 256 bits of security)
+
+#### Weak vs Strong collision reistance
+
+Let m be of a size where:
+
+- searching a space of size $`2^m`$ is computationally infeasible
+- searching a space of size $`2^{m/2}`$ is computationally feasible.
+
+Then we expect m-bit hash function to be:
+
+- pre-image resistant
+- weakly collision resistant
+- **not** strongly collision resistant
+
+#### Birthday Attack on signature schemes with hash functions
+
+- Attacker geenrates $`2^{m/2}`$ variations of a valid message
+- Attacker generates $`2^{m/2}`$ variations of a desired fraudelent message
+- The two sets of messages are compared to find a pair with the same hash
+- Attacker has the victim sign the hash of the valid message - the signature will also be valid for the fraudelent message
 
 ### Definition and properties of MAC
 
+* **MAC**: a small, fixed size key-dependent block that is appended to a message to check data integrity - AKA keyed hash function or tag.
+* MAC definition:
+  * A single parameter family $`\{C_K\}_{K \in K}`$ of many-to-one functions $`C_K: M \to \{0, 1\}^n`$, $`n \in \N`$, satisfying:
+    * Ease of computation with knowledge of K: For any $`m \in M`$ and $`k \in K`$, $`C_K(M)`$ is easy to compute.
+    * Computation resistance: for any $`k \in K`$, given zero or more message/MAC pairs $`(m_i, C_k(m_i))`$, it is computationally infeasible to compute any new message/mac pair $`(m, C_k(m))`$, $`m \neq m_i`$ for all $`i`$, without knowledge of $`k`$.
+
 #### Services provided by MAC
+
+* Computation-resistance implies **data integrity** (without secrecy):
+  - sender and receiver share a secret key $`k`$
+  - sender computes $`MAC = C_k(m)`$ and sends (m, mac) (unencrypted)
+  - receiver computes the same thing and checks $`mac' = mac`$. If they match and $`C_k`$ is computation resistant, the integrity of $`m`$ is preserved.
+* Active attack:
+  - attacker suppresses (m, mac) and instead sends a pair (m'', mac'') to the receiver
+  - receiver checks if $`C_k(m'') = mac''`$. If it holds, the attacker must have defeated computational resistance -> generated new pair (m'', mac'') from (m, mac).
+* MACs provide limited sender authentication in a similar manner to encryption:
+  - only sender or reciver who knows k could generate the mac.
+* non-repudiation of data origin is not provided:
+  - either party possesing k can generate macs.
 
 ### Basic idea of CMAC (CBC-MAC with special key in last round) and HMAC
 
+MAC can be applied first and then encrypt the message or encrypt the message first and apply MAC to the ciphertext.
+
+- Encrypt then MAC
+  - formally secure, it preserves the integrity of the ciphertext and protects against malleability
+  - prone to implementation errors
+- MAC then encrypt
+  - more natural, less error prone
+  - can be more practical if encryption is defeated, message integrity is still preserved
+
+* **CMAC**: a secure block cipher can be used to generate MACs
+  - **CBC-MAC**:
+    - Encrypt the message (zero IV, last block padded with 0s) using CBC mode
+    - the last cipher block (whose bits are dependent on all the key bits and message bits) is the MAC
+  - Only secure if messages of one fixed length are processed. Solution:
+    - use three keysm one at each step of chaining, two for the last block
+    - second two keys may be derived from the encryption key
+  - Properties:
+    - specified for use with AES and 3DES.
+    - can be proven secure as long as the underlying block cipher's output is indistinguishanle from a random permutation
+    - no known weaknesses
+* **HMAC**: $`MAC = H(M||K)`$ where H is a cryptographic hash function and K is a secret key.
+  - advantage over CMAC: hash functions are faster than block ciphers
+  - provable security
+
 ### Attacks on MACs and their complexity
 
-#### MAC space
+- Compute a new message / MAC pair (M, Ck(M)) for some message M != Mi given one or more pairs (Mi, Ck(Mi)).
+- Known-text, chosen-text, and adaprive chosen text variations are possible.
+
+#### MAC space attack
+
+Assume n-bit MACs, m-bit keys:
+
+- pick a message, guess the MAC value (probability $`2^{-n}`$ of being correct)
+- requires black-box MAC verifier to confirm guesses
+- expected number of attempts is 2^n
+- does not find the MAC key
 
 #### Key space attacks
 
+Assumes m > n (longer keys than MACs, reasonable). This is KPA:
+
+- given M1 and MAC1 = Ck(M1), compute MACi1 = Cki(M1) for all possible keys ki $`1 \leq i \leq 2^m`$
+- expect $`2^{m - n}`$ keys to produce a match MAC1 = MACi1 ($`2^m`$ MACs produced, only $`2^n`$ possible MACs)
+- repeat with M2 and MAC2 = Ck(M2) reducing the number of possible keys to $`2^{m - 2n}`$. Iterate with Mj and MACj = Ck(Mj), j = 3, 4, .. .
+- Requirements:
+  - [m/n] message/MAC pairs
+  - [m/n] * 2^m MAC computations but these can be conducted offline if M1, M2 are known in advance.
+- Brute force attacks (n bit MACs, m-bit keys):
+  - $`2^n`$ to defeat computation resistance (find a valid message/mac pair)
+  - [m/n] $`2^m`$ to find a MAC key.
+- for CMAC possible to attack cipher
+- for HMAC possible to attack hash function
+
 ## Key Agreement
+
+### One way functions
+
+One way function is a function that satisfies two following properties:
+
+- Ease of computation: $`f(x)`$ is easy to evaluate for a given $`x`$.
+- Pre-image resistance: Given $`y = f(x)`$ it is computationally infeasible to find $`x`$
+- Examples:
+  - pre-image resistant hash function is a one-way function
+
+### Diffie Hellman protocol
+
+![Diffie-Hellman Protocol](cpsc418/img/m2/dhp.png)
+
+- A and B get the same number K because $`y_{b}^{a} \equiv (g^b)^a \equiv g^{ba} \equiv y_{a}^{b} \pmod{p}`$
+- Can use the low order 128 bits of $`H(K)`$ for an AES key, where H is a cryptographically secure hash function
+
+### Discrete Logarithm Problem
+
+For a prime $`p`$:
+
+- The function $`f(x) = g^x \pmod{p}`$ is a one-way function. This means that the **discrete logarithm problem** - extracting discrete logs is computationally hard since it's equivalent of computing a pre-image of a one-way function.
+
+### Diffie-Hellman Security
+
+#### Best choice of p
+
+* The best choice for $`p`$ is a safe prime, a prime of the form: $`p = 2q + 1`$, with $`q`$ prime.
+* $`q`$ is called **Sophie Germain** prime.
+
+#### Best choice of g
+
+* A primitive root of p
+  - maximizes the number of possible values K
+
+### MITM attacks on "textbook" DH
+
+* Attacker gets a hold of $`g^a`$ and $`g^b`$.
+  - select $`1 < e < p`$ and seng $`g^e`$ to A and B
+* A computes $`g^{ea}`$
+* B computes $`g^{eb}`$
+* Attacker can compute $`g^{ae}`$ and $`g^{be}`$ which are keys for A and B
+* Results:
+  - attacker can intercept $`g^{ea}`$ from A and decrypt messages encrypted using $`g^{ea}`$, re-encrypt it with $`g^{eb}`$ and send to B
+  - B decrypts it correctly using $`g^{eb}`$
 
 ## Public Key Cryptosystems
 
+- Every user has **2 keys**:
+  - **encryption** key is **public**
+  - **decryption** key is **only known to the receiver**
+- Deducing the decryption key from the encryption key should be computationally infeasible
+
+### Trapdoor one-way functions
+
+- A function f that satisfies the following properties:
+  - **Ease of computation**: $`f(x)`$ is easy to compute for any given $`x`$
+  - **Pre-image Resistance with Trap-door**: Given $`y = f(x)`$, it is computationally infeasible to determine $`x`$ unless certain special information used in the design of $`f`$ is known.
+    - When this **trap-door** $`k`$ is known, there exists a function $`g`$ which is easy to compute such that $`x = g(k, y)`$
+- key to designing public-key cryptosystems: decryption key acts as a trap door for the encryption function
+
+### Definition of a PKC
+
+- A PKC consists of a plaintext space $`M`$, a ciphertext space $`C`$, a public key space $`K`$, and encryption functions $`E_{k_1} : M \to C`$, indexed by public keys $`k_1 \in K`$ with following properties:
+  1. every encryption function $`E_{k_1}`$ has a left inverse $`D_{k_2}`$, where $`k_2`$ is the private key corresponding to the public key $`k_1`$.
+  2. $`E_{k_1}(m)`$ and $`D_{k_2}(c)`$ are easy to compute when $`k_1`$ and $`k_2`$ are known.
+  3. $`D_{k_2}(E_{k_1}(m)) = m`$ for all $`m \in M`$
+  4. Given $`k_1`$, $`E_{k_1}`$, and $`c = $`E_{k_1}(m)`$, it is computationally infeasible to find $`m`$ or $`k_1`$
+- properties 2 - 4 describe $`E_{k_1}`$ as a trapdoot one-way function
+- in a PKC it is **not necessary** for the key channel to be secure
+
+#### Properties of PKC
+
+- unlike convenional cryptosystems, messages encrypted using public key cryptosystems contain sufficient information to uniquely determine the plaintext and the key (given enough ciphertext, resources, etc)
+  - the **entropy** contained in these systems is **zero**
+  - this is the **exact opposite** of a perfectly secret system like **one time pad**
+- security of a PKC lies in the computational cost of computing the plaintext and/or private key from the ciphertext (computational security)
+
+#### Services provided by PKC
+
+- PKC's in use today are **much slower** than systems like AES (by a factor of 1000-1500), generally not used for bulk encryption. Common uses:
+  - **Encryption** and transmission of keys for conventional cryptosystems (**hybrid** encryption)
+  - Authentication and non-repudiation via digital signatures
+
+### RSA
+
+- **Encryption**: $`c \equiv m^e \pmod{n}`$
+  - if a message exceeds $`n`$, block it into less than n size blocks
+  - $`0 < c < n`$
+- **Decryption**: $`m \equiv c^d \pmod{n}`$
+  - $`0 < m < n`$
+- Setup:
+  1. Select two distinct large primes $`p`$ and $`q`$ (each around 2^{1536})
+  2. compute $`n = pq`$ and $`\phi(n) = (p - 1)((q - 1)`$
+  3. select random integer $`e \in Z_{\phi(n)}^{*}`$, so $`1 \leq e \leq \phi(n)`$ and $`gcd(e, \phi(n)) = 1`$
+  4. solve linear congruence: $`de \equiv 1 \pmod{\phi(n)}`$ for $`d \in Z_{\phi(n)}^{*}`$
+  5. keep $`d, p, q`$ secret and make $`n, e`$ public:
+    - the public key $`k_1 = (e, n)`$
+    - the private key $`k_2 = \{d\} = (d, p, q)`$
+- **Advantages**:
+  - mathematically secure
+  - key size is small: two 463-digit numbers
+  - no message expansion: ciphertext and plaintext are the same length
+  - can use in signature scheme
+- **Disadvantages**:
+  - very slow compared to DES or AES and other symmetric cryptosystems.
+  - finding keys is expensive
+  - security is unproven
+  - 'textbook' version leaks information and is vulnerable to a number of attacks
+
+#### Security of "textbook" RSA
+
+- $`C^d \equiv (M^e)^d \equiv M^{ed} \pmod{n}`$
+- Since $`d`$ is chosen such that $`ed \equiv 1 \pmod{\phi(n)}`$, we have $`ed = 1 + k\phi(n)`$ for some $`k \in Z`$
+- $`M^{ed} \equiv M^{1 + k\phi(n)} \equiv MM^{k\phi(n)} \equiv M(M^{\phi(n)})^{k} \pmod{n}`$
+- Equler's theorem implies that $`M^{\phi(n)} \equiv 1 \pmod{n}`$, therefore $`C^d \equiv M(M^{\phi(n)})^k \equiv M \pmod{n}`$
+
+All of the above is assuming $`gcd(m, n) = 1`$. In case if $`gcd(m, n) \neq 1`$:
+
+- The probability of $`gcd(m, n) \neq 1`$ is $`1/p + 1/q`$, very small
+- since $`n = pq`$ and $`m < n, gcd(m, n) \in \{1, p, q\}`$, in extremely rare cases it is likely to find a factor of $`n`$
+
+##### Computing $`\phi(n)`$ and finding $`d`$
+
+- in RSA, given $`\phi(n) = (p - 1)(q - 1)`$ and $`e \in Z_{\phi(n)}^{*}`$, the designer must find $`d \in Z_{\phi(n)}^{*}`$, such that: $`ed \equiv \pmod{\phi(n)}`$
+
+##### Choice of parameters
+
+- Prime generation uses a PRNG followed by a probable primality test, (like Fermat test)
+- Generating $`e`$ again requires a PRNG and one gcd calculation, or pick fav. $`e`$
+- Computing $`n`$ and $`\phi(n)`$ is negligeble
+- Computing $`d`$ requires finding a modular nverse (EEA)
+- Encryption and Decryption: modular exponentiation (like Diffie-Hellman)
+
+Requirements for $`p`$ and $`q`$:
+
+1. probable primes with high probability (~$`2^{-100}`$)
+2. Large: at least $`2^{1536}`$
+3. not too close together; $`|p-q| > 2^{128}`$ for $`p,q \approx 2^{1536}`$
+4. p and q must be **strong primes**. i.e. $`p-1, q-1, p+1, q+1`$ must all have a large prime factor.
+5. p/q should not be near the ratio of two small (relatively prime) integers a/b (a, b <= 100).
+
+Requirements for $`e`$:
+
+1. For efficiency, $`e = 2^{16} + 1`$
+2. avoid really small $`e`$
+3. in practice can use $`e = 3`$ but only when RSA is used with a secure padding mechanism.
+
+Requirements for $`d`$
+
+- $`d > n^{0.25}/3`$
+- $`d > n^{0.292}`$
+
+### Multiplicative attacks on RSA
+
+- Multiplicative (or homomorphic) property of RSA: $`(M_1M_2)^e \equiv M_{1}^{e}M_{1}^{e} \equiv C_1C_2 \pmod{n}`$
+  - the encryption of a product is the same as the product of encryptions (!!)
+- means that a factorization of the plaintext implies one of the corresponding ciphertext, which can be exploited in following attacks
+
+#### CCA
+
+1. generate $`x \in Z^{*}_{n}`$ with $`x \not{\equiv} 1 \pmod{n}`$
+2. compute $`c' \equiv cx^e \pmod{n}`$ this is the chosen ciphertext, therefore $`c' \neq c`$
+3. obtain the corresponding plaintext: $`m' \equiv (c')^d \equiv c^d(x^e)^d \equiv mx \pmod{n}`$
+4. compute $`m \equiv m'x^{-1} \pmod{n}`$, where $`x^{-1}`$ is the inverse of $`x \pmod{n}`$
+
+#### Meet in the middle
+
+- if $`m \approx 2^k`$ for some bit length k, then it is possible to find $`m = m_1m_2`$, with $`m_1, m_2 \approx 2^{k/2}`$
+  - the probability that a number of 40-64 bits factor into equal size factors is between 18 and 50 %.
+- the attacker build a list $`\{1^e, 2^e \pmod{n}, ..., (2^{k/2})^e \pmod{n}\}`$ and their inverses $`\pmon{n}`$:
+  - then, search for a match $`c_{i^{-e}} \pmod{n}`$ in the list ($`i^{-e}`$ is the modular inverse of $`i^e`$)
+  - $`c_{i^{-e}} \equiv j^e \pmod{n}`$ for some j, then $`m \equiv ij \pmod{n}`$
+- requires $`2 * 2^{k/2}`$ modular exponentiantions, rest is negligeble.
+
+### Randomized encryption
+
+- Randomized (probabilistic) encryprion utilizes randomness to attain a provable, stronger level of security
+- as a result, every message can have many possible encryptions
+  - leads to the notion of semantic security
+
+#### ElGamal
+
+- **Key Generation**:
+  1. select large prime p and a primitive root g of p
+  2. generate a random integer x with 1 < x < p - 1 and compute $`y = g^x \pmod{p}`$, $`1 \leq y \leq p - 1`$
+  3. Public key: (p, g, y)
+  4. Private key: {x}
+  5. Note: every user must have their own pair (x, y), but can share g and p.
+- **Encryption**:
+  1. select a random $`k \in Z, 0 < k < p - 1`$.
+  2. compute and send $`(c_1, c_2)`$:
+    - $`c_1 \equiv g^{k} \pmod{p}`$
+    - $`c_2 \equiv my^k \pmod{p}`$
+- **Decryption** (x is a private key):
+  - Need to compute $`c_2c_{1}^{p - 1 - x}`$
+  - think of $`c_1`$ as a clue that can be used to remove mask $`y^k`$ in $`c_2`$
+
+### Facts and assumptions about ElGamal
+
+- **Advantages**:
+  - Different security assumption, works in other settings
+- **Disadvantages**:
+  - message expansion by a factor of 2 (ciphertext is 2ce as long as the plaintext)
+  - twice as much computational work for encrypting as RSA
+    - two exponentiations and one multiplication as opposed to one exponentiation for RSA
+  - a new random number k must be generated for each message
+
 ## Number Theory
+
+**in notebook**
