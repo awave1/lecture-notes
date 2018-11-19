@@ -251,19 +251,86 @@ Assumes m > n (longer keys than MACs, reasonable). This is KPA:
 
 ### One way functions
 
+One way function is a function that satisfies two following properties:
+
+- Ease of computation: $`f(x)`$ is easy to evaluate for a given $`x`$.
+- Pre-image resistance: Given $`y = f(x)`$ it is computationally infeasible to find $`x`$
+- Examples:
+  - pre-image resistant hash function is a one-way function
+
 ### Diffie Hellman protocol
 
-### Discrete logarithms and the DLP
+![Diffie-Hellman Protocol](cpsc418/img/m2/dhp.png)
+
+- A and B get the same number K because $`y_{b}^{a} \equiv (g^b)^a \equiv g^{ba} \equiv y_{a}^{b} \pmod{p}`$
+- Can use the low order 128 bits of $`H(K)`$ for an AES key, where H is a cryptographically secure hash function
+
+### Discrete Logarithm Problem
+
+For a prime $`p`$:
+
+- The function $`f(x) = g^x \pmod{p}`$ is a one-way function. This means that the **discrete logarithm problem** - extracting discrete logs is computationally hard since it's equivalent of computing a pre-image of a one-way function.
+
+### Diffie-Hellman Security
+
+#### Best choice of p
+
+* The best choice for $`p`$ is a safe prime, a prime of the form: $`p = 2q + 1`$, with $`q`$ prime.
+* $`q`$ is called **Sophie Germain** prime.
+
+#### Best choice of g
+
+* A primitive root of p
+  - maximizes the number of possible values K
 
 ### MITM attacks on "textbook" DH
 
+* Attacker gets a hold of $`g^a`$ and $`g^b`$.
+  - select $`1 < e < p`$ and seng $`g^e`$ to A and B
+* A computes $`g^{ea}`$
+* B computes $`g^{eb}`$
+* Attacker can compute $`g^{ae}`$ and $`g^{be}`$ which are keys for A and B
+* Results:
+  - attacker can intercept $`g^{ea}`$ from A and decrypt messages encrypted using $`g^{ea}`$, re-encrypt it with $`g^{eb}`$ and send to B
+  - B decrypts it correctly using $`g^{eb}`$
+
 ## Public Key Cryptosystems
+
+- Every user has **2 keys**:
+  - **encryption** key is **public**
+  - **decryption** key is **only known to the receiver**
+- Deducing the decryption key from the encryption key should be computationally infeasible
 
 ### Trapdoor one-way functions
 
+- A function f that satisfies the following properties:
+  - **Ease of computation**: $`f(x)`$ is easy to compute for any given $`x`$
+  - **Pre-image Resistance with Trap-door**: Given $`y = f(x)`$, it is computationally infeasible to determine $`x`$ unless certain special information used in the design of $`f`$ is known.
+    - When this **trap-door** $`k`$ is known, there exists a function $`g`$ which is easy to compute such that $`x = g(k, y)`$
+- key to designing public-key cryptosystems: decryption key acts as a trap door for the encryption function
+
 ### Definition of a PKC
 
+- A PKC consists of a plaintext space $`M`$, a ciphertext space $`C`$, a public key space $`K`$, and encryption functions $`E_{k_1} : M \to C`$, indexed by public keys $`k_1 \in K`$ with following properties:
+  1. every encryption function $`E_{k_1}`$ has a left inverse $`D_{k_2}`$, where $`k_2`$ is the private key corresponding to the public key $`k_1`$.
+  2. $`E_{k_1}(m)`$ and $`D_{k_2}(c)`$ are easy to compute when $`k_1`$ and $`k_2`$ are known.
+  3. $`D_{k_2}(E_{k_1}(m)) = m`$ for all $`m \in M`$
+  4. Given $`k_1`$, $`E_{k_1}`$, and $`c = $`E_{k_1}(m)`$, it is computationally infeasible to find $`m`$ or $`k_1`$
+- properties 2 - 4 describe $`E_{k_1}`$ as a trapdoot one-way function
+- in a PKC it is **not necessary** for the key channel to be secure
+
+#### Properties of PKC
+
+- unlike convenional cryptosystems, messages encrypted using public key cryptosystems contain sufficient information to uniquely determine the plaintext and the key (given enough ciphertext, resources, etc)
+  - the **entropy** contained in these systems is **zero**
+  - this is the **exact opposite** of a perfectly secret system like **one time pad**
+- security of a PKC lies in the computational cost of computing the plaintext and/or private key from the ciphertext (computational security)
+
 #### Services provided by PKC
+
+- PKC's in use today are **much slower** than systems like AES (by a factor of 1000-1500), generally not used for bulk encryption. Common uses:
+  - **Encryption** and transmission of keys for conventional cryptosystems (**hybrid** encryption)
+  - Authentication and non-repudiation via digital signatures
 
 ### RSA
 
@@ -289,14 +356,4 @@ Assumes m > n (longer keys than MACs, reasonable). This is KPA:
 
 ## Number Theory
 
-### $`Z_m and Z_{m}^{*}`$
-
-### Euler's $`\phi`$ function and Fermat's Theorems
-
-### Primitive roots
-
-### Binary Exponentiation
-
-### Euclidean algorithm and extended euclidean
-
-#### Solving linear Diophantine equations and linear congruences
+**in notebook**
