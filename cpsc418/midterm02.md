@@ -334,25 +334,127 @@ For a prime $`p`$:
 
 ### RSA
 
+- **Encryption**: $`c \equiv m^e \pmod{n}`$
+  - if a message exceeds $`n`$, block it into less than n size blocks
+  - $`0 < c < n`$
+- **Decryption**: $`m \equiv c^d \pmod{n}`$
+  - $`0 < m < n`$
+- Setup:
+  1. Select two distinct large primes $`p`$ and $`q`$ (each around 2^{1536})
+  2. compute $`n = pq`$ and $`\phi(n) = (p - 1)((q - 1)`$
+  3. select random integer $`e \in Z_{\phi(n)}^{*}`$, so $`1 \leq e \leq \phi(n)`$ and $`gcd(e, \phi(n)) = 1`$
+  4. solve linear congruence: $`de \equiv 1 \pmod{\phi(n)}`$ for $`d \in Z_{\phi(n)}^{*}`$
+  5. keep $`d, p, q`$ secret and make $`n, e`$ public:
+    - the public key $`k_1 = (e, n)`$
+    - the private key $`k_2 = \{d\} = (d, p, q)`$
+- **Advantages**:
+  - mathematically secure
+  - key size is small: two 463-digit numbers
+  - no message expansion: ciphertext and plaintext are the same length
+  - can use in signature scheme
+- **Disadvantages**:
+  - very slow compared to DES or AES and other symmetric cryptosystems.
+  - finding keys is expensive
+  - security is unproven
+  - 'textbook' version leaks information and is vulnerable to a number of attacks
+
 #### Security of "textbook" RSA
 
-##### Equivalence of factoring n
+- $`C^d \equiv (M^e)^d \equiv M^{ed} \pmod{n}`$
+- Since $`d`$ is chosen such that $`ed \equiv 1 \pmod{\phi(n)}`$, we have $`ed = 1 + k\phi(n)`$ for some $`k \in Z`$
+- $`M^{ed} \equiv M^{1 + k\phi(n)} \equiv MM^{k\phi(n)} \equiv M(M^{\phi(n)})^{k} \pmod{n}`$
+- Equler's theorem implies that $`M^{\phi(n)} \equiv 1 \pmod{n}`$, therefore $`C^d \equiv M(M^{\phi(n)})^k \equiv M \pmod{n}`$
+
+All of the above is assuming $`gcd(m, n) = 1`$. In case if $`gcd(m, n) \neq 1`$:
+
+- The probability of $`gcd(m, n) \neq 1`$ is $`1/p + 1/q`$, very small
+- since $`n = pq`$ and $`m < n, gcd(m, n) \in \{1, p, q\}`$, in extremely rare cases it is likely to find a factor of $`n`$
 
 ##### Computing $`\phi(n)`$ and finding $`d`$
 
+- in RSA, given $`\phi(n) = (p - 1)(q - 1)`$ and $`e \in Z_{\phi(n)}^{*}`$, the designer must find $`d \in Z_{\phi(n)}^{*}`$, such that: $`ed \equiv \pmod{\phi(n)}`$
+
 ##### Choice of parameters
+
+- Prime generation uses a PRNG followed by a probable primality test, (like Fermat test)
+- Generating $`e`$ again requires a PRNG and one gcd calculation, or pick fav. $`e`$
+- Computing $`n`$ and $`\phi(n)`$ is negligeble
+- Computing $`d`$ requires finding a modular nverse (EEA)
+- Encryption and Decryption: modular exponentiation (like Diffie-Hellman)
+
+Requirements for $`p`$ and $`q`$:
+
+1. probable primes with high probability (~$`2^{-100}`$)
+2. Large: at least $`2^{1536}`$
+3. not too close together; $`|p-q| > 2^{128}`$ for $`p,q \approx 2^{1536}`$
+4. p and q must be **strong primes**. i.e. $`p-1, q-1, p+1, q+1`$ must all have a large prime factor.
+5. p/q should not be near the ratio of two small (relatively prime) integers a/b (a, b <= 100).
+
+Requirements for $`e`$:
+
+1. For efficiency, $`e = 2^{16} + 1`$
+2. avoid really small $`e`$
+3. in practice can use $`e = 3`$ but only when RSA is used with a secure padding mechanism.
+
+Requirements for $`d`$
+
+- $`d > n^{0.25}/3`$
+- $`d > n^{0.292}`$
 
 ### Multiplicative attacks on RSA
 
+- Multiplicative (or homomorphic) property of RSA: $`(M_1M_2)^e \equiv M_{1}^{e}M_{1}^{e} \equiv C_1C_2 \pmod{n}`$
+  - the encryption of a product is the same as the product of encryptions (!!)
+- means that a factorization of the plaintext implies one of the corresponding ciphertext, which can be exploited in following attacks
+
 #### CCA
+
+1. generate $`x \in Z^{*}_{n}`$ with $`x \not{\equiv} 1 \pmod{n}`$
+2. compute $`c' \equiv cx^e \pmod{n}`$ this is the chosen ciphertext, therefore $`c' \neq c`$
+3. obtain the corresponding plaintext: $`m' \equiv (c')^d \equiv c^d(x^e)^d \equiv mx \pmod{n}`$
+4. compute $`m \equiv m'x^{-1} \pmod{n}`$, where $`x^{-1}`$ is the inverse of $`x \pmod{n}`$
 
 #### Meet in the middle
 
+- if $`m \approx 2^k`$ for some bit length k, then it is possible to find $`m = m_1m_2`$, with $`m_1, m_2 \approx 2^{k/2}`$
+  - the probability that a number of 40-64 bits factor into equal size factors is between 18 and 50 %.
+- the attacker build a list $`\{1^e, 2^e \pmod{n}, ..., (2^{k/2})^e \pmod{n}\}`$ and their inverses $`\pmon{n}`$:
+  - then, search for a match $`c_{i^{-e}} \pmod{n}`$ in the list ($`i^{-e}`$ is the modular inverse of $`i^e`$)
+  - $`c_{i^{-e}} \equiv j^e \pmod{n}`$ for some j, then $`m \equiv ij \pmod{n}`$
+- requires $`2 * 2^{k/2}`$ modular exponentiantions, rest is negligeble.
+
 ### Randomized encryption
 
-- ElGamal key generation, encryption and decryption procedures (no details about those)
+- Randomized (probabilistic) encryprion utilizes randomness to attain a provable, stronger level of security
+- as a result, every message can have many possible encryptions
+  - leads to the notion of semantic security
+
+#### ElGamal
+
+- **Key Generation**:
+  1. select large prime p and a primitive root g of p
+  2. generate a random integer x with 1 < x < p - 1 and compute $`y = g^x \pmod{p}`$, $`1 \leq y \leq p - 1`$
+  3. Public key: (p, g, y)
+  4. Private key: {x}
+  5. Note: every user must have their own pair (x, y), but can share g and p.
+- **Encryption**:
+  1. select a random $`k \in Z, 0 < k < p - 1`$.
+  2. compute and send $`(c_1, c_2)`$:
+    - $`c_1 \equiv g^{k} \pmod{p}`$
+    - $`c_2 \equiv my^k \pmod{p}`$
+- **Decryption** (x is a private key):
+  - Need to compute $`c_2c_{1}^{p - 1 - x}`$
+  - think of $`c_1`$ as a clue that can be used to remove mask $`y^k`$ in $`c_2`$
 
 ### Facts and assumptions about ElGamal
+
+- **Advantages**:
+  - Different security assumption, works in other settings
+- **Disadvantages**:
+  - message expansion by a factor of 2 (ciphertext is 2ce as long as the plaintext)
+  - twice as much computational work for encrypting as RSA
+    - two exponentiations and one multiplication as opposed to one exponentiation for RSA
+  - a new random number k must be generated for each message
 
 ## Number Theory
 
