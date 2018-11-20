@@ -79,7 +79,7 @@ Modes:
     * Collision resistance does not imply pre-image resistance or vice versa
     * Weak collision resistance does not imply pre-image resistance or vice versa
     * Collision resistance implies weak collision resistance, but not vice versa
-* A hash function is cryptographically secure if it is pre-image resistan and collision resistant
+* A hash function is **cryptographically secure** if it is **pre-image resistant and collision resistant**
 
 ### Iterated Hash Functions
 
