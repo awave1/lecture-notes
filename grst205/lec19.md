@@ -70,3 +70,57 @@ Roman magistrates and politicians competed for the glory of leading these campai
   - **Sulla**:
 - Sulla marches on Rome twice to secure power
 
+```
+@TODO: Add missing notes
+```
+
+### 49-45 BC: Second Civil War
+
+- Fought between Pompey (+ most of the senate) and Julius Caesar
+  - Pompey also known as **"Young Butcher"**
+- Caesar threatened with legal prosecution/exile; **crossed Rubicon** river into Italy and marched on Rome
+  - Caesar didn't leave the house for 1 year
+- Caesar made dictator and then dictator pepetuus
+  - **dictator pepetuus**: permanent dictator
+- Civil wars were fought in Greece
+
+#### 44 BCE: Assasination of Caesar
+
+- Caesar was killed on **ides of march**: March 15th
+- Assasination sparks further conflict
+
+### 44-36 BCE: Intermittent civil wars
+
+- Winners are Octavian (heir of Caesar) and Caesar's friend Mark Anthony
+
+### 32-31 BCE: Final Civil War
+
+- Octavian defeats Mark Anthony
+- Defeats Cleopatra
+  - **Cleopatra**: last of the major Hellenistic rulers.
+  - End of **Hellenistic Period** of Greek History
+- Octavian, **aka Agustus** assumes sole power as **principles**
+  - **Princeps**: First among equals
+  - **Emperor**: (princeps) from now on Rome will be ruled by emperors
+
+### Emergence of Monarchy
+
+- Q: How could the Roman emperor (princeps) maintain his power without being perceived as a king (rex)?
+- Augustus solution is adopted by all later emperors:
+  - Continue to show respect for senate
+  - **Imperium**: Right to command troops/military
+    - Other generals fight under emperor's **auspices**
+    - Imperial family monopolizes triumphs
+    - professional standing army
+  - Hold tribune of the plebs' powers - **tribunicia potestas** (protecting the plebs)
+- A: Hold the powers of magistrates without taking their offices
+
+## Mass Entertainment at Rome
+
+- **Gladiatorial combat**: imported from Etrutia, arrested by **3rd BCE** as a funerary ritual
+  - Over time, link to funerals is lost, seen as another public spectacle - **munera**
+- **Chariot Racing**: publicly funded as part of state *ludi*
+  - **ludi**: games in honor of the gods 
+- **Drama** from **3rd BCE**, inspired by Greek Drame
+  - publicly funded as a part of **ludi**
+- Organized by politicians and magistrates (especially *aediles*) during Republic; dominated by emperor in Imperial Period
