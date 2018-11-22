@@ -17,7 +17,7 @@ Silver *denarius* of P. Licinius Nerva depicting Roma (obverse) and voting bridg
 
 - **5th - early 3rd BCE**: Romans become dominant in Italy
 - Defeated states generally spared: they remain independent and **provide money and troops**
-  - Some are givin **citizenship**, others become allies
+  - Some are given **citizenship**, others become allies
 
 ### Why was Rome so successfull?
 
@@ -46,9 +46,6 @@ Silver *denarius* of P. Licinius Nerva depicting Roma (obverse) and voting bridg
     - **cohots**: smaller unit, new name for **maniples**
     - Made Roman army more maneuverable and responsive
 
-![02.png](grst205/img/lec16/02.png)
-> Scutum
-
 ## Rome and Carthage
 
 - Romans now become concerned about Carthage
@@ -57,8 +54,6 @@ Silver *denarius* of P. Licinius Nerva depicting Roma (obverse) and voting bridg
 - **814 BCE**: **Carthge** founded
   - **6th BCE**: **Carthage** becomes main Phoenician city
 - **Punic**: Roman (Latin) term for Carthaginians
-
-![03.png](grst205/img/lec16/03.png)
 
 ## 3rd - 2nd BCE: Punic Wars
 
