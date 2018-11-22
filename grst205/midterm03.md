@@ -237,3 +237,6 @@
   - publicly funded as a part of **ludi**
 - Organized by politicians and magistrates (especially *aediles*) during Republic; dominated by emperor in Imperial Period
 
+## ??
+
+- **Sacrosanctity**: was a right of tribunes in Rome not to be harmed physically. Plebeians took an oath to regard anyone who laid hands on a tribune as an outlaw liable to be killed without penalty.
