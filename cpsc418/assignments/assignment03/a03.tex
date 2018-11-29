@@ -81,6 +81,16 @@
   By definition, a PKC is polynomially secure if no passive attacker can in expected polynomial time select two plaintexts $M_1$ and $M_2$ and then correctly distinguish between $E(M_1)$ and $E(M_2)$, where $E(M_1)$ and $E(M_2)$ are encryptions of $M_1$ and $M_2$ respectively with probability $p > \frac{1}{2}$.
 
   However, it is given that $\M$ can assert whether $C = E(M_1)$ or $C = E(M_2)$ in polynomial time using modular exponentiation by Euler's Criterion with probability $p' = 1$, $p' > p$. It contradicts the definition of polynomially secure PKC, and therefore shows that ElGamal is not semantically secure.
+  
+  To further prove that statement, using the fact that $y \equiv g^x \pmod{p}$ and $g$ is a primitive root of $p$, we can show that:
+  \begin{align*}
+    \Leg{y}{p} &\equiv (y)^{\frac{p - 1}{2}} \equiv (g^x)^{\frac{p - 1}{2}} \\
+               &\equiv (g^{x(p - 1)})^{\frac{1}{2}} \\
+               &\equiv ((g^{(p - 1)})^x)^{\frac{1}{2}} \\
+               &\equiv 1 \pmod{p}
+  \end{align*}
+
+  We can see that $\M$ only nees to compute $\Leg{y}{p}$ and $\Leg{C_2}{p}$ to find $E(M_1)$ and $E(M_2)$. 
 \end{proof}
 
 \newpage
