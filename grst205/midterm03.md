@@ -105,7 +105,7 @@
 
 ## Hellenistic period & Growth of Roman Empire
 
-- Hellenistic period: 323 - 321 BCE
+- Hellenistic period: 323 - 31 BCE
   - Greek language and culture spreads around Med. sea
   - Alexander's conquests divided into **Hellenistic kingdoms**:
     - Largest kingdom -> kingdom of Seleucids aka former Persian Empire

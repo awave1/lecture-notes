@@ -1,0 +1,107 @@
+\documentclass[11pt]{article}
+
+% \usepackage[shortlabels]{enumerate}
+\usepackage{algorithm, algorithmic, verbatim,amsthm,amsmath,amssymb,amsfonts,url,tcolorbox}
+
+\usepackage[margin=1in]{geometry}
+
+\parindent 0pt
+\parskip 3mm
+
+\theoremstyle{definition}
+\newtheorem*{solution}{Solution}
+
+\renewcommand{\pmod}[1]{\mbox{\ $(\ensuremath{\operatorname{mod}}\ {#1})$}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\ord}{\mbox{$\ensuremath{\operatorname{ord}}$}}
+\providecommand{\Leg}[2]{\genfrac{(}{)}{}{}{#1}{#2}}
+\def\dsp#1{\displaystyle{#1}}
+
+\newcommand{\A}{Alice}
+\newcommand{\B}{Bob}
+\newcommand{\E}{Eve}
+\newcommand{\M}{Mallory}
+
+\begin{document}
+
+\begin{center}
+  \bf \Large CPSC 418 / MATH 318 --- Introduction to Cryptography \\
+  ASSIGNMENT 3
+\end{center}
+
+\medskip \hrule
+  \textbf{Name:} Artem Golovin \\
+  \textbf{Student ID:} 30018900
+\medskip \hrule
+
+
+\begin{enumerate} \itemsep 0.3in
+
+\item[] \textbf{Problem 1} --- A modified man-in-the-middle attack on Diffie-Hellman, 12 marks
+
+\begin{enumerate}
+  \item
+    Let $y_a \equiv (g^a)^q \pmod{p}$, $y_b = (g^b)^q \pmod{p}$ and key $K$:
+    \begin{enumerate}
+      \item $\A$ receives malicious $y_a$ and sends it to $\B$.
+      \item $\B$ receives malicious $y_b$ and sends it to $\A$.
+      \item $\A$ computes $K \equiv y_b^a \equiv ((g^b)^q)^a \pmod{p}$
+      \item $\B$ computes $K \equiv y_a^b \equiv ((g^a)^q)^b \pmod{p}$
+      \item $\A$ and $\B$ get the same key $K$, because:
+        \begin{align*}
+          y_b^a \equiv ((g^b)^q)^a \equiv g^{bqa} \equiv g^{aqb} \equiv ((g^a)^q)^b \equiv y_b^a \pmod{p}
+        \end{align*}
+    \end{enumerate}
+  \item ???
+  \item 
+    In this version, $\M$ does not have to pick a number $e$, where $1 < e < p$. Therefore, by knowing values $g^a \pmod{p}$ and $g^b \pmod{p}$, $\M$ is more likely to compute $g^{abq} \pmod{p}$, which is a private key used by $\A$ and $\B$.
+\end{enumerate}
+
+\newpage
+
+\item[] \textbf{Problem 2} --- RSA and binary exponentiation, 24 marks
+
+\begin{enumerate}
+  \item ok
+\end{enumerate}
+
+\newpage
+
+\item[] \textbf{Problem 3} --- 
+
+\begin{enumerate}
+  \item ok
+\end{enumerate}
+
+\newpage
+
+\item[] \textbf{Problem 4} --- The ElGamal public key cryptosystem is not semantically secure, 10 marks
+
+\begin{proof}
+  By definition, a PKC is polynomially secure if no passive attacker can in expected polynomial time select two plaintexts $M_1$ and $M_2$ and then correctly distinguish between $E(M_1)$ and $E(M_2)$, where $E(M_1)$ and $E(M_2)$ are encryptions of $M_1$ and $M_2$ respectively with probability $p > \frac{1}{2}$.
+
+  However, it is given that $\M$ can assert whether $C = E(M_1)$ or $C = E(M_2)$ in polynomial time using modular exponentiation by Euler's Criterion with probability $p' = 1$, $p' > p$. It contradicts the definition of polynomially secure PKC, and therefore shows that ElGamal is not semantically secure.
+  
+  To further prove that statement, using the fact that $y \equiv g^x \pmod{p}$ and $g$ is a primitive root of $p$, we can show that:
+  \begin{align*}
+    \Leg{y}{p} &\equiv (y)^{\frac{p - 1}{2}} \equiv (g^x)^{\frac{p - 1}{2}} \\
+               &\equiv (g^{x(p - 1)})^{\frac{1}{2}} \\
+               &\equiv ((g^{(p - 1)})^x)^{\frac{1}{2}} \\
+               &\equiv 1 \pmod{p}
+  \end{align*}
+
+  We can see that $\M$ only nees to compute $\Leg{y}{p}$ and $\Leg{C_2}{p}$ to find $E(M_1)$ and $E(M_2)$. 
+\end{proof}
+
+\newpage
+
+\item[] \textbf{Problem 5} --- 
+
+\begin{enumerate}
+  \item ok
+\end{enumerate}
+
+\newpage
+
+\end{enumerate}
+\end{document}
