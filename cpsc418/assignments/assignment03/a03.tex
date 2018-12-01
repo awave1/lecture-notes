@@ -16,6 +16,7 @@
 \newcommand{\ord}{\mbox{$\ensuremath{\operatorname{ord}}$}}
 \providecommand{\Leg}[2]{\genfrac{(}{)}{}{}{#1}{#2}}
 \def\dsp#1{\displaystyle{#1}}
+\newcommand{\xor}{\oplus}
 
 \newcommand{\A}{Alice}
 \newcommand{\B}{Bob}
@@ -62,12 +63,157 @@
 \item[] \textbf{Problem 2} --- RSA and binary exponentiation, 24 marks
 
 \begin{enumerate}
-  \item ok
+  \item
+    \begin{enumerate}
+      \item 
+        Given $M = 17$, public key $(e, n) = (11, 77)$:
+        \begin{align*}
+          C \equiv M^e \pmod{n} \\
+          C \equiv 17^{11} \pmod{77}
+        \end{align*}
+
+        Binary exponentiation:
+        \begin{align*}
+          e = 11 = 1011_{2} \\
+          b_0 = 1, b_1 = 0, b_2 = 1, b_3 = 1 \\
+          r_0 &\equiv 17 \pmod{77} \\
+          r_1 &\equiv 17^2 \equiv 58 \pmod{77} \\
+          r_2 &\equiv 58^2 \times 17 \equiv 54 \pmod{77}  \\
+          r_3 &\equiv 54^2 \times 17 \pmod{77} \equiv 61 \pmod{77}  \\
+        \end{align*}
+
+        Therefore:
+        \begin{align*}
+          C \equiv 17^{11} \equiv 61 \pmod{77}
+        \end{align*}
+      \item
+        Given that $n = pq$ and $\phi{(n)} = (p - 1)(q - 1)$ and $n = 77$, we can say that $p = 11$, $q = 7$.
+
+        To find $d$, we need to solve the following congruence:
+        \begin{align*}
+          de &\equiv 1 \pmod{\phi{(n)}} \\
+             &\text{Where } \phi{(n)} = (11 - 1)(7 - 1) = 60 \\
+          d \times 11 &\equiv 1 \pmod{60}
+        \end{align*}
+
+        Solving $gcd(e, \phi{(n)}) = gcd(11, 60) = 1$ to confirm that inverse of $e$ exists:
+        \begin{align*}
+          60 &= 11 \times 5 + 5 \\
+          11 &= 10 \times 1 + 1 \\
+          10 &= 2 \times 5 + 0 \\
+        \end{align*}
+
+        Applying Extended Euclidean Algorithm to find $d$:
+        \begin{align*}
+          1 &= 11 - 10 = 11 - ((2 \times 5) + 0) = 11 - (2 \times 5) - 0 \\
+            &= 11 - 2 \times (60 - 11 \times 5) = 11 - 2 \times 60 + 10 \times 11 \\
+            &= 11 \times 11 + (-2) \times 60
+        \end{align*}
+        Therefore $gcd(60, 11) = 11 \times 11 + (-2) \times 60$ and $d = 11$:
+        \begin{align*}
+          11 \times 11 \equiv 1 \pmod{60}
+        \end{align*}
+      \item
+        Given $C = 21$ and $(d, n) = (11, 77)$:
+        \begin{align*}
+          M &\equiv C^d \pmod{n} \\
+          M &\equiv 32^{11} \pmod{77}
+        \end{align*}
+
+        Binary exponentiation:
+        \begin{align*}
+          11 = 1011_{2} \\
+          b_0 = 1, b_1 = 0, b_2 = 1, b_3 = 1 \\
+          r_0 &\equiv 32 \pmod{77} \\
+          r_1 &\equiv 32^2 \equiv 23 \pmod{77} \\
+          r_2 &\equiv 23^2 \times 32 \equiv 16928 \equiv 65 \pmod{77} \\
+          r_3 &\equiv 65^2 \times 32 \equiv 135200 \equiv 65 \pmod{77}
+        \end{align*}
+        Therefore, $M = 65$
+    \end{enumerate}
+  \item
+    \begin{enumerate}
+      \item
+        Given $s_0 = b_0$, $s_{i + 1} = 2s_i + b_{i + 1}$ for $0 \leq i \leq k - 1$
+        \begin{proof}
+          Base case. Let $i = 0$
+          \begin{align*}
+            s_i &= \sum^{i}_{j = 0} b_j 2^{i - j} \\
+            s_0 &= \sum^{0}_{j = 0} b_j2^{0 - 0} \\
+                &= b_0
+          \end{align*}
+
+          Induction hypothesis. Assume $i = m$, where $m \in \Z$ and $0 \leq m \leq k$:
+          \begin{align*}
+            s_m &= \sum^{m}_{j = 0} b_j2^{m - j} \\
+                &= b_0 + \sum^{m + 1}_{j = 0} b_j 2^{(m + 1) - j}
+          \end{align*}
+
+          Inductive case. Assume $i = m + 1$:
+          \begin{align*}
+            s_{m + 1} = \sum^{m + 1}_{j = 0} b_j 2^{(m + 1) - j} \\
+            \text{Left hand side: } \\
+            s_{m + 1} = 2s_m + b_{m + 1} \\
+            \text{Right hand side: } \\
+            \sum^{m + 1}_{j = 0} b_j 2^{(m + 1) - j} &= 2 \times \sum^{m}_{j = 0} b_j 2^{(m - j)} + b_{m + 1} \\
+                                                     &= 2s_m + b_{m + 1} \\ \\
+            \text{Therefore, } s_i &= \sum^{i}_{j = 0} b_j 2^{i - j}
+          \end{align*}
+        \end{proof}
+      \item
+        Let $r_i$, $0 \leq i \leq k$, $k = \left \lfloor{log_2{n}}\right \rfloor$.
+        \begin{proof}
+          Base case. Let $i = 0$:
+          \begin{align*}
+            r_i &\equiv a^{s_i} \pmod{m} \\
+            r_0 &\equiv a^{s_0} \pmod{m} \\
+                &\equiv a^{b_0} \equiv a \pmod{m}
+          \end{align*}
+          Where $s_0 = b_0$ is shown in part $(i)$
+
+          Induction hypothesis. Let $p = i$, $p \in \Z$, $0 \leq p \leq k$,
+          \begin{align*}
+            r_p \equiv a^{s_p} \pmod{m}
+          \end{align*}
+
+          Inductive case. Show $r_{p + 1} \equiv a^{s_{p + 1}} \pmod{m}$.
+          \begin{align*}
+            \text{\textbf{Case }} b_{i + 1} = 0 \\
+            r_{p + 1} \equiv r^2_p \pmod{m} \\
+            \text{Therefore:} \\
+            a^{s_p + 1} &\equiv a^{2s_p + b_{p + 1}} \\
+                        &\equiv a^{2s_p} \\
+                        &\equiv a^{s_p} \times a^{sp} \\
+                        &\equiv r_{p} \times r_{p} \\
+                        &\equiv r^2_{p} \pmod{m}
+          \end{align*}
+
+          \begin{align*}
+            \text{\textbf{Case }} b_{i + 1} = 1 \\
+            a^{s_p + 1} &\equiv a^{2s_p + b_{p + 1}} \\
+                        &\equiv a^{s_p} \times a^{s_p} \times a^{b_{p + 1}} \\
+                        &\equiv r^2_{p} \times a^{b_{p + 1}} \\
+                        &\equiv r^2_{p} \times a \pmod{m}
+          \end{align*}
+
+          Therefore, $r_{p + 1} \equiv a^{p + 1} \pmod{m}$ and $r_i \equiv a^i \pmod{m}$
+        \end{proof}
+      \item
+        \begin{proof}
+          Given proof of $(ii)$, we can say that $a^n \equiv r_k \pmod{m}$, where $n = s_k$. Therefore,
+          \begin{align*}
+            a^{s_k} &\equiv a^{2s_{k - 1} + b_k} \\
+                    &\equiv (a^{s_{k - 1}})^2 \times a^{b_k} \\
+                    &\equiv (r_{k - 1})^2 \times a^{b_k} \\
+                    &\equiv r_k \pmod{m}
+          \end{align*}
+        \end{proof}
+    \end{enumerate}
 \end{enumerate}
 
 \newpage
 
-\item[] \textbf{Problem 3} --- 
+\item[] \textbf{Problem 3} --- Fast RSA decryption using Chinese remaindering, 8 marks
 
 \begin{enumerate}
   \item ok
@@ -95,13 +241,28 @@
 
 \newpage
 
-\item[] \textbf{Problem 5} --- 
+\item[] \textbf{Problem 5} --- An IND-CPA, but not IND-CCA secure version of RSA, 10 marks 
 
-\begin{enumerate}
-  \item ok
-\end{enumerate}
+\begin{proof}
+  Given encryption of message $M$, $C = (s || t)$, where $s \equiv r^e \pmod{n}$, $t = H(r) \xor M$ and $H: \{0, 1\}^k \mapsto \{0, 1\}^m$, and decryption of $C$, $M \equiv H(s^d \pmod{n}) \xor t$, we can consider two plaintexts $M_1$ and $M_2$ with following enryption process: $C = (s||t) = (r^e (\pmod{n}) || H(r) \xor M_i)$, where $i = 1$ or $2$.
 
-\newpage
+  We can mount CCA using $C' = (s || t \xor M_1)$:
+  \begin{align*}
+    C' &= (s || t \xor M_1) \\
+       &= (r^e (\pmod{n}) || H(r) \xor M_i \xor M_1)
+  \end{align*}
+
+  Decryption of $M_i$:
+  \begin{align*}
+    M_i &\equiv H(s^d (\pmod{n})) \xor t \\
+        &\equiv H(r^{ed} (\pmod{n})) \xor H(r) \xor M_i \xor M_1 \\
+        &\equiv H(r \pmod{n}) \xor H(r) \xor M_i \xor M_1 \\
+        &= M_i \xor M_1
+  \end{align*}
+  Where $ed \equiv 1 \pmod{\phi(n)}$
+
+  Therefore, $M_i = 0$, $C$ is an encryption of $M_1$, because $M_1 \xor M_1 = 0$, otherwise $M_i = M_2$
+\end{proof}
 
 \end{enumerate}
 \end{document}
