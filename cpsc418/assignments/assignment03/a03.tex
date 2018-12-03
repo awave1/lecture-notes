@@ -46,16 +46,16 @@
     \begin{enumerate}
       \item $\A$ receives malicious $y_a$ and sends it to $\B$.
       \item $\B$ receives malicious $y_b$ and sends it to $\A$.
-      \item $\A$ computes $K \equiv y_b^a \equiv ((g^b)^q)^a \pmod{p}$
-      \item $\B$ computes $K \equiv y_a^b \equiv ((g^a)^q)^b \pmod{p}$
+      \item $\A$ computes $K \equiv y_b^a \equiv ((g^b)^q)^a \equiv g^{abq} \pmod{p}$
+      \item $\B$ computes $K \equiv y_a^b \equiv ((g^a)^q)^b \equiv g^{abq} \pmod{p}$
       \item $\A$ and $\B$ get the same key $K$, because:
         \begin{align*}
           y_b^a \equiv ((g^b)^q)^a \equiv g^{bqa} \equiv g^{aqb} \equiv ((g^a)^q)^b \equiv y_b^a \pmod{p}
         \end{align*}
     \end{enumerate}
   \item ???
-  \item 
-    In this version, $\M$ does not have to pick a number $e$, where $1 < e < p$. Therefore, by knowing values $g^a \pmod{p}$ and $g^b \pmod{p}$, $\M$ is more likely to compute $g^{abq} \pmod{p}$, which is a private key used by $\A$ and $\B$.
+  \item
+    In this version, $\M$ sends $g^{aq}$ or $g^{bq}$, and since $\M$ knows $g^{a} \pmod{p}$ and $g^{b} \pmod{p}$, she is able to compute $g^{abq} \pmod{p}$ which is the same key that $\A$ and $\B$ use. In the example, discussed in class $\E$  has no knowledge of shared key that $\A$ and $\B$ use and therefore $\E$ would need to handle decryption and encryption separatly.
 \end{enumerate}
 
 \newpage
@@ -214,10 +214,52 @@
 \newpage
 
 \item[] \textbf{Problem 3} --- Fast RSA decryption using Chinese remaindering, 8 marks
+ 
+Let $p$ and $q$ be distinct large primes and $(e, n)$ be RSA public key with corresponding private key $d$. Given $d_p \equiv d \pmod{p - 1}$ and $d_q \equiv d \pmod{q - 1}$
+\begin{align*}
+  M_p &\equiv C^{dp} \equiv C^{d}(C^{p - 1})^{k} \\
+      &\equiv C^{d} \\
+      &\equiv M^{ed} \pmod{p} \\
+  M_q &\equiv C^{dq} \equiv C^{d}(C^{q - 1})^{k} \\
+      &\equiv C^{d} \\
+      &\equiv M^{ed} \pmod{q}
+\end{align*}
 
-\begin{enumerate}
-  \item ok
-\end{enumerate}
+Therefore,
+\begin{align*}
+  M_p &\equiv M^{ed} \pmod{p} \\
+  M_q &\equiv M^{ed} \pmod{q} \\
+  M_p &= M^{ed} + qt \\
+  M_q &= M^{ed} + pk
+\end{align*}
+
+For some $t \in \Z$ and $k \in \Z$.
+
+Let $M' \equiv pxM_q + qyM_p \pmod{n}$ be the plaintext obtained using Chinese remainer theorem and $M \equiv C^d \pmod{n}$ be the message obtained using normal RSA way.
+\begin{align*}
+  M \equiv C^{d} \equiv (M^e)^d \equiv M^{ed} \\
+  \text{Where } ed \equiv 1 \pmod{\phi{(n)}} \\
+  \text{Therefore } ed = 1 + m\phi{(n)} \text{ for some } m \in \Z \\
+  M \equiv M^{1 + m\phi{(n)}} \equiv MM^{m\phi{(n)}} \equiv M(M^{\phi{(n)}})^m \pmod{n} \\ \\
+  \text{by Euler's theorem: } \\
+  M^{\phi{(n)}} \equiv 1 \pmod{n} \\
+  \text{which gives us: } \\
+  M \equiv M(M^{\phi{(n)}})^m \equiv M \pmod{n}
+\end{align*}
+
+Plaintext $M'$, obtained using Chinese remainer theorem:
+\begin{align*}
+  M' &\equiv pxM_q + qyM_p \\
+     &\equiv px(M^{ed} + qt) + qy(M^{ed} + pk) \\
+     &\equiv pxM^{ed} + pxqt + qyM^{ed} + qypk \\
+     &\equiv pxM^{ed} + qyM^{ed} \\
+     &\equiv M^{ed}(px + qy) \\
+     &\text{where } (px + qy) = 1 \text{ because gcd(\textit{p}, \textit{q}) = 1} \\
+     &\equiv M^{ed} \pmod{n} \\
+     &\equiv M \pmod{n}
+\end{align*}
+
+Therefore $M = M'$ \qed
 
 \newpage
 
