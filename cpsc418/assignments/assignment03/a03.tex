@@ -53,7 +53,20 @@
           y_b^a \equiv ((g^b)^q)^a \equiv g^{bqa} \equiv g^{aqb} \equiv ((g^a)^q)^b \equiv y_b^a \pmod{p}
         \end{align*}
     \end{enumerate}
-  \item ???
+  \item
+    Given that $g$ is a primitive root of $p$ and $p - 1 = mq$, then $g^{(p - 1)} \equiv g^{mq} \equiv 1 \pmod{p}$, by Fermat's Little Theorem. We know that $K \equiv g^{abq} \pmod{p}$
+
+    Let $k \in \Z$ and $k \geq 1$,
+    \begin{align*}
+      g^{kmq} \equiv (g^{mq})^k \equiv (g^{(p - 1)})^k \equiv 1 \pmod{p}
+    \end{align*}
+
+    Suppose $ab$ = $km$, then we'll get:
+    \begin{align*}
+      g^{abq} \equiv g^{kmq} \equiv 1 \pmod {p}
+    \end{align*}
+
+    Therefore, there are $m$ possible values for $K$.
   \item
     In this version, $\M$ sends $g^{aq}$ or $g^{bq}$, and since $\M$ knows $g^{a} \pmod{p}$ and $g^{b} \pmod{p}$, she is able to compute $g^{abq} \pmod{p}$ which is the same key that $\A$ and $\B$ use. In the example, discussed in class $\E$  has no knowledge of shared key that $\A$ and $\B$ use and therefore $\E$ would need to handle decryption and encryption separatly.
 \end{enumerate}
