@@ -243,7 +243,7 @@ It was personally led by **Xerxes I**, son of Darius I. Much larger persian forc
 **Key Battles**:
 1. [Battle of Thermopylae](#battle-of-thermopylae-480-bc)
 2. [Battle of Salamis](#battle-of-salamis-480-bc)
-3. [Battle of Platea](#battle-of-platea-480-bc)
+3. [Battle of Platea](#battle-of-platea-479-bc)
 
 ##### Battle of Thermopylae: 480 BC
 
@@ -259,9 +259,35 @@ Led by Spartan regent **Pausaias**, son of Leonidas, results in Greeks defeating
 
 ### Greek Drama
 
-```
-TODO
-```
+#### Athenian Drama
+
+- **Tradegy**: 6th BC
+  - Involves mythical creatures
+- **Satyr-play**: spoof / slapstick after tragedies
+  - 3 authors chosen per tragedy contest
+- **Comedy**: 5th BC, had 5 authors competing
+  - Mythical and contemporary characters
+  - Comments & mocks events or politicians
+- 3 tradegies 1 satyr-play
+
+#### Theaters and Staging
+
+- Dramatic contests held during festivals for the God Dionysus, had religious mindset
+- Performers were men in costumes
+- Actors - speaking part
+- **Chorus**: dancers, singers
+- **Orchestra**: dancing place, performance space for chorus
+- **Theatron**: viewing place, audience seating
+- **Skene**: tent, backdrop for exits, enterances, dressing rooms
+
+#### Political Aspects
+
+- Competition involved **citizens of polis**:
+  - Playwrights and professional actors were chosen by **archon**
+  - Plays were funded by wealthy citizens as a public service: **choregos**
+  - Chorus were amateur citizens
+  - Winning playwright would be chosen by citizen judges
+- Some tradegies were based on historical events
 
 ### Classical Period & Art
 
