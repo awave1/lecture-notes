@@ -174,9 +174,12 @@ It encouraged communal values within a city and conflict with other polies. Poli
 
 ### Athens
 
-```
-TODO
-```
+- unifies Attica by mid 8th c. BCE
+- outward looking, expansive trading links
+  - exported olive oil and pottery, imported grain
+- emphasized creativity (pottery, drama & philosoph)
+- few rights for women
+- large navy and smaller infantry
 
 ### Sparta
 
