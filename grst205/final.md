@@ -207,7 +207,9 @@ Kings were replaced by annually elected magistrates:
 - **Archons**: the chief magistrate or magistrates in many city-states.
 - **Strategoi**: military general.
 
-### Herodotus
+### Herodotus: 440 BC
+
+Herodotus was Greek historian. Was heavily interested in other cultures: Egyptian, Persian, Indian. Wrote a first surviving book called **Historia** 📜. Historia explained why things happened the way they did, was critical of myth, and was based on research.
 
 ### Persian Wars
 
