@@ -65,11 +65,15 @@ Mycenaean were influenced by Minoans. Some bones were found in Pylos.
 
 Mycenaeans spoke **Linear B**. They had strong economy, concept of mayors that were looking after people.
 
-### Greek Dark Age
+### Greek Dark Age: 1050 - 750 BC
 
-```
-TODO
-```
+Greek Dark Age marked the end of the [**Bronze Age**](#bronze-age-2200---1050-bc). Minoans and Mycenaeans were only remembered from myths. Dark Age marked the fall of Mycenaean civilization.
+
+Greek Dark Age resulted in lack of monumental buildings, loss of literacy, and almost total disappearance of figurative art - styles became more crude. There was less trade, due to collapse of Mycenaean. Settlements became poorer and smaller.
+
+Some echoes of Minoan/Mycenaean civilizations preserved in Greek Myths, traditions and language.
+
+Greek Dark Age sometimes is reffered to as Iron Age due to high usage of iron in various products. Around 950 BC iron started being used more often.
 
 ### Greek Revival
 
