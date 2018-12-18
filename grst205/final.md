@@ -11,7 +11,7 @@ Both systems (BC/AD, BCE/CE) are split by 0. The older, the further you're away 
 
 Greeks are group people who lived around Aegean Sea, all spoke ancient greek language of some form.
 
-### Early Greece
+### 🤗 Early Greece
 
 Two key civilizations:
 
@@ -20,7 +20,7 @@ Two key civilizations:
 
 Both civilizations were located in Aegean Sea area.
 
-### Bronze Age: 2200 - 1050 BC
+### 🤫 Bronze Age: 2200 - 1050 BC
 
 Palaces were religious, economic powers.
 
@@ -65,7 +65,7 @@ Mycenaean were influenced by Minoans. Some bones were found in Pylos.
 
 Mycenaeans spoke **Linear B**. They had strong economy, concept of mayors that were looking after people.
 
-### Greek Dark Age: 1050 - 750 BC
+### 👿 Greek Dark Age: 1050 - 750 BC
 
 Greek Dark Age marked the end of the [**Bronze Age**](#bronze-age-2200---1050-bc). Minoans and Mycenaeans were only remembered from myths. Dark Age marked the fall of Mycenaean civilization.
 
@@ -75,7 +75,7 @@ Some echoes of Minoan/Mycenaean civilizations preserved in Greek Myths, traditio
 
 Greek Dark Age sometimes is reffered to as Iron Age due to high usage of iron in various products. Around 950 BC iron started being used more often.
 
-### Greek Revival: 900 - 750 BC
+### 😈 Greek Revival: 900 - 750 BC
 
 Still a part of Dark Age but Greeks were producing more art and developed more literacy. Collapse of Mycenaean civilization produces **sub-mycenaean pottery**. It had less sophisticated decorations and was assymetrical & lumpy.
 
@@ -89,7 +89,7 @@ Late Dark Age sees shift to **geometric pottery**. Geometric pottery was decorat
 
 Greek Revival encouraged trade/contact with other peoples of Mediterranean. 
 
-### Archaic Period: 750 - 480 BC
+### 🤝 Archaic Period: 750 - 480 BC
 
 Shift from archaic to communal values. The concept of **Polis**: 750 BC was developed during Archaic Period. **Polis** - city state.
 
@@ -172,7 +172,7 @@ It encouraged communal values within a city and conflict with other polies. Poli
 - Some migration during Dark Age: Ionians go to Asia Minor
 - Boom in colonization during Archaic period mid 8th c. to 500 BC.
 
-### Athens
+### 🤔 Athens
 
 - unifies Attica by mid 8th c. BCE
 - outward looking, expansive trading links
@@ -181,7 +181,7 @@ It encouraged communal values within a city and conflict with other polies. Poli
 - few rights for women
 - large navy and smaller infantry
 
-### Sparta
+### 😤 Sparta
 
 - neighbors made **serfs** (helots), class of people that weren't considered citizens. Forced to work the land and serve the army.
 - no coinage until 4th c. BCE
@@ -191,7 +191,7 @@ It encouraged communal values within a city and conflict with other polies. Poli
 - focus on infantry army, Spartan citizen men focus exclusively on military training
 - used a concise language
 
-### Organs Of Government
+### 💼 Organs Of Government
 
 #### Sparta
 
@@ -207,11 +207,11 @@ Kings were replaced by annually elected magistrates:
 - **Archons**: the chief magistrate or magistrates in many city-states.
 - **Strategoi**: military general.
 
-### Herodotus: 440 BC
+### 👴🏼 Herodotus: 440 BC
 
 Herodotus was Greek historian. Was heavily interested in other cultures: Egyptian, Persian, Indian. Wrote a first surviving book called **Historia** 📜. Historia explained why things happened the way they did, was critical of myth, and was based on research.
 
-### Persian Wars: early 5th BC
+### ⚔️ Persian Wars: early 5th BC
 
 Land warfare, dominated from 7th - 4th BC. It was a conflict between Greek polies and Persian Empire. Major source of Persian Wars was [Herodotus](#herodotus-440-bc).
 
@@ -257,7 +257,7 @@ Greek fleet under Athenian leadership, led by **Themistocles**, defeats Persian 
 
 Led by Spartan regent **Pausaias**, son of Leonidas, results in Greeks defeating Persian land forces.
 
-### Greek Drama
+### 🎭 Greek Drama
 
 #### Athenian Drama
 
@@ -289,13 +289,29 @@ Led by Spartan regent **Pausaias**, son of Leonidas, results in Greeks defeating
   - Winning playwright would be chosen by citizen judges
 - Some tradegies were based on historical events
 
-### Classical Period & Art
+#### Sophocles' Antigone
+- A tragedy by Sophocles written in or before 441 BC
+- Chorus: Wisdom is provided as the chief part of happiness, and our dealings with the gods must be in way unholy. The great words of arrogant men will be repaid with heavy blows, and wisdom will be taught in old age.
 
-```
-TODO
-```
+### 🏛 Classical Period & Art
 
-### Peloponnesian War
+- **Symposium** - part of banquet that took place after the meal, when drinking for pleaure was accompanied by music, dancing, recitals, or conversation
+
+#### Athenian Acropolis
+
+- 1st unified temple complex in Greek world
+- Centrally planned, but built over time: 447 - 404 BC
+- **Propylaea** - Entrance/gateway to the Acropolis
+- **The Parthenon**
+  - Temple of Athena 'The Maiden'
+  - Built 447 - 332 BC
+- **Erechtheum**: 421 - 406 BC
+  - Commemorated mythical events in Athens and several deities
+  - Mythical King Erechtheus (son of Hephaestus and Earth)
+  - Olive Tree of Athena
+  - Salt Spring of Poseidon
+
+### ⚔️ Peloponnesian War
 
 ```
 TODO
