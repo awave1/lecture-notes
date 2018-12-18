@@ -191,6 +191,26 @@ It encouraged communal values within a city and conflict with other polies. Poli
 - focus on infantry army, Spartan citizen men focus exclusively on military training
 - used a concise language
 
+### Organs Of Government
+
+#### Sparta
+
+Sparta was ruled by **oligarchy** (rule of few (rich)). **Gerousia**: more power to aristocratic council. Assembly of all adult male citizens, but they were only able to vote yes/no. Sparta had two kings **basileis**, but their power was limited, were similar to army commanders. 
+
+Kings were supervised by annually elected **ephors** (5 leaders of Sparta 🧙🏿‍️🧙🏾‍️🧙🏽‍️🧙🏼‍🧙🏻‍). Two ephors supervised the king that went to war
+
+#### Athens
+
+Athens had **democracy** (power of people). **Areopagus** - less power to aristocratic council. Assembly of all adult male citizens who can speak and vote. All adult male citizens can be jurors.
+
+Kings were replaced by annually elected magistrates:
+- **Archons**: the chief magistrate or magistrates in many city-states.
+- **Strategoi**: military general.
+
+### Herodotus
+
+### Persian Wars
+
 ## 🤯 Romans
 
 Romans - controlled a bunch of territories in Europe and North Africa. They weren't the same as Greeks, but admired Greek culture. Eventually, conquered the Greek world.
