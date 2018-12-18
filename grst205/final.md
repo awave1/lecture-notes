@@ -75,17 +75,102 @@ Some echoes of Minoan/Mycenaean civilizations preserved in Greek Myths, traditio
 
 Greek Dark Age sometimes is reffered to as Iron Age due to high usage of iron in various products. Around 950 BC iron started being used more often.
 
-### Greek Revival
+### Greek Revival: 900 - 750 BC
 
-```
-TODO
-```
+Still a part of Dark Age but Greeks were producing more art and developed more literacy. Collapse of Mycenaean civilization produces **sub-mycenaean pottery**. It had less sophisticated decorations and was assymetrical & lumpy.
 
-### Archaic Period
+Late Dark Age sees shift to **geometric pottery**. Geometric pottery was decorated with geometric shapes called **meanders**.
 
-```
-TODO
-```
+**Greek Alphabet**: 800 BC
+- Developed by 800 BC
+- Was different from Mycenaean, not syllabic, like Linear B
+- It was first script to use signs for vowels
+- Derived from **Phonicians**
+
+Greek Revival encouraged trade/contact with other peoples of Mediterranean. 
+
+### Archaic Period: 750 - 480 BC
+
+Shift from archaic to communal values. The concept of **Polis**: 750 BC was developed during Archaic Period. **Polis** - city state.
+
+#### Hoplite Warfare: 8th - 7th BC
+
+Hoplite warfare was developed around 8th - 7th BC and it is main Greek fighting style until 4th BC. Called after a shield **hoplon** - heavy rounded wooden shield, coated with bronze; about 3ft tall, covered upper body and a person beside. Other terms:
+- **Greaves**: Hoplite shin guards
+- **Linen Cuirass**: Hoplite chest guard
+- **Sarissa**: A long spear
+- **Phalanx**: Rank / group of soldiers
+- **Coward**: someone who throws **hoplon**
+- **Trireme** - the most effective warship used to ram, disable, or sink other ships
+- Middle class was infantry
+- Poor were rowers
+- Formation is important
+
+#### Increased Literacy & Artistic Achievements
+
+##### Homer
+
+The author of **The Illiad** and **The Odyssey**.
+
+**The Illiad**:
+- Covers Trojan War
+- Might have ocured in 13th / 12th c BC
+- Troy: located in modern Turkey
+
+**The Odyssey**:
+- Return of Odysseus, Greek king, from Trojan War
+
+##### Art
+
+**Kouros**
+- Life sized male sculptures
+- Appeared around 6th c BC
+- Kouros were inspired by **Egyptian sculptures**
+- Showed Greek obsession with male body and interest in its beauty 🏳️‍🌈
+
+**Kore**
+- Life sized female sculpture
+- Weren't naked like **kouros**
+
+#### Shift From Aristocratic Values To Communal Values
+
+**Wanakes** were powerful kings that ruled during the [Bronze Age](#bronze-age-2200---1050-bc). **Baseileis** are chieftains that were in control of small greek communities. They existed before polis and position was justified by personal charisma, courage and leadership in battle.
+
+During early Archaic perion, descendands of baseileis see themselves as **aristocrats** aka the best 😎; justified by ancestry.
+
+During the archaic period, non-elite Greeks challenged aristocrats' claim to superiority. They organized themselves into cities where male citizens could participate in government, which is definition of **citizenship**. All of that called **egalitarianism** - the doctrine that all people are equal and deserve equal rights and opportunities.
+
+#### Polis System
+
+**Polis** is a **city-state**. Important polies were:
+- Thebes
+- Athens
+- Corinth
+- Sparta
+- Rhodes
+
+Typical characteristics of a polis:
+- Temples - for worshipping Greek Gods
+- **Agora** place for governemnt acivity, "gathering place", "assembly"
+- Paved streets with grid pattern
+- Coinage, with gods displayed on coins
+- Citizen army
+
+Polis consisted of several organs of government:
+- Assembly
+- Council
+- Officials
+
+In some cities, the power and role that each have may change.
+
+##### Effects & Significances of Polis System
+
+It encouraged communal values within a city and conflict with other polies. Polis system prompted greeks to place immense value on political participation. Greeks saw themselves as free people with the right to be involved in the running of polis.
+
+#### Colonization
+
+- Some migration during Dark Age: Ionians go to Asia Minor
+- Boom in colonization during Archaic period mid 8th c. to 500 BC.
 
 ### Athens
 
