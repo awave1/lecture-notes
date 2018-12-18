@@ -7,7 +7,7 @@ Both systems (BC/AD, BCE/CE) are split by 0. The older, the further you're away 
 * BCE - Before Common Era
 * CE - Common Era
 
-## 🤩 Greeks
+## 🇬🇷 Greeks
 
 Greeks are group people who lived around Aegean Sea, all spoke ancient greek language of some form.
 
@@ -313,17 +313,27 @@ Led by Spartan regent **Pausaias**, son of Leonidas, results in Greeks defeating
 
 ### ⚔️ Peloponnesian War
 
+#### Athenian War
+
+#### Lead Up to Peloponnesian War
+
+#### Thycydides, History of the Peloponnesian War: 420 - 400 BC
+
+#### Peloponnesian War
+
+##### Strategies
+
+#### Why Athenians Lost?
+
+#### Significances
+
+### 🇲🇰 Rise of Macedon & Alexander the Great
+
 ```
 TODO
 ```
 
-### Rise of Macedon & Alexander the Great
-
-```
-TODO
-```
-
-## 🤯 Romans
+## 🐺 Romans
 
 Romans - controlled a bunch of territories in Europe and North Africa. They weren't the same as Greeks, but admired Greek culture. Eventually, conquered the Greek world.
 
