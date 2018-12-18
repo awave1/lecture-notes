@@ -180,9 +180,13 @@ TODO
 
 ### Sparta
 
-```
-TODO
-```
+- neighbors made **serfs** (helots), class of people that weren't considered citizens. Forced to work the land and serve the army.
+- no coinage until 4th c. BCE
+- seen as totalitarian, a lot of control over their citizens and emphasized stability
+- kids were taken at age 7 to be educated and at age 20 to be sent to a military style school
+- had more rights for women, looked after them as they got married and had kids
+- focus on infantry army, Spartan citizen men focus exclusively on military training
+- used a concise language
 
 ## 🤯 Romans
 
