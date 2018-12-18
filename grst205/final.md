@@ -211,7 +211,51 @@ Kings were replaced by annually elected magistrates:
 
 Herodotus was Greek historian. Was heavily interested in other cultures: Egyptian, Persian, Indian. Wrote a first surviving book called **Historia** 📜. Historia explained why things happened the way they did, was critical of myth, and was based on research.
 
-### Persian Wars
+### Persian Wars: early 5th BC
+
+Land warfare, dominated from 7th - 4th BC. It was a conflict between Greek polies and Persian Empire. Major source of Persian Wars was [Herodotus](#herodotus-440-bc).
+
+**Major Events**:
+1. [Ionian Revolt](#ionian-revolt-499---493-bc): 499 - 493 BC
+2. [First Persian Offensive](#first-persian-offensive)
+3. [Second Persian Offensive](#second-persian-offensive)
+
+Persian army was led by **Darius I**, third king of Persian Empire, and later by **Xerxes**, son of Darius, fourth king of Persian Empire.
+
+#### Ionian Revolt: 499 - 493 BC
+
+Ionian Revolt was an uprising of some Ionian cities against Persians in Asia Minor. They unsuccessfully tried to overthrow Persian domination. Darius I used this as a reason to start war with Greece.
+
+#### First Persian Offensive
+
+##### Battle Of Marathon
+
+Persians land at Marathon. Trained runner **Pheidippides** runs 250km to Sparta for help. Spartans say thay will help after their religious festival is finished.
+
+Approx 9000 Athenians and 1000 Plataeans vs 20000 Persians. Athenian strategos Militades and archon Callimachis persuade troops to fight. Battle resulted in Massive Greek victory and Athenians take credit for saving Greece.
+
+#### Second Persian Offensive
+
+It was personally led by **Xerxes I**, son of Darius I. Much larger persian force than in previous invasion.
+
+31 polies join together under Spartan leadership, called **Hellenic League** (Hellenic = Greek).
+
+**Key Battles**:
+1. [Battle of Thermopylae](#battle-of-thermopylae-480-bc)
+2. [Battle of Salamis](#battle-of-salamis-480-bc)
+3. [Battle of Platea](#battle-of-platea-480-bc)
+
+##### Battle of Thermopylae: 480 BC
+
+300 Spartans led by **King Leonidas**, including 700 Thespians, 400 Thebans and helots. Greeks were defeated, but they bought some time to retreat and regroup.
+
+##### Battle of Salamis: 480 BC
+
+Greek fleet under Athenian leadership, led by **Themistocles**, defeats Persian fleet. Xerxes leaves but 100k troops remain.
+
+##### Battle of Platea: 479 BC
+
+Led by Spartan regent **Pausaias**, son of Leonidas, results in Greeks defeating Persian land forces.
 
 ## 🤯 Romans
 
