@@ -2,7 +2,7 @@
 
 ## 🇬🇷 Greeks
 
-![05.png](grst205/img/lecfinal/05.png)
+![05.png](/img/lecfinal/05.png)
 
 Greeks are group people who lived around Aegean Sea, all spoke ancient greek language of some form.
 
