@@ -516,15 +516,91 @@ Romans - controlled a bunch of territories in Europe and North Africa. They were
 
 ### 🤙 Early Italy
 
+- Italian **Iron Age** began in 900 BC
+- **Urbanization process** was in **7th - 5th** BC
+- [**Regal Period**](#rome-regal-period-monarchy-753-859-bc): 753 - 859 BC
+- [**Early Republic**](#rome-early-republic): 509 - 264 BC
+
+Early Italy had many ethnic groups and languages:
+
+- People who lived in Latium area spoke latin
+- Etruria (Etruscans) were influenced by Greek art in the [Archaic Period](#archaic-period-750---480-bc)
+- **Magna Graecia**: Area of italian peninsula where Greeks lived
+
+Italian art was influenced by Egyptian, Phoenician and Greek art, but also reflected local customs and values. Greek influence on Early Italy includes:
+
+- **Settlements**: from mid 8th BC
+- **Writing**: 700 BC
+- **Hoplite warfare**: 6th BC
+- **Coinage**: 5th BC in Etruria, by 300 BC in Rome
+
+Compare to Greece, complex civilizations developed slower in Italy.
+
 ### 🕵🏽‍️ Evidence for Early Rome
 
-### 🤴🏻 Rome: The Regal Period (Monarchy): 753 - 859 BC
+#### Archaelogical & Material Evidence
+
+No proven connection to characters of early Roman mythology.
+
+#### Mythology & Oral Tradition
+
+- Romans created songs & poetry about their past
+- Romulus and Remus were mythological, semi-devine sons of Mards, the God of war
+  - Rome was found by Romulus and Remus. Romulus killed Remus and named the city after himself
+
+#### Literary & Textual Evidence
+
+- First Greek-style Latin plays and poems about Roman past were written in second half of 3rd BC
+- First Roman prose 'history' was written in the end of 3rd BC
+- Texts present founding & growth of Rome as organized process, in great detail
+- Romans didn't start writing down their stories until ~200 BC
+
+### 🤴🏻 Rome: Regal Period (Monarchy): 753 - 859 BC
+
+Rome was ruled by **reges**, kings (**rex** - king). In 509 BC Rome **stops being monarchy**. Kingship wasn't hereditary. Kings were responsible for following:
+
+- Organizing religious rites
+- Fortifying the city
+- Public buildings
+- Leadership in war
+
+Romans valued **military leadership**. Aristocratic council, called **senate**, chose kings and advised them. Some evidence suggests that Romulus originally chose the senate.
+
+Roman poet **Ennuis** wrote a lot of poetry about Rome and can be compared to Homer.
 
 #### Romulus as King
 
-### 🗣 Rome: Early Republic
+- Roman silver coin **denarius** depicting the abduction of the Sabine Women (89 BCE).
+- Roman myths provide evidence for Roman cultural values:
+  - openness to other ethinic groups / cultures
+  - larger role for women than in much of greek world
+
+### 🗣 Rome: Early Republic: 509 - 254 BC
+
+- **509 BCE**: Sextus Tarquinius, son of the last king Tarquin the Proud, rapes elite woman Lucretia.
+  - As the result, kings were expelled from Rome
+- Her relatives lead a revolt and expel the kings from Rome.
+- 6th - 4th c's BCE: powers of the king distributed between officials / magistrates.
+  - **2 Consuls** - analog of strategois.
+  - **Praetors** - military leaders, judges in the law courts.
+  - **Dictator** (in emergencies) - in power only for 6 months, resign after. powers are similar to the old kings, can execute people.
+- Also retained from Regal Period:
+  - **Assembly** (comitia) of adult male citizens:
+    - Only magistrates can speak
+    - Elects magistrates
+    - Passes laws: accepts or rejects proposals by magistrates
+    - Votes on war and peace but votes only yes or no
+    - Several different assemblies: imortant are: **comitia centuriata** and **concilium plebis**
+  - **Senate** remains as advisory council for magistrates
+- Rome had a **mixed constitution**: elements of democracy, oligarchy, and monarchy.
 
 #### Struggle of the Orders: 5th - early 3rd BC
+
+- **5th - early 3rd BCE**: Romans not of noble birth **plebians** challenge aristocrats **patricians**.
+- Plebians went on strike
+- Conflict resolved through compromise (secession)
+- As the result of Struggle of the Orders **10 tribunes of the plebs** created to protect all citizens - **provocatio**:
+  - Tribunes of the plebs were elected annually
 
 ### 💪 Rome: Republic
 
