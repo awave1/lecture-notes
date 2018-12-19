@@ -57,7 +57,7 @@ Minoans spoke **Linear A**, which is _not_ decipherable. Eventually, Minoans wer
 
 Mycenaean were influenced by Minoans. Some bones were found in Pylos.
 
-**Mycenae**
+**Mycenae**:
 
 - Settlement size: 30 km^2
 - Defensible position
