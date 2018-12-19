@@ -375,18 +375,18 @@ Delian League founded in 478/477 BC. Athens led 150 polies with one goal - aggre
 #### Why Athenians Lost?
 
 1. Spartans terms for Athens, after they won:
-  - Empire lost (democracies replaced with oligarchies)
-  - Limitation for Athenian army: No more than 12 ships
-  - Long walls torn down, to make sure Athenians can't try the naval strategy
-  - Oligarchy installed in 404 BCE in Athens (democracy restored in 403 BCE)
+    - Empire lost (democracies replaced with oligarchies)
+    - Limitation for Athenian army: No more than 12 ships
+    - Long walls torn down, to make sure Athenians can't try the naval strategy
+    - Oligarchy installed in 404 BCE in Athens (democracy restored in 403 BCE)
 2. Less confidence in democracy, harsher policies for politicians.
 3. Concentration of population within walls results in plague (430 BCE).
-  - Pericles dies 429 BCE, subsequent Athenians leaders less effective.
+     - Pericles dies 429 BCE, subsequent Athenians leaders less effective.
 4. **Sicilian Expedition** (415 - 413 BC): Athens tries to help Egesta vs Selinus, Selinus calls in ally Syracuse.
-  - 7k hoplites survived, but got starved to death. Was possible to survive, if you knew tradegies.
+     - 7k hoplites survived, but got starved to death. Was possible to survive, if you knew tradegies.
 5. Harsh treatment of allies alienates support:
-  - e.g. Mytilene, revolted vs Athenian Empire (**428 BCE**), recaptured in **427 BCE**.
-  - 'Mytilenaean Debate' in athens about how to treat the recaptured city
+     - e.g. Mytilene, revolted vs Athenian Empire (**428 BCE**), recaptured in **427 BCE**.
+     - 'Mytilenaean Debate' in athens about how to treat the recaptured city
 6. After the war, Greece left vulnerable to attacks from Macedon 
 
 #### Significances
