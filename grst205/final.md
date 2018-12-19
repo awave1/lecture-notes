@@ -520,13 +520,13 @@ Romans - controlled a bunch of territories in Europe and North Africa. They were
 
 - Italian **Iron Age** began in 900 BC
 - **Urbanization process** was in **7th - 5th** BC
-- [**Regal Period**](#rome-regal-period-monarchy-753-859-bc): 753 - 859 BC
-- [**Early Republic**](#rome-early-republic): 509 - 264 BC
+- [**Regal Period**](#-rome-regal-period-monarchy-753-859-bc): 753 - 859 BC
+- [**Early Republic**](#-rome-early-republic): 509 - 264 BC
 
 Early Italy had many ethnic groups and languages:
 
 - People who lived in Latium area spoke latin
-- Etruria (Etruscans) were influenced by Greek art in the [Archaic Period](#archaic-period-750---480-bc)
+- Etruria (Etruscans) were influenced by Greek art in the [Archaic Period](#-archaic-period-750---480-bc)
 - **Magna Graecia**: Area of italian peninsula where Greeks lived
 
 Italian art was influenced by Egyptian, Phoenician and Greek art, but also reflected local customs and values. Greek influence on Early Italy includes:
@@ -894,6 +894,93 @@ Freeperson's name consisted of **praenomen** (first name), **nomen** (family nam
 
 ### 💒 Christianity
 
+#### Early Christianity
+
+- Roots in Jewish religion: Judaism
+- **Judaea**/**Palestine**: a client kingdom under Persian Empire
+  - conquered by seleucids (2nd BCE) made a roman province in 6 CE
+- Judaism was a **monotheistic** religion: one god, expeced to send a **Messiah** (saviour)
+
+#### Jesus
+
+Early christianity focused on **Jesus of Nazareth**:
+
+- Jewish man, **born 4/3** BC
+- Was executed by Romans during the reight of Emperor Tiberius in 30 - 33 AD
+- Jesus is said to have risen from the dead on **third day** after his death
+- Followers of Jesus claimed that he was the Messiah
+
+**Early symbols**:
+
+- Chi-rho: first two greek letters of ch r istos
+- alpha and omega: first and last letters of greek alphabet
+
+#### Paul & His Travels
+
+Spread knowlege that jesus was not only for jews
+
+#### Why Did It Spread
+
+- Unified and relatively peaceful roman empire, enabled travel, improved communication
+- Christinas delibberatly sought to convert others
+- Gradually christians develop their own sacred writings which they add to Jewish ones
+  - old testament + new testament = bible
+
+#### Christianity as The Dominant Religion in Roman Empire
+
+- Despite persecution, core converts in 1st - 4th c's AD
+- In AD 312, Constantine becomes sole emperor in the West and converts - Battle of Milvian Bridge. Gains control of whole Empire AD 324
+- Constantine makes christianity legal
+- By end of 4th AD christianity - official religion of the roman empire
+- From now on all emperors (except one) will be Christian
+
 ### 🌍 Rome: Late Empire
 
+- **Third Century Crisis**: 235 - 284 CE
+- **Dominate**: 284 - 476 CE (dominus - master / lord)
+
+#### Third Century Crisis
+
+##### Political Problems
+
+Series of short lived emperors and userpers devalues imperial authority
+
+##### Economic Problems
+
+Less tax revenue, massive inflation
+
+##### Military Problems
+
+Civil wars deplete Roman military strength. Fewer recruits from within Roman Empire, Roman army comes to rely on barbarian **foederati**, allied trives. There are also fewer resources to pay to the army.
+
+**Serious military defeats for Roman army**:
+
+- Emperor Decius killed in battle with goths AD 251
+- Emperor Valerian captured by Sasanians AD 260
+
+### ⚡️ The Dominate: AD 284 - 476
+
+- Reorganizaion of Empire by Dicletian (**tetrarchy**)
+  - Empire split into 4 parts ruled by either a senior or a junior emperor
+    - senior -> augustus
+    - junior -> caesar
+  - size of army increased
+  - size of bureaucracy increased
+  - Constantine obtains sole power, his sons split empire again
+- these reforms -> fragmentation of Roman Empire split between Western and Eastern Mediterranean
+
 ### 🗡 Fall of Rome
+
+- In 4th - 6th centuries 'barbarian' people from outside the Empire invade and defeat Roman armies
+- The last Emperor of the Western Roman Empire, Romulus Augustulus is deposed in 476
+- Barbarian people establish kingdoms within the western half of the former Roman Empire. These kingdoms eventually develop into the European countries of the Middle Ages
+
+#### Roman Empire: Significances
+
+- Encouraged development of a shared culture in Europe
+  - Romance languages evolved from Latin
+  - Roman and greek myths, legendsm and history remain fundamental in Western art and thought for centuries
+  - much of roman law is adopted by barbarian kingdoms
+- made christianity the dominant religion in Europe
+- provided a model for later kingdoms and empires
+  - studying the cases of the roman empire's rise, success, and fall can help us to analyze and understand more recent events even in ourown time
