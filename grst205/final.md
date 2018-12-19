@@ -2,6 +2,8 @@
 
 ## 🇬🇷 Greeks
 
+![05.png](grst205/img/lecfinal/05.png)
+
 Greeks are group people who lived around Aegean Sea, all spoke ancient greek language of some form.
 
 ### ⌛️ Dating systems
@@ -603,6 +605,10 @@ Roman poet **Ennuis** wrote a lot of poetry about Rome and can be compared to Ho
 - Conflict resolved through compromise (secession)
 - As the result of Struggle of the Orders **10 tribunes of the plebs** created to protect all citizens - **provocatio**:
   - Tribunes of the plebs were elected annually
+
+##### Sacrosanctity
+
+Sacrosanctity was a right of tribunes in Rome not to be harmed physically. Plebeians took an oath to regard anyone who laid hands on a tribune as an outlaw liable to be killed without penalty.
 
 ### 💪 Rome: Republic: 5th - early 3rd
 
