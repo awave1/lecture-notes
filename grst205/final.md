@@ -789,3 +789,71 @@ There were two main leagues:
   - solial-political elite are the priests
   - during the imperial period, emperor is worshipped as a god - **divus**
   - religion has political consequences
+
+### The Fall of Roman Republic
+
+- 133 - 131 BCE: Rome late republic
+  - Major development:
+    - political and economic problems
+    - further expansion of roman empite 
+      - increased power for individual generals
+    - political violence -> several civil wars
+- political & economic problems
+  - growing divide between rich and poor
+  - tribunes of the plebs bebings to use concilium plebis againsts the senate
+  - rise of **publicani** - middle class, non senatorial businessmen -> pressure for pol. influence
+  - Competition for offices:
+    - consisted of:
+      1. 10 tribunes of the plebs vs 20 quaestors
+           - **quaestor**: financial assistant to higher magistrates
+      2. 4 **aediles**: magistrates responsible for public services
+      3. 8 **praetors** (courts, military, commands)
+      4. 2 **consuls**: highest regular magistrates; command armies
+    - problems:
+      - there were many annual offices at the bottom of the cursus honorum
+        - **cursus honorun**: course of offices (eg quaestors, aediles)
+      - there were far fewer annual offices at the top: eg praetors, consuls
+- increased power for roman generals
+  - end of 2nd BCE: any roman could enlist the army
+  - Julius Caesar:
+    - was unconventional, did things in his own way
+    - notorious for affairs
+    - was pushing for war & conflict
+- Political Violence
+  - 88 - 81 BCE: First Civil War
+    - fought between Marius, Sulla, and theiir supporters
+      - **Sulla**:
+        - Marches on Rome twice to secure the power
+        - Massacres 1600-4700 opponents and confiscates their property - **proscriptions**
+        - Firces senate to make him a **dictator**
+  - 49 - 45 BCE: Second Civil War
+    - Fought between **Pompey** (aka 'yung butcher' + most of the senate) and **Julius Caesar**
+    - Caesar threatened with legal prosecution exile
+      - **crossed Rubicon** river into Italy and marched into Rome
+      - made dictator and then **dictator perpetuus** - permanent dictator
+  - 44 BCE: Assasination of Caesar
+    - Caesar was killed on **ides of march**: march 15th => sparks further conflict
+  - 44 - 36 BCE: Intermittent civil wars
+    - winners are Octavial (heir of Caesar) nad Caesar's friend Mark Anthony
+  - 32 - 31 BCE: Final Civil War
+    - Octavial defeats Mark Anthony
+    - Defeats Cleopatra
+    - Octavian, **aka Agustus** assummes sole power as **principes**
+      - **principes**: first among equals. Emperor == principes => Rome ruled by emperors
+- Rise of monarchy:
+  - roman emperor held powers of magistrates without taking their offices
+  - showed respect for senate
+  - had right to command troops/military - **imperium**
+    - other genrals fight under emperor's **auspices** (divine or prophetic token.)
+
+### Roman Entertainment
+
+![04.png](/grst205/img/lecfinal/04.png)
+
+- **Gladiatorial combat**: imported from Etrutia, arrested by **3rd BCE** as a funerary ritual
+  - Over time, link to funerals is lost, seen as another public spectacle - **munera**
+- **Chariot Racing**: publicly funded as part of state *ludi*
+  - **ludi**: games in honor of the gods 
+- **Drama** from **3rd BCE**, inspired by Greek Drame
+  - publicly funded as a part of **ludi**
+- Organized by politicians and magistrates (especially *aediles*) during Republic; dominated by emperor in Imperial Period
