@@ -435,9 +435,59 @@ Delian League founded in 478/477 BC. Athens led 150 polies with one goal - aggre
 
 ### 🕴 Alexander the Great: 336 - 323 BC
 
-```
-TODO
-```
+#### Why was Alexander successful
+
+- Name of his famous horse **Bucephalus** - Courageous
+- He was courageous, decisive and charismatic
+- Cutting the Gordian Knot 
+- **A king does not drink if his army is thirsty** (some famous quote he said to his army when they were in the desert)
+
+#### Campaigns of Alexander (334-325 BCE)
+
+**Important Events**:
+- **Battle of Issus**: 333 BC
+  - Persian kind Darius III personally defeated for the first time
+  - **331 BCE**:, Darius is defeated again. Soon after he murdured by one of his satraps.
+    - Darius is the **last ruler of Achaemenid dynasty**.
+- **Captures of Persipolis**: 330 BCE
+- **Mutiny at Hyphasia**: 326 BCE
+  - Turns back after mutiny at Hyphasiis River in India 
+- **323 BCE**: Dies in Babylon
+- Established kingdoms in: Asia, Syria, Egypt, Macedon, and Northern Greece
+
+#### Motivation
+
+- Need to prove seld as courageous warrior king
+- Inspired by greek mythology
+  - god Dionysus and hero Herakles said to have visited India
+- Belief in own divinity/megalomania
+  - proclaimed **'son of Ra/Ammon [Zeus]' in Egypt**.
+- To gain world empire
+- Later Greeks believed that Alexander's goal had been to spread Greek culture across Mediterranean world
+
+#### Treatment of Other People
+
+- Takes over Persian Empire (end of Achaemenid dynasty)
+- **330 BCE**: Burns down palaces at Persepolis
+- Appropriates land to build cities, demands supplies, troops
+- Several massacres (Tyre, India)
+- Greek and non-greek sources show attempt to gain local loyalty
+- Astronomical diaries - texts producedby priests in Babylon, mention of Alexander's activities
+- Married women from Persian Empire: one Bactrian (Roxane), two Persians (Statira, daughter of Darius III).
+- Adopted Persian court ceremonies and dress
+- Tolerated or encouraged local religions and customs
+- **324 BCE**: mass marriage of Macedonian *hetaroi* to Persian women
+- included and promoted persians in army and government
+
+#### Alexander the Great: Significance
+
+- some conquests lost, but lasting Macedonian kingdoms established in:
+  - asia + syria
+  - egypt
+  - Macedon + northen Greece
+- Larger, more interconnected Mediterranean world, linked by Greek language and culture
+- More trade and travel
+- Plutarch wrote about his campaigns 400 years later
 
 ## 🐺 Romans
 
