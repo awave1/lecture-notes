@@ -1,15 +1,17 @@
 # GRST205: Final review 🤪
 
-## ⌛️ Dating systems:
-Both systems (BC/AD, BCE/CE) are split by 0. The older, the further you're away from 0 in BC/BCE (backwards):
-* BC - Before Christ
-* AD - Anno Domini
-* BCE - Before Common Era
-* CE - Common Era
-
 ## 🇬🇷 Greeks
 
 Greeks are group people who lived around Aegean Sea, all spoke ancient greek language of some form.
+
+### ⌛️ Dating systems
+
+Both systems (BC/AD, BCE/CE) are split by 0. The older, the further you're away from 0 in BC/BCE (backwards):
+
+- BC - Before Christ
+- AD - Anno Domini
+- BCE - Before Common Era
+- CE - Common Era
 
 ### 🤗 Early Greece
 
@@ -29,6 +31,7 @@ Palaces were religious, economic powers.
 Minoans were located on island of Crete. Key palace called **Knosos** (1700 BC).
 
 **Knosos**:
+
 - Lightwell: hole in the ceiling
 - Labytrinthine floor plan: maze-like floor design
 - Central courtyard: central performance community space
@@ -43,22 +46,24 @@ Minoans were located on island of Crete. Key palace called **Knosos** (1700 BC).
   - Labyrinthine floor plan
 
 **Minoan Art**:
+
 - Bull leaping
 - Snake godess
 - Both were common motifs in minoan art, but lack of knowledge from knowing the meaning behind the art.
 
-Minoans spoke **Linear A**, which is *not* decipherable. Eventually, Minoans were taken over by Myvenaean in **1400 BC**.
+Minoans spoke **Linear A**, which is _not_ decipherable. Eventually, Minoans were taken over by Myvenaean in **1400 BC**.
 
 #### Mycenaean: 1700 - 1200 BC
 
 Mycenaean were influenced by Minoans. Some bones were found in Pylos.
 
 **Mycenae**
+
 - Settlement size: 30 km^2
 - Defensible position
 - Heavy fortifications
   - **Cyclopean** nasonry: massive boulders
-    - Called after **Cyclops**: one eyed giants from Greek mythology 
+    - Called after **Cyclops**: one eyed giants from Greek mythology
 - **Megaron**: central hall, rather than courtyard
 - Same decorative style as Minoan
 - Art includes more military elements
@@ -82,12 +87,13 @@ Still a part of Dark Age but Greeks were producing more art and developed more l
 Late Dark Age sees shift to **geometric pottery**. Geometric pottery was decorated with geometric shapes called **meanders**.
 
 **Greek Alphabet**: 800 BC
+
 - Developed by 800 BC
 - Was different from Mycenaean, not syllabic, like Linear B
 - It was first script to use signs for vowels
 - Derived from **Phonicians**
 
-Greek Revival encouraged trade/contact with other peoples of Mediterranean. 
+Greek Revival encouraged trade/contact with other peoples of Mediterranean.
 
 ### 🤝 Archaic Period: 750 - 480 BC
 
@@ -96,6 +102,7 @@ Shift from archaic to communal values. The concept of **Polis**: 750 BC was deve
 #### Hoplite Warfare: 8th - 7th BC
 
 Hoplite warfare was developed around 8th - 7th BC and it is main Greek fighting style until 4th BC. Called after a shield **hoplon** - heavy rounded wooden shield, coated with bronze; about 3ft tall, covered upper body and a person beside. Other terms:
+
 - **Greaves**: Hoplite shin guards
 - **Linen Cuirass**: Hoplite chest guard
 - **Sarissa**: A long spear
@@ -113,22 +120,26 @@ Hoplite warfare was developed around 8th - 7th BC and it is main Greek fighting 
 The author of **The Illiad** and **The Odyssey**.
 
 **The Illiad**:
+
 - Covers Trojan War
 - Might have ocured in 13th / 12th c BC
 - Troy: located in modern Turkey
 
 **The Odyssey**:
+
 - Return of Odysseus, Greek king, from Trojan War
 
 ##### Art
 
 **Kouros**
+
 - Life sized male sculptures
 - Appeared around 6th c BC
 - Kouros were inspired by **Egyptian sculptures**
 - Showed Greek obsession with male body and interest in its beauty 🏳️‍🌈
 
 **Kore**
+
 - Life sized female sculpture
 - Weren't naked like **kouros**
 
@@ -143,6 +154,7 @@ During the archaic period, non-elite Greeks challenged aristocrats' claim to sup
 #### Polis System
 
 **Polis** is a **city-state**. Important polies were:
+
 - Thebes
 - Athens
 - Corinth
@@ -150,6 +162,7 @@ During the archaic period, non-elite Greeks challenged aristocrats' claim to sup
 - Rhodes
 
 Typical characteristics of a polis:
+
 - Temples - for worshipping Greek Gods
 - **Agora** place for governemnt acivity, "gathering place", "assembly"
 - Paved streets with grid pattern
@@ -157,6 +170,7 @@ Typical characteristics of a polis:
 - Citizen army
 
 Polis consisted of several organs of government:
+
 - Assembly
 - Council
 - Officials
@@ -195,7 +209,7 @@ It encouraged communal values within a city and conflict with other polies. Poli
 
 #### Sparta
 
-Sparta was ruled by **oligarchy** (rule of few (rich)). **Gerousia**: more power to aristocratic council. Assembly of all adult male citizens, but they were only able to vote yes/no. Sparta had two kings **basileis**, but their power was limited, were similar to army commanders. 
+Sparta was ruled by **oligarchy** (rule of few (rich)). **Gerousia**: more power to aristocratic council. Assembly of all adult male citizens, but they were only able to vote yes/no. Sparta had two kings **basileis**, but their power was limited, were similar to army commanders.
 
 Kings were supervised by annually elected **ephors** (5 leaders of Sparta 🧙🏿‍️🧙🏾‍️🧙🏽‍️🧙🏼‍🧙🏻‍). Two ephors supervised the king that went to war
 
@@ -204,6 +218,7 @@ Kings were supervised by annually elected **ephors** (5 leaders of Sparta 🧙�
 Athens had **democracy** (power of people). **Areopagus** - less power to aristocratic council. Assembly of all adult male citizens who can speak and vote. All adult male citizens can be jurors.
 
 Kings were replaced by annually elected magistrates:
+
 - **Archons**: the chief magistrate or magistrates in many city-states.
 - **Strategoi**: military general.
 
@@ -216,6 +231,7 @@ Herodotus was Greek historian. Was heavily interested in other cultures: Egyptia
 Land warfare, dominated from 7th - 4th BC. It was a conflict between Greek polies and Persian Empire. Major source of Persian Wars was [Herodotus](#herodotus-440-bc).
 
 **Major Events**:
+
 1. [Ionian Revolt](#ionian-revolt-499---493-bc): 499 - 493 BC
 2. [First Persian Offensive](#first-persian-offensive)
 3. [Second Persian Offensive](#second-persian-offensive)
@@ -241,6 +257,7 @@ It was personally led by **Xerxes I**, son of Darius I. Much larger persian forc
 31 polies join together under Spartan leadership, called **Hellenic League** (Hellenic = Greek).
 
 **Key Battles**:
+
 1. [Battle of Thermopylae](#battle-of-thermopylae-480-bc)
 2. [Battle of Salamis](#battle-of-salamis-480-bc)
 3. [Battle of Platea](#battle-of-platea-479-bc)
@@ -290,6 +307,7 @@ Led by Spartan regent **Pausaias**, son of Leonidas, results in Greeks defeating
 - Some tradegies were based on historical events
 
 #### Sophocles' Antigone
+
 - A tragedy by Sophocles written in or before 441 BC
 - Chorus: Wisdom is provided as the chief part of happiness, and our dealings with the gods must be in way unholy. The great words of arrogant men will be repaid with heavy blows, and wisdom will be taught in old age.
 
@@ -329,6 +347,7 @@ Delian League founded in 478/477 BC. Athens led 150 polies with one goal - aggre
 - **460 - 455** BC: Athens meddles in Peloponnese (Argos, Megara)
 
 **Key themes in the Peloponnesian War**:
+
 - Struggles between democracy and oligarchy
 - The Navy vs. the Infantry
 - The role of allies (Cold War)
@@ -354,7 +373,7 @@ Delian League founded in 478/477 BC. Athens led 150 polies with one goal - aggre
 ##### Strategies
 
 - 462-429 BCE: Pericles (strategos) dominated in Athens
-  - Plan: 
+  - Plan:
     - stay within walls
     - Import grain
     - Attack Peloponnese with navy
@@ -375,19 +394,19 @@ Delian League founded in 478/477 BC. Athens led 150 polies with one goal - aggre
 #### Why Athenians Lost?
 
 1. Spartans terms for Athens, after they won:
-    - Empire lost (democracies replaced with oligarchies)
-    - Limitation for Athenian army: No more than 12 ships
-    - Long walls torn down, to make sure Athenians can't try the naval strategy
-    - Oligarchy installed in 404 BCE in Athens (democracy restored in 403 BCE)
+   - Empire lost (democracies replaced with oligarchies)
+   - Limitation for Athenian army: No more than 12 ships
+   - Long walls torn down, to make sure Athenians can't try the naval strategy
+   - Oligarchy installed in 404 BCE in Athens (democracy restored in 403 BCE)
 2. Less confidence in democracy, harsher policies for politicians.
 3. Concentration of population within walls results in plague (430 BCE).
-     - Pericles dies 429 BCE, subsequent Athenians leaders less effective.
+   - Pericles dies 429 BCE, subsequent Athenians leaders less effective.
 4. **Sicilian Expedition** (415 - 413 BC): Athens tries to help Egesta vs Selinus, Selinus calls in ally Syracuse.
-     - 7k hoplites survived, but got starved to death. Was possible to survive, if you knew tradegies.
+   - 7k hoplites survived, but got starved to death. Was possible to survive, if you knew tradegies.
 5. Harsh treatment of allies alienates support:
-     - e.g. Mytilene, revolted vs Athenian Empire (**428 BCE**), recaptured in **427 BCE**.
-     - 'Mytilenaean Debate' in athens about how to treat the recaptured city
-6. After the war, Greece left vulnerable to attacks from Macedon 
+   - e.g. Mytilene, revolted vs Athenian Empire (**428 BCE**), recaptured in **427 BCE**.
+   - 'Mytilenaean Debate' in athens about how to treat the recaptured city
+6. After the war, Greece left vulnerable to attacks from Macedon
 
 #### Significances
 
@@ -419,10 +438,11 @@ Delian League founded in 478/477 BC. Athens led 150 polies with one goal - aggre
 **350-338 BCE**: intervened in disputes betwen polies. Phillip II was the king during Battle of Chaeronea.
 
 **Battle of Chaeronea**: 338 BC
+
 - Defeat of remaining Greek opposition
 - Macedonians solidify control of Greece
 - Phillip strenthened loyalty to king among elite and non-elite Macedonians
-- Macedonians used new weapon, **sarissa** and more cavalry to break up hoplite phalanx 
+- Macedonians used new weapon, **sarissa** and more cavalry to break up hoplite phalanx
 
 **League of Corinth** was founded in 337 BC. Their maing goals are common peace and vengeance against Persia. League of Corinth was funded by King Phillip.
 
@@ -439,19 +459,20 @@ Delian League founded in 478/477 BC. Athens led 150 polies with one goal - aggre
 
 - Name of his famous horse **Bucephalus** - Courageous
 - He was courageous, decisive and charismatic
-- Cutting the Gordian Knot 
+- Cutting the Gordian Knot
 - **A king does not drink if his army is thirsty** (some famous quote he said to his army when they were in the desert)
 
 #### Campaigns of Alexander (334-325 BCE)
 
 **Important Events**:
+
 - **Battle of Issus**: 333 BC
   - Persian kind Darius III personally defeated for the first time
   - **331 BCE**:, Darius is defeated again. Soon after he murdured by one of his satraps.
     - Darius is the **last ruler of Achaemenid dynasty**.
 - **Captures of Persipolis**: 330 BCE
 - **Mutiny at Hyphasia**: 326 BCE
-  - Turns back after mutiny at Hyphasiis River in India 
+  - Turns back after mutiny at Hyphasiis River in India
 - **323 BCE**: Dies in Babylon
 - Established kingdoms in: Asia, Syria, Egypt, Macedon, and Northern Greece
 
@@ -476,7 +497,7 @@ Delian League founded in 478/477 BC. Athens led 150 polies with one goal - aggre
 - Married women from Persian Empire: one Bactrian (Roxane), two Persians (Statira, daughter of Darius III).
 - Adopted Persian court ceremonies and dress
 - Tolerated or encouraged local religions and customs
-- **324 BCE**: mass marriage of Macedonian *hetaroi* to Persian women
+- **324 BCE**: mass marriage of Macedonian _hetaroi_ to Persian women
 - included and promoted persians in army and government
 
 #### Alexander the Great: Significance
@@ -493,6 +514,22 @@ Delian League founded in 478/477 BC. Athens led 150 polies with one goal - aggre
 
 Romans - controlled a bunch of territories in Europe and North Africa. They weren't the same as Greeks, but admired Greek culture. Eventually, conquered the Greek world.
 
-```
-TODO
-```
+### 🤙 Early Italy
+
+### 🕵🏽‍️ Evidence for Early Rome
+
+### 🤴🏻 Rome: The Regal Period (Monarchy): 753 - 859 BC
+
+#### Romulus as King
+
+### 🗣 Rome: Early Republic
+
+#### Struggle of the Orders: 5th - early 3rd BC
+
+### 💪 Rome: Republic
+
+### ⚔️ Punic Wars
+
+### 🎎 Hellenistic Period & Growth of Roman Empire
+
+### 🛐 Roman Religion
