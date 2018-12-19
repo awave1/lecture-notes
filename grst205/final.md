@@ -1,4 +1,4 @@
-# GRST205: Final review 🤪
+# 🤪 GRST205: Final review
 
 ## 🇬🇷 Greeks
 
@@ -391,7 +391,7 @@ Delian League founded in 478/477 BC. Athens led 150 polies with one goal - aggre
       - Oligarchy installed 404 BCE, Democracy stored in 403 BCE
   - Battle of Aegostami (405 BCE), Long Walls
 
-#### Why Athenians Lost?
+#### Why Athenians Lost
 
 1. Spartans terms for Athens, after they won:
    - Empire lost (democracies replaced with oligarchies)
