@@ -230,7 +230,7 @@ Herodotus was Greek historian. Was heavily interested in other cultures: Egyptia
 
 ### ⚔️ Persian Wars: early 5th BC
 
-Land warfare, dominated from 7th - 4th BC. It was a conflict between Greek polies and Persian Empire. Major source of Persian Wars was [Herodotus](#herodotus-440-bc).
+Land warfare, dominated from 7th - 4th BC. It was a conflict between Greek polies and Persian Empire. Major source of Persian Wars was [Herodotus](#-herodotus-440-bc).
 
 **Major Events**:
 
@@ -881,7 +881,11 @@ There were two main leagues:
 
 > pst. slavery is bad, ok.
 
-Slaves had collar tags with names of their master, in case if they ran away. Treatment of slaves depended on the law, personality of the owner & the type of work they had to do.
+Free birth did not necessarily equal Roman citizenship.
+
+Slaves (**servi**) had collar tags with names of their master, in case if they ran away. Treatment of slaves depended on the law, personality of the owner & the type of work they had to do.
+
+Slave was never a citizen and had none of the citizen's legal benefits. Slaves owned nothing.
 
 Slavery was inherited. Treatment of slaves:
 
@@ -894,9 +898,27 @@ Some slaves had been trained and were **specialized** in something; developed cl
 
 #### Freepeople
 
-Roman citizens were able to free their slaves. Free slaves were called **freepeople**. Freepeople were important in Rome economy - they could acquire wealth.
+Freedpersons existed in the divide betwee freeborn citizen and slave. Freed status was the only status that was not hereditary
+
+Roman citizens were able to free their slaves. Free slaves were called **freepeople**. Freepeople were important in Rome economy - they could acquire wealth. Citizenship was granted with formal **manumission**, the act of an owner freeing their slave.
+
+The law allowed former masters to continue to inflict physical punishment upon ex-slaves.
 
 Freeperson's name consisted of **praenomen** (first name), **nomen** (family name), **cognomen** (distinguishing name).
+
+Terms:
+
+- **Ordo**: was often used and can be translated to "rank", "class", "station", "condition"
+- **Honestiores**: wealthy
+- **Humiliores**: poor
+
+The elite includes the three wealthiest classes of freeborn Roman citizens:
+
+- **Equestrians**: those who had minimum of 400k **sesterces** (money) of annual income
+- **Senatorials**: equiestrians who had been elected to a public magistracy and had gained membership in **senate**
+- **Decurions**: wealthies members of urban communities outside of Rome; were eligeble for local mahistracies; amt of wealth varied from place to place.
+
+The rest were non-elite.
 
 ### 💒 Christianity
 
