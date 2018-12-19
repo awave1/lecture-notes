@@ -115,7 +115,7 @@ Hoplite warfare was developed around 8th - 7th BC and it is main Greek fighting 
 
 #### Increased Literacy & Artistic Achievements
 
-##### Homer
+#### Homer
 
 The author of **The Illiad** and **The Odyssey**.
 
@@ -129,16 +129,16 @@ The author of **The Illiad** and **The Odyssey**.
 
 - Return of Odysseus, Greek king, from Trojan War
 
-##### Art
+#### Art
 
-**Kouros**
+**Kouros**:
 
 - Life sized male sculptures
 - Appeared around 6th c BC
 - Kouros were inspired by **Egyptian sculptures**
 - Showed Greek obsession with male body and interest in its beauty 🏳️‍🌈
 
-**Kore**
+**Kore**:
 
 - Life sized female sculpture
 - Weren't naked like **kouros**
