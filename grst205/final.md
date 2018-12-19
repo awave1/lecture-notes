@@ -313,21 +313,127 @@ Led by Spartan regent **Pausaias**, son of Leonidas, results in Greeks defeating
 
 ### ⚔️ Peloponnesian War
 
-#### Athenian War
+#### Hellenic League
+
+Forces under **Pausanias** liberate Ionian polies. Pausanias, accused of Persian sympathies, flees in 478 BC.
+
+#### Delian League
+
+Delian League founded in 478/477 BC. Athens led 150 polies with one goal - aggressive protection from Persia. Members of the league **contribute either ships or troops**. From 460 BC Athens refuses to allow secession from League, confiscated territory from rebelious polies.
 
 #### Lead Up to Peloponnesian War
 
+- Growing fear of Athens
+- **464 - 462** BC: Helots revolt, Sparta calls to Hellenic League for help
+  - Ahens send 4000 but they were rejected
+- **460 - 455** BC: Athens meddles in Peloponnese (Argos, Megara)
+
+**Key themes in the Peloponnesian War**:
+- Struggles between democracy and oligarchy
+- The Navy vs. the Infantry
+- The role of allies (Cold War)
+
 #### Thycydides, History of the Peloponnesian War: 420 - 400 BC
+
+- Athenian elite citizen
+- Strategos in Thrace (nothern Greece) **424 BCE**
+  - Spartans capture Amphipolis before he can arrive **423/422 BCE**
+- **Spoke to both sides** in the conflict
+- Building on legacy of Heradotus
+  - Interest in difference between real causes atia (_aitiai_) and pretexts (_prophaseis_) for action
+  - Less **divine machinery**
 
 #### Peloponnesian War
 
+- Sparta + allies vs Athens vs allies
+- Ostensible causes of war:
+  - Colony Corcyra conflicts with mother-city Coritnth
+  - Athens intervenes to help Corcyra
+  - Corinth appeals to Sparta + allies to fight Athens + allies
+
 ##### Strategies
+
+- 462-429 BCE: Pericles (strategos) dominated in Athens
+  - Plan: 
+    - stay within walls
+    - Import grain
+    - Attack Peloponnese with navy
+  - Succeeded by 'demagogues'
+- Spartan Kings also cautious strategy:
+  - Destroy farms in Attica
+  - Defeat Athenian allies
+    - General: Brasidas (infantry, died in 422 BCE), Lysander Navy (407-404 BCE)
+  - Eventually, Spartans win
+    - Use Persian-financed navy to defeat the Athenians at Sea, depriving Athens of grain
+    - Spartan terms for Athens:
+      - Democracies replaced with oligarchies
+      - No more than 12 ships
+      - Long wall torn down
+      - Oligarchy installed 404 BCE, Democracy stored in 403 BCE
+  - Battle of Aegostami (405 BCE), Long Walls
 
 #### Why Athenians Lost?
 
+1. Spartans terms for Athens, after they won:
+  - Empire lost (democracies replaced with oligarchies)
+  - Limitation for Athenian army: No more than 12 ships
+  - Long walls torn down, to make sure Athenians can't try the naval strategy
+  - Oligarchy installed in 404 BCE in Athens (democracy restored in 403 BCE)
+2. Less confidence in democracy, harsher policies for politicians.
+3. Concentration of population within walls results in plague (430 BCE).
+  - Pericles dies 429 BCE, subsequent Athenians leaders less effective.
+4. **Sicilian Expedition** (415 - 413 BC): Athens tries to help Egesta vs Selinus, Selinus calls in ally Syracuse.
+  - 7k hoplites survived, but got starved to death. Was possible to survive, if you knew tradegies.
+5. Harsh treatment of allies alienates support:
+  - e.g. Mytilene, revolted vs Athenian Empire (**428 BCE**), recaptured in **427 BCE**.
+  - 'Mytilenaean Debate' in athens about how to treat the recaptured city
+6. After the war, Greece left vulnerable to attacks from Macedon 
+
 #### Significances
 
-### 🇲🇰 Rise of Macedon & Alexander the Great
+- End of Athenian Empire and dominance
+- Weakens Athenian democracy
+- Sparta wins but soon loses the support of other polies
+- **Leads to upheaval and uncertainty in Greece in 4th c. BCE**
+  - Greek polies more vulnerable to interference from Macedon
+
+### 🇲🇰 Rise of Macedonia
+
+#### Ancient Macedonia
+
+- Few cities, **many tribal groups**
+- **Didn't** use polis system
+- King has sole power, advised by **hetairoi**, noble campanion
+  - Macedon was **monarchy**
+- Aristocratic warrior ideals:
+  - Personal Courage, **war and hunting celebrated**
+- Absorbed and admired Greek culture
+- Finds from royal tombs at **Vergina**:
+  - Gold diadems and coins
+  - Arms and armor
+  - Bones
+  - Fresco paintings
+
+#### Rise Of Macedonia
+
+**350-338 BCE**: intervened in disputes betwen polies. Phillip II was the king during Battle of Chaeronea.
+
+**Battle of Chaeronea**: 338 BC
+- Defeat of remaining Greek opposition
+- Macedonians solidify control of Greece
+- Phillip strenthened loyalty to king among elite and non-elite Macedonians
+- Macedonians used new weapon, **sarissa** and more cavalry to break up hoplite phalanx 
+
+**League of Corinth** was founded in 337 BC. Their maing goals are common peace and vengeance against Persia. League of Corinth was funded by King Phillip.
+
+- Had greek style theatres
+- **Phillip II**:
+  - Encoureged loyalty
+  - United greeks
+  - Invented new technology
+  - **336 BCE**: dies
+
+### 🕴 Alexander the Great: 336 - 323 BC
 
 ```
 TODO
