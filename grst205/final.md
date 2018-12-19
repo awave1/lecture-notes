@@ -790,7 +790,7 @@ There were two main leagues:
   - during the imperial period, emperor is worshipped as a god - **divus**
   - religion has political consequences
 
-### The Fall of Roman Republic
+### 🍂 The Fall of Roman Republic
 
 - 133 - 131 BCE: Rome late republic
   - Major development:
@@ -846,7 +846,7 @@ There were two main leagues:
   - had right to command troops/military - **imperium**
     - other genrals fight under emperor's **auspices** (divine or prophetic token.)
 
-### Roman Entertainment
+### 🤹‍️ Roman Entertainment
 
 ![04.png](/grst205/img/lecfinal/04.png)
 
@@ -857,3 +857,43 @@ There were two main leagues:
 - **Drama** from **3rd BCE**, inspired by Greek Drame
   - publicly funded as a part of **ludi**
 - Organized by politicians and magistrates (especially *aediles*) during Republic; dominated by emperor in Imperial Period
+
+#### Roman Mass Entertainment: Significances
+
+**Political Significance**:
+
+- Used by emperors to demonstrate their generosity and gain popularity
+- Userd by ordinary Romans to express their opinions to the emperor
+
+**Cultural Significance**:
+
+- opportunity for romans to celebrate the success and power of their empire
+- beleivedto teach moral lessons about courage, discipline
+- tells us about roman attitudes towards human and animal life
+
+### 👨🏻‍🌾 Slavery
+
+> pst. slavery is bad, ok.
+
+Slaves had collar tags with names of their master, in case if they ran away. Treatment of slaves depended on the law, personality of the owner & the type of work they had to do.
+
+Slavery was inherited. Treatment of slaves:
+
+- It was legal to abuse slaves physically & sexually
+- Slaves could only give legal evidence under torture
+
+**Pedanius Secundus** owned 400 slaves and got killed by one of them.
+
+Some slaves had been trained and were **specialized** in something; developed close and trusted relationships with citizens. Many children of Roman elite were raised by slaves.
+
+#### Freepeople
+
+Roman citizens were able to free their slaves. Free slaves were called **freepeople**. Freepeople were important in Rome economy - they could acquire wealth.
+
+Freeperson's name consisted of **praenomen** (first name), **nomen** (family name), **cognomen** (distinguishing name).
+
+### 💒 Christianity
+
+### 🌍 Rome: Late Empire
+
+### 🗡 Fall of Rome
