@@ -512,6 +512,8 @@ Delian League founded in 478/477 BC. Athens led 150 polies with one goal - aggre
 
 ## 🐺 Romans
 
+> pst. Moscow is the Third Rome
+
 Romans - controlled a bunch of territories in Europe and North Africa. They weren't the same as Greeks, but admired Greek culture. Eventually, conquered the Greek world.
 
 ### 🤙 Early Italy
@@ -602,10 +604,188 @@ Roman poet **Ennuis** wrote a lot of poetry about Rome and can be compared to Ho
 - As the result of Struggle of the Orders **10 tribunes of the plebs** created to protect all citizens - **provocatio**:
   - Tribunes of the plebs were elected annually
 
-### 💪 Rome: Republic
+### 💪 Rome: Republic: 5th - early 3rd
+
+- 5th - early 3rd
+- Defeated states remain independent and provide money and troops
+  - some are given citizenship, others become allies
+
+#### Rome success
+
+**Social Factors**:
+
+- Romans found peaceful solutions to socio-economic friction in their society
+- Resolution of Struggle of the orders
+  - Plebians continue to support the state
+
+**Diplomatic Factors**:
+
+- Romans harnessed the strength of defeated opponents
+  - Made allies: **Socii** - allies
+- Used diplomacy to justify their wars
+  - Beleived that every war was a just war - **bellum iustum**
+
+**Military Factors**:
+
+- **Scutum**: oblong shield
+  - each shield protected the soldier more or less completely
+- Soldiers were armed with:
+  - **Pilum**: 2 javelins
+  - **Gladius**: sword
+- Soldiers were getting paid (**end of 5th BCE**: state pay)
+- Flexible troop organization:
+  - **Legion**: 4500 men, compromised of smaller units
+  - **Maniples**: Smaller unit, until 2nd BCE
+  - **Cohots**: new name for maniples
+  - romans were able to resist hoplite phalanx and a Macedonian-style phalanx with *sarissa*
+  - made the army more maneuverable and responsive
 
 ### ⚔️ Punic Wars
 
+Punic wars happened between Rome and Carthage. **Punic** is the term Romans gave for Carthagenians. **Phoenicians**, people from near east Syria. Mainly were traders, known for exporting purple shellfish.
+
+Carthage was founded in 814 BC. In 6th BC, Carthage becomes **main Phoenician city**.
+
+Major sources about the wars are:
+
+- **Polybius**: Greek, 2nd BC, witnessed [Third Punic War](#third-punic-war-264---241-bc)
+- **Livy**: Roman, late 1st BC
+- **No carthagenian** evidence
+
+#### First Punic War: 264 - 241 BC
+
+The First Punic War was fought to establish control over the strategic islands of Corsica and Sicily. Rome backs Italian merenaries who captured Messana. Carthage backs Greek Syracuse. Regulus, the consul, captured by Carthagenians.
+
+##### Military Factors in Roman Success
+
+Romans won by building fleet, which resulted in Rome becoming naval power.
+
+![01.png](/grst205/img/lecfinal/01.png)
+
+- **Corvus**: Boarding ramn, key technology in First Punic War
+- **Rostra**: Ship ram
+
+##### Oucomes & Significances
+
+- Rome gets **Sicily** => first Roman territory outside Italian peninsula
+- Rome captures **Corsica and Sardinia**: 238 BCE
+- Carthage weakened, pays war idemnity, revolts among unpaid troops
+- Carthagenians seek to expand territory in Spain => Rome spooked
+
+#### Second Punic War: 264 - 241 BC
+
+**Important Carthagenian Generals**:
+
+1. Hamiclar Barca
+2. Hasdrubal
+3. Hannibal Barce
+
+##### Events
+
+![03.png](/grst205/img/lecfinal/03.png)
+
+- 226 BCE: Romans and Carthagenians agree not to cross **Ebro river**
+- Carthagenian forces led by **Hannibal Barca**, capture Roman friend Saguntum
+- **amicitia**: "friendship", relationship
+- 218 CE: Hannibal crosses the Ebro river, breaking treaty with Rome
+- Invades Italy from north, crossing the Alps:
+  - 20000 infantry
+  - 6000 cavalry
+  - 30 elephants
+- **Battle of Canae**: 216 BCE, Hannibal wins
+- Romans manage to contain Hannibal in Southern Italy
+- **Romans invade North Africa, led by Scipio Africanus**: 204 BCE
+- **Battle of Zama**: 202 BCE, Hannibal defeated, flees and dies in Asia Minor
+
+##### Military Factors
+
+- Romans defeated Hannibal by:
+  - avoiding pitched battles
+  - using **fabian tactics**
+  - invading Africa to threaten Carthage
+  - retaining the loyalty of the most of their Italian allies: **Italian Manpower**
+
+##### Outcomes & Significances
+
+- Expansion of Rome territory
+  - Rome gains control of Spain
+- End of Carthagenian military and naval power
+  - Huge idemnity to be paid for the next 50 yrs
+  - Fleet confiscated and Carthage forbidden to build navy
+- Rome becimes dominant power in the Mediterranean
+
+#### Third Punic War: 264 - 241 BC
+
+- Outline:
+  - 151 BCE: Carthage finishes paying war idemnity
+  - Carthagenians start building navy
+  - Rival kingdom Numidia, Roman ally, provoked Carthage into war
+  - Romans under Scipio Aemilianus destroy the city in 146 BCE
+  - Carthagenian territory becomes Roman province of Africa
+
 ### 🎎 Hellenistic Period & Growth of Roman Empire
 
+#### Hellenistic Period: 323 - 31 BC
+
+Greek language and culture spreads around Medirettanean sea. The results of Alexander's conquests were divided into **hellenistic kingdoms**. Largest kingdom was **kingdom of Seleucids** aka former Persian Empire. **Ptolomeis** located in Egypt. **Antigonids** - Macedonia and Greece.
+
+In 264 - 133 BC, Romans **begin to intervvene** Greece, during middle republican period.
+
+##### Hellenistic Kings
+
+Hellenistic kings saw themselves as the **duadochoi**, successoors, of Alexander. They continued Macedonian tradition of justifying their leadership through personal charisma and military victories.
+
+Hellenistic kings kept Greek polies on their side by offering **benefits** such as freedom. By freedom they meant freedom from taxation. Also provided garrison, and right to use their own laws. Polies may change sides if they found that other kings might treat them differently.
+
+##### Main Political Agents
+
+1. Hellenistic Kings
+2. Greek polies
+3. Greek **ethne**, federal states. Claimed common ethhnic descend, called **ethnos**
+
+There were two main leagues:
+
+1. **Achaean** league
+2. **Aetolian** league
+
+##### Romans in Mediterranean
+
+- In late 3rd BC Romans attack Illyria
+- Greek polies in Adriatic become Roman "friends"
+- War vs Antigonid Phillip V & Achaenan league: end of 2nd BC
+- War vs Seleucid Antiochus III & Aetolian League: 192 – 188 BC
+- War vs Antigonid Perseus => end of Macedonian Kingdom
+- Ongoing conflict between kings, leagues, and polies => constant appeal to Rome to help
+- Romans crush rebelion in Macedonia and Macedonia becomes Roman province: 1500 - 148 BC
+- Final war vs Achaean League: 146 BC
+  - Corinth is destroyed
+  - Greece became part of province of Macedonia
+
+**Roman success in Medetiranean**:
+
+- Political Factors
+  - Tradition of instability, competition, and appeal to outside powers in Hellenistic world
+- Diplomatic Factors
+  - wars vs Antigonids and Seleucids were waged with greek allies
+  - wars were justified by appeals from 'friends' and allies
+  - claimed their "friends" were "free"
+- Military Factors
+  - morale of troops
+  - authority of commanders mainained by rotation of offices (commands)
+
 ### 🛐 Roman Religion
+
+- Worshipped many gods
+- **polytheism**: religion with many gods
+- romans had their own indigenous divine beings
+  - portrayals were influenced by Etruscan and Greek ideas and art
+- Rituals:
+  - Consisted of some key players:
+    - Officiant - conducts the ceremony
+    - Victimarius - victim man
+    - Flute player
+    - Priests - pontifices, haruspex
+- religion & politics:
+  - solial-political elite are the priests
+  - during the imperial period, emperor is worshipped as a god - **divus**
+  - religion has political consequences
