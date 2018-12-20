@@ -390,7 +390,7 @@ Delian League founded in 478/477 BC. Athens led 150 polies with one goal - aggre
       - Democracies replaced with oligarchies
       - No more than 12 ships
       - Long wall torn down
-      - Oligarchy installed 404 BCE, Democracy stored in 403 BCE
+      - Oligarchy installed 404 BCE, Democracy restored in 403 BCE
   - Battle of Aegostami (405 BCE), Long Walls
 
 #### Why Athenians Lost
@@ -902,11 +902,15 @@ Freedpersons existed in the divide betwee freeborn citizen and slave. Freed stat
 
 Roman citizens were able to free their slaves. Free slaves were called **freepeople**. Freepeople were important in Rome economy - they could acquire wealth. Citizenship was granted with formal **manumission**, the act of an owner freeing their slave.
 
-The law allowed former masters to continue to inflict physical punishment upon ex-slaves.
+The law allowed former masters to continue to inflict physical punishment upon ex-slaves, who continued to owe their ex-masters both a derential attitude (**obsequium**) and a certain amount of (free) labour (**operae**) per year.
 
-Freeperson's name consisted of **praenomen** (first name), **nomen** (family name), **cognomen** (distinguishing name).
+Citizenship came with the right of three named. Freeperson's name consisted of **praenomen** (first name), **nomen** (family name), **cognomen** (distinguishing name).
 
-Terms:
+The ex-slaves of the rich, powerful, and well-connected might become the same, while those of non-descript masters were less likely to soar to great social or economic height.
+
+#### Classes; Elite & Non-elite
+
+Some terms:
 
 - **Ordo**: was often used and can be translated to "rank", "class", "station", "condition"
 - **Honestiores**: wealthy
@@ -920,11 +924,13 @@ The elite includes the three wealthiest classes of freeborn Roman citizens:
 
 The rest were non-elite.
 
+![06.png](/grst205/img/lecfinal/06.png)
+
 ### 💒 Christianity
 
 #### Early Christianity
 
-- Roots in Jewish religion: Judaism
+- Roots in Jewish religion: Judaism (~13th c. BC)
 - **Judaea**/**Palestine**: a client kingdom under Persian Empire
   - conquered by seleucids (2nd BCE) made a roman province in 6 CE
 - Judaism was a **monotheistic** religion: one god, expeced to send a **Messiah** (saviour)
@@ -937,6 +943,7 @@ Early christianity focused on **Jesus of Nazareth**:
 - Was executed by Romans during the reight of Emperor Tiberius in 30 - 33 AD
 - Jesus is said to have risen from the dead on **third day** after his death
 - Followers of Jesus claimed that he was the Messiah
+- Beardless Jesus was pictured around 5th AD
 
 **Early symbols**:
 
