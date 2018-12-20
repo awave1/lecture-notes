@@ -892,7 +892,7 @@ Slavery was inherited. Treatment of slaves:
 - It was legal to abuse slaves physically & sexually
 - Slaves could only give legal evidence under torture
 
-**Pedanius Secundus** owned 400 slaves and got killed by one of them. 400 slaves were crucified.
+**Pedanius Secundus** owned 400 slaves and got killed by one of them. 400 slaves were crucified, due to Roman tradition.
 
 Some slaves had been trained and were **specialized** in something; developed close and trusted relationships with citizens. Many children of Roman elite were raised by slaves.
 
