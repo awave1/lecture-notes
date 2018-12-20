@@ -523,7 +523,7 @@ Romans - controlled a bunch of territories in Europe and North Africa. They were
 - Italian **Iron Age** began in 900 BC
 - **Urbanization process** was in **7th - 5th** BC
 - [**Regal Period**](#-rome-regal-period-monarchy-753-859-bc): 753 - 859 BC
-- [**Early Republic**](#-rome-early-republic): 509 - 264 BC
+- [**Early Republic**](#-rome-republic-5th---early-3rd): 509 - 264 BC
 
 Early Italy had many ethnic groups and languages:
 
@@ -994,11 +994,16 @@ The accession of Diocletian marks the end of the Third Century Crisis. Reorganiz
 - Empire split into 4 parts ruled by either a senior or a junior emperor
   - senior -> augustus
   - junior -> caesar
+- Constantine obtains sole power, his sons split empire again
+- these reforms -> fragmentation of Roman Empire split between Western and Eastern Mediterranean
+
+The Empire was divided into two halves, an Eastern and a Western one. Each of four emperors governed one quarter of each side.
+
 - size of army increased
   - Every army was loyal to their emperor.
 - size of bureaucracy increased
-- Constantine obtains sole power, his sons split empire again
-- these reforms -> fragmentation of Roman Empire split between Western and Eastern Mediterranean
+
+System collapsed after death of Constantius. His son, Constantine was declared as the new Augustus by his own troops. Soon after, Maxentius, son of Maximian, became Augustus. After years of confusion, with more individuals claiming titles, Constantine obtains sole power.
 
 #### Constantine's Reign
 
