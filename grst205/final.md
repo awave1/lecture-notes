@@ -319,6 +319,8 @@ Led by Spartan regent **Pausaias**, son of Leonidas, results in Greeks defeating
 
 ### 🏛 Classical Period & Art
 
+![07.png](/grst205/img/lecfinal/07.png)
+
 - **Symposium** - part of banquet that took place after the meal, when drinking for pleaure was accompanied by music, dancing, recitals, or conversation
 
 #### Athenian Acropolis
