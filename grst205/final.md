@@ -372,7 +372,7 @@ Delian League founded in 478/477 BC. Athens led 150 polies with one goal - aggre
 
 #### Peloponnesian War
 
-![09.png](/grst205/img/lecfinal/09.png)
+![09.png](/grst205/img/lecfinal/08.png)
 
 - Sparta + allies vs Athens vs allies
 - Ostensible causes of war:
