@@ -372,6 +372,8 @@ Delian League founded in 478/477 BC. Athens led 150 polies with one goal - aggre
 
 #### Peloponnesian War
 
+![09.png](/grst205/img/lecfinal/09.png)
+
 - Sparta + allies vs Athens vs allies
 - Ostensible causes of war:
   - Colony Corcyra conflicts with mother-city Coritnth
@@ -995,6 +997,8 @@ Spread knowlege that jesus was not only for jews
 - From now on all emperors (except one) will be Christian
 
 ### 🌍 Rome: Late Empire
+
+![08.png](/grst205/img/lecfinal/08.png)
 
 - **Third Century Crisis**: 235 - 284 CE
 - **Dominate**: 284 - 476 CE (dominus - master / lord)
