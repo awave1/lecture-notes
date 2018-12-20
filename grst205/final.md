@@ -892,7 +892,7 @@ Slavery was inherited. Treatment of slaves:
 - It was legal to abuse slaves physically & sexually
 - Slaves could only give legal evidence under torture
 
-**Pedanius Secundus** owned 400 slaves and got killed by one of them.
+**Pedanius Secundus** owned 400 slaves and got killed by one of them. 400 slaves were crucified.
 
 Some slaves had been trained and were **specialized** in something; developed close and trusted relationships with citizens. Many children of Roman elite were raised by slaves.
 
@@ -942,6 +942,7 @@ Early christianity focused on **Jesus of Nazareth**:
 
 - Chi-rho: first two greek letters of ch r istos
 - alpha and omega: first and last letters of greek alphabet
+  - Revalation 22:13 "I am the Alpha and the Omega, the First and the Last, the Beginning and the End."
 
 #### Paul & His Travels
 
@@ -986,22 +987,36 @@ Civil wars deplete Roman military strength. Fewer recruits from within Roman Emp
 - Emperor Decius killed in battle with goths AD 251
 - Emperor Valerian captured by Sasanians AD 260
 
-### ⚡️ The Dominate: AD 284 - 476
+#### The Dominate: AD 284 - 476
 
-- Reorganizaion of Empire by Dicletian (**tetrarchy**)
-  - Empire split into 4 parts ruled by either a senior or a junior emperor
-    - senior -> augustus
-    - junior -> caesar
-  - size of army increased
-  - size of bureaucracy increased
-  - Constantine obtains sole power, his sons split empire again
+The accession of Diocletian marks the end of the Third Century Crisis. Reorganizaion of Empire by Dicletian (**tetrarchy**):
+
+- Empire split into 4 parts ruled by either a senior or a junior emperor
+  - senior -> augustus
+  - junior -> caesar
+- size of army increased
+  - Every army was loyal to their emperor.
+- size of bureaucracy increased
+- Constantine obtains sole power, his sons split empire again
 - these reforms -> fragmentation of Roman Empire split between Western and Eastern Mediterranean
+
+#### Constantine's Reign
+
+Constantine's reign best remembered not for reunification of the empire but for the roleration of Christianity.
+
+#### Diocletian Reforms
+
+Reforms of Diocletian re-established stability for a time, but economic, political, and military problems continued in 4th - 6th centuries barbarian peoples from the empire invade and defeat Roman armies.
+
+The last emperor of the western empire Romulus is deposed
 
 ### 🗡 Fall of Rome
 
 - In 4th - 6th centuries 'barbarian' people from outside the Empire invade and defeat Roman armies
 - The last Emperor of the Western Roman Empire, Romulus Augustulus is deposed in 476
 - Barbarian people establish kingdoms within the western half of the former Roman Empire. These kingdoms eventually develop into the European countries of the Middle Ages
+
+Eastern Roman Empire however didn't collapse. It was more densely settled and was easier to defend.
 
 #### Roman Empire: Significances
 
