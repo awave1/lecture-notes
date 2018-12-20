@@ -530,7 +530,7 @@ Romans - controlled a bunch of territories in Europe and North Africa. They were
 
 - Italian **Iron Age** began in 900 BC
 - **Urbanization process** was in **7th - 5th** BC
-- [**Regal Period**](#-rome-regal-period-monarchy-753---859-bc): 753 - 859 BC
+- [**Regal Period**](#-rome-regal-period-monarchy-753---859-bc): 753 - 509 BC
 - [**Early Republic**](#-rome-republic-5th---early-3rd): 509 - 264 BC
 
 Early Italy had many ethnic groups and languages:
@@ -567,7 +567,7 @@ No proven connection to characters of early Roman mythology.
 - Texts present founding & growth of Rome as organized process, in great detail
 - Romans didn't start writing down their stories until ~200 BC
 
-### 🤴🏻 Rome: Regal Period (Monarchy): 753 - 859 BC
+### 🤴🏻 Rome: Regal Period (Monarchy): 753 - 509 BC
 
 Rome was ruled by **reges**, kings (**rex** - king). In 509 BC Rome **stops being monarchy**. Kingship wasn't hereditary. Kings were responsible for following:
 
