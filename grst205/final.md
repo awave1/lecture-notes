@@ -522,7 +522,7 @@ Romans - controlled a bunch of territories in Europe and North Africa. They were
 
 - Italian **Iron Age** began in 900 BC
 - **Urbanization process** was in **7th - 5th** BC
-- [**Regal Period**](#-rome-regal-period-monarchy-753-859-bc): 753 - 859 BC
+- [**Regal Period**](#-rome-regal-period-monarchy-753---859-bc): 753 - 859 BC
 - [**Early Republic**](#-rome-republic-5th---early-3rd): 509 - 264 BC
 
 Early Italy had many ethnic groups and languages:
