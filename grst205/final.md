@@ -1,5 +1,9 @@
 # 🤪 GRST205: Final review
 
+## 🌋 Destruction of Pompeii (79 AD)
+
+Aftermath of Pompeii gives archaeologists a lot of insights about life of romans.
+
 ## 🇬🇷 Greeks
 
 ![05.png](/grst205/img/lecfinal/05.png)
@@ -863,6 +867,19 @@ There were two main leagues:
 - **Drama** from **3rd BCE**, inspired by Greek Drame
   - publicly funded as a part of **ludi**
 - Organized by politicians and magistrates (especially *aediles*) during Republic; dominated by emperor in Imperial Period
+- Those who commited crimes were used for entertainment - **venationes** (beasthunts) and execution by animal
+- When Pompeii organized killing of elephants, citizens didn't like it
+
+**Types of gladiators**:
+
+- **Secutor**: persuer, had heavy helmet, scutum, sword, shin/arm guard
+- **Restarius**: netman, gladiator that had trident, net, dagger, arm/shoulder guard
+
+**Cicero's thoughts on gladiators**:
+
+- Gladiators never complained
+- Uncivil compared to actual warriors
+- Lost their fear of death through training
 
 #### Roman Mass Entertainment: Significances
 
@@ -894,7 +911,7 @@ Slavery was inherited. Treatment of slaves:
 
 **Pedanius Secundus** owned 400 slaves and got killed by one of them. 400 slaves were crucified, due to Roman tradition.
 
-Some slaves had been trained and were **specialized** in something; developed close and trusted relationships with citizens. Many children of Roman elite were raised by slaves.
+Some slaves had been trained and were **specialized** in something; developed close and trusted relationships with citizens. Many children of Roman elite were raised by slaves. The Emperor Nero was buried by **his slaves that raised him**.
 
 #### Freepeople
 
@@ -934,6 +951,9 @@ The rest were non-elite.
 - **Judaea**/**Palestine**: a client kingdom under Persian Empire
   - conquered by seleucids (2nd BCE) made a roman province in 6 CE
 - Judaism was a **monotheistic** religion: one god, expeced to send a **Messiah** (saviour)
+- The missionaries went for children and ignorant women since they wwere easily influenced.
+
+Jews rebelled against Roman Empire in 60-70 CE because Romans destroyed Jerusalem and penalized jews. That caused christians to distance from judaism.
 
 #### Jesus
 
@@ -961,13 +981,15 @@ Spread knowlege that jesus was not only for jews
 - Christinas delibberatly sought to convert others
 - Gradually christians develop their own sacred writings which they add to Jewish ones
   - old testament + new testament = bible
+- Christianity focused on beliefs more than on rituals
 
 #### Christianity as The Dominant Religion in Roman Empire
 
 - Despite persecution, core converts in 1st - 4th c's AD
 - In AD 312, Constantine becomes sole emperor in the West and converts - Battle of Milvian Bridge. Gains control of whole Empire AD 324
+  - Also declares allegiance to Christianity becausee he saw a symbol in the sky that allowed him win the battle
 - Constantine makes christianity legal
-- By end of 4th AD christianity - official religion of the roman empire
+- By end of 4th AD christianity - official religion of the Roman Empire
 - From now on all emperors (except one) will be Christian
 
 ### 🌍 Rome: Late Empire
@@ -996,7 +1018,9 @@ Civil wars deplete Roman military strength. Fewer recruits from within Roman Emp
 
 #### The Dominate: AD 284 - 476
 
-The accession of Diocletian marks the end of the Third Century Crisis. Reorganizaion of Empire by Dicletian (**tetrarchy**):
+The accession of Diocletian marks the end of the Third Century Crisis. Diocletian dripped too hard and made senators bow in front of him.
+
+Reorganizaion of Empire by Diocletian (**tetrarchy**):
 
 - Empire split into 4 parts ruled by either a senior or a junior emperor
   - senior -> augustus
