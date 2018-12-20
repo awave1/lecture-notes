@@ -998,7 +998,7 @@ Spread knowlege that jesus was not only for jews
 
 ### 🌍 Rome: Late Empire
 
-![08.png](/grst205/img/lecfinal/08.png)
+![08.png](/grst205/img/lecfinal/09.png)
 
 - **Third Century Crisis**: 235 - 284 CE
 - **Dominate**: 284 - 476 CE (dominus - master / lord)
